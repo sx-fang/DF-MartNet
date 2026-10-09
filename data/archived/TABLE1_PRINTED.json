@@ -1,0 +1,47 @@
+{
+  "hjb1_d10000": {
+    "re_native": 0.00244,
+    "re_native_sd": 0.00018,
+    "re_path": 0.0092,
+    "re_path_sd": 0.00079,
+    "rc_abs": 0.0013,
+    "rc_abs_sd": 0.00017,
+    "rt_solve": 2812
+  },
+  "hjb2_d10000": {
+    "re_native": 0.0203,
+    "re_native_sd": 0.002,
+    "re_path": 0.0062,
+    "re_path_sd": 0.0021,
+    "rc_abs": 0.0083,
+    "rc_abs_sd": 0.00024,
+    "rt_solve": 2814
+  },
+  "hjb3_d10000": {
+    "re_native": 0.0369,
+    "re_native_sd": 0.0026,
+    "re_path": 0.021,
+    "re_path_sd": 0.0025,
+    "rc_abs": 0.0013,
+    "rc_abs_sd": 5.2e-05,
+    "rt_solve": 3953
+  },
+  "hjb3_d2000_w2010": {
+    "re_native": 0.0624,
+    "re_native_sd": 0.0064,
+    "re_path": 0.041,
+    "re_path_sd": 0.0079,
+    "rc_abs": 0.028,
+    "rc_abs_sd": 0.001,
+    "rt_solve": 248
+  },
+  "hjb3_d2000_w10010": {
+    "re_native": 0.032,
+    "re_native_sd": 0.0047,
+    "re_path": 0.035,
+    "re_path_sd": 0.0024,
+    "rc_abs": 0.00076,
+    "rc_abs_sd": 6.5e-05,
+    "rt_solve": 1791
+  }
+}

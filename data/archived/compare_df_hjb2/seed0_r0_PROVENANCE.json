@@ -1,0 +1,17 @@
+{
+  "case": "compare_df_hjb2",
+  "sample_id": "seed0_r0",
+  "history_source": {
+    "sha256": "fdc44001392e27d541a5bc13417c763cf0d3d855f67e0a74979e3cdb6fa0fa5e",
+    "curated_columns": [
+      "it",
+      "rel_l1err",
+      "rc",
+      "rt_solve",
+      "rt_log"
+    ]
+  },
+  "profile_source": {
+    "sha256": "e8e7131b582237ddcd43c5c7f6c8e52ae948bdc759d2a3ce6690b509dfd94888"
+  }
+}

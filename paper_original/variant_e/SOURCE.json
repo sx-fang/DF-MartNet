@@ -1,0 +1,61 @@
+{
+  "commit": null,
+  "files": [
+    {
+      "file": "diagnostics.py",
+      "bytes": 3801,
+      "sha256": "0a035cc119d148ec794b872394571c8646394be9b720115d683ebb417a1811ae",
+      "original_sha256": "0a035cc119d148ec794b872394571c8646394be9b720115d683ebb417a1811ae"
+    },
+    {
+      "file": "examples.py",
+      "bytes": 20158,
+      "sha256": "0152114db38c7c21d34d52607a3713bf92d1080a9c6022c15f1a5a9370d7a856",
+      "original_sha256": "dcd84280db18691034308db1a2e236672e4a1447b7da6ffeaa74e798fcdea22b"
+    },
+    {
+      "file": "loss_martnet.py",
+      "bytes": 8587,
+      "sha256": "f04d469c93e02b7add1a3eccd3436836c0287a72b019e1746bd38e7af66752b2",
+      "original_sha256": "4edee696de0fa73dccd4270c341e45bab62ec21903ab34f9990663027b11905e"
+    },
+    {
+      "file": "networks.py",
+      "bytes": 4947,
+      "sha256": "6f3f4f962e52008602a201957c9c2bb14f9270e6adc8193a5c846d078e481c14",
+      "original_sha256": "928e1e48d6618194e116d49c868b6986730c84bedb0da4f1222360b26c69d8b2"
+    },
+    {
+      "file": "runtask.py",
+      "bytes": 5278,
+      "sha256": "09169f6a2ecd42db1f5998e499f2bf36feb3e51b4bf230a09f11ec6d86f9af69",
+      "original_sha256": "09169f6a2ecd42db1f5998e499f2bf36feb3e51b4bf230a09f11ec6d86f9af69"
+    },
+    {
+      "file": "sampling.py",
+      "bytes": 2794,
+      "sha256": "a2fa4e13f1201c85d3f08f5e4cd5cdca9ec2c8c4f6ea6cbdf858d13969dfbd4a",
+      "original_sha256": "16df1d9a0c80ecb1862b3a680a6bad34c536800d5e2551775bb5ff05931f1ebb"
+    },
+    {
+      "file": "solver.py",
+      "bytes": 9238,
+      "sha256": "fb421bc700c509c31772bc649bbc147ab556a2824c3f0eb1a5db5ce6d02424fe",
+      "original_sha256": "fd3f48bd920ae89fd6cb5bed10b1a556056dc1633e39dc5890a990bff75e1c68"
+    },
+    {
+      "file": "train.py",
+      "bytes": 7314,
+      "sha256": "b79d3dac517dfa82fb3845cb379af24204813c1fe775a7dd7235644f61cf9683",
+      "original_sha256": "b79d3dac517dfa82fb3845cb379af24204813c1fe775a7dd7235644f61cf9683"
+    },
+    {
+      "file": "utils.py",
+      "bytes": 6896,
+      "sha256": "e8b17b7170e4b58e1816b36c71cbafe3c4e8e5e77a5adc2d1a6b6de67a65565f",
+      "original_sha256": "e3d9053a4b65c44eaaa289794a9f2551096ae80afec778af6d96c988c21fe606"
+    }
+  ],
+  "curation": "Publication comments, docstrings and diagnostic/help text; computational AST checked against original source.",
+  "role": "Numerical runtime dependency closure"
+}

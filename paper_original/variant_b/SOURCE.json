@@ -1,0 +1,70 @@
+{
+  "commit": "d7fcbe5910bea001e323c2bf1586625437ff7d8a",
+  "files": [
+    {
+      "file": "diagnostics.py",
+      "bytes": 4387,
+      "sha256": "281bdecb894a981daebac6ab5fc361b28b0ba37ee180a224348256114a1b285c",
+      "original_sha256": "e586c3de5f1fc6b9828fb744bcdb865d2d1d268143e3578ec9217a98a6a20d54",
+      "original_manifest_md5": "74e6e5e97e830c3f8e4e76b1afcdb1c0"
+    },
+    {
+      "file": "examples.py",
+      "bytes": 127145,
+      "sha256": "23a8ce3ef4d570eba3c571f612711d1c70f66128769d4873ad5dd0455fd6bf5c",
+      "original_sha256": "516f0e66ef01a1919ff410510803235e6746377541529caa2429e074ca103099",
+      "original_manifest_md5": "335a77634aa132f50f9de3e6fbe9aa40"
+    },
+    {
+      "file": "loss_martnet.py",
+      "bytes": 12135,
+      "sha256": "f4447b4f8dfa9e8900e715f52331068b3acd1608d7729b9815e6a266becc20ae",
+      "original_sha256": "9695035a42dc2045d2962b9f4d5bd9430a773256646711c4fafb227ff067c04d",
+      "original_manifest_md5": "75ed63a42f7380ed8b30a1c38a2000d5"
+    },
+    {
+      "file": "networks.py",
+      "bytes": 6448,
+      "sha256": "095a75f74b017101347e576e8e09b68414d26d2939f347346dbd4214f6035274",
+      "original_sha256": "fcf2fb2d22f31a166249b46af8fbbf51e7540990931b6f421e8a326ea6dc71aa",
+      "original_manifest_md5": "bd408dd735723a0b6cbb607221fa31d1"
+    },
+    {
+      "file": "runtask.py",
+      "bytes": 5596,
+      "sha256": "353106310be2b7d5fa93c7d0d0569d6e3385842e25be4d1416d322429613a13c",
+      "original_sha256": "353106310be2b7d5fa93c7d0d0569d6e3385842e25be4d1416d322429613a13c",
+      "original_manifest_md5": "51d3f4dd432654836be3e029c7e03865"
+    },
+    {
+      "file": "sampling.py",
+      "bytes": 2794,
+      "sha256": "a2fa4e13f1201c85d3f08f5e4cd5cdca9ec2c8c4f6ea6cbdf858d13969dfbd4a",
+      "original_sha256": "16df1d9a0c80ecb1862b3a680a6bad34c536800d5e2551775bb5ff05931f1ebb",
+      "original_manifest_md5": "f9ecd4db4c021e78fc2c33f80b37953e"
+    },
+    {
+      "file": "solver.py",
+      "bytes": 18858,
+      "sha256": "43fede5bfce4a9073f663d8a84495dc7220a1e364ba3817c738b183903032124",
+      "original_sha256": "e28e0320430bca0f263ef08dc3a1fc931f1b0aa1dcf6d1c30c1309f1541537bb",
+      "original_manifest_md5": "745a48856e83dc89d3f8ca9507d6bacd"
+    },
+    {
+      "file": "train.py",
+      "bytes": 8469,
+      "sha256": "70f484c84b97fd9ce3924389a4150a605c40b8bb078fbd090bc37868c6fda2e0",
+      "original_sha256": "5d9a1766c83e8edd7a85f7355b004d18338f94f938f2434568fb91ff05ee04a4",
+      "original_manifest_md5": "451b5609367179895352333b50c855ad"
+    },
+    {
+      "file": "utils.py",
+      "bytes": 7099,
+      "sha256": "32b4d2052a78440dec588c4bd33dfceb6df0784765bf88ba1fd60db81cd27218",
+      "original_sha256": "4c111bd60397e25957c93c5851e06ccd8b94ab33ebfac49bb24713b6a31ad4ba",
+      "original_manifest_md5": "760a977aeeb65b56dfc0feab3d464d0b"
+    }
+  ],
+  "curation": "Publication comments, docstrings and diagnostic/help text; computational AST checked against original source.",
+  "role": "Numerical runtime dependency closure"
+}

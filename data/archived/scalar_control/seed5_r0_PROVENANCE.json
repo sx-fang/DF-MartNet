@@ -1,0 +1,19 @@
+{
+  "case": "scalar_control",
+  "sample_id": "seed5_r0",
+  "history_source": {
+    "sha256": "fc3b958b49d306bc9472ba2c4b186837037e02abfa74858c514f5e9acb9c6d93",
+    "curated_columns": [
+      "it",
+      "rel_l1err",
+      "rc",
+      "rt_solve",
+      "rt_log",
+      "rel_l1err_ualoop",
+      "rel_l1err_u_ualoop"
+    ]
+  },
+  "profile_source": {
+    "sha256": "c6b9b4509be904eb9c158e7b375d66c4561e6013ce6b289737eee25921de259c"
+  }
+}

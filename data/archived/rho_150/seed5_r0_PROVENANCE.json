@@ -1,0 +1,17 @@
+{
+  "case": "rho_150",
+  "sample_id": "seed5_r0",
+  "history_source": {
+    "sha256": "97399536477ee013a88f1785281ddaebd8f3146e42b57d3973a576cd30583601",
+    "curated_columns": [
+      "it",
+      "rel_l1err",
+      "rc",
+      "rt_solve",
+      "rt_log"
+    ]
+  },
+  "profile_source": {
+    "sha256": "7c3cac6beca6115f8d95b559af703635971f8ac1737cf559f7341a9594b518af"
+  }
+}

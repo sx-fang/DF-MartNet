@@ -1,0 +1,17 @@
+{
+  "case": "rho_300",
+  "sample_id": "seed1_r0",
+  "history_source": {
+    "sha256": "38dde4b2f041a841e4c84cd7ab0bbf0876f053ce4fd036fd1630874d82f25212",
+    "curated_columns": [
+      "it",
+      "rel_l1err",
+      "rc",
+      "rt_solve",
+      "rt_log"
+    ]
+  },
+  "profile_source": {
+    "sha256": "cf2f0b3aa3c643ae5b32c9c6dc3b31b78db736124c94248901240cd6b345eb98"
+  }
+}

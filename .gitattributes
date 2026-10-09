@@ -1,0 +1,2 @@
+# Preserve the exact source/config/data bytes used by SHA provenance on every OS.
+* -text

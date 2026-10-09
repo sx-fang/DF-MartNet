@@ -1,0 +1,17 @@
+{
+  "case": "hjb3_d2000_w10010",
+  "sample_id": "seed2_r0",
+  "history_source": {
+    "sha256": "1f48f80fcdfab41af9d7603fbbe2d947ae1b749482fd7a37067bde715a9333ab",
+    "curated_columns": [
+      "it",
+      "rel_l1err",
+      "rc",
+      "rt_solve",
+      "rt_log"
+    ]
+  },
+  "profile_source": {
+    "sha256": "293aac1fe1a865ee6ac377266efe42acfee21cc3b67ffc9e874e81e3f1558b76"
+  }
+}

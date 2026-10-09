@@ -1,0 +1,69 @@
+{
+  "original_run_sha256": "07ac3b02510a70a65c3979ef00fb4881c0e3905821920d6e9351926b2975f6f2",
+  "license": "MIT",
+  "license_file": "../../LICENSE",
+  "files": [
+    {
+      "file": "run.py",
+      "bytes": 31154,
+      "sha256": "dacfdb84f2ec5ae3bd7d2f00b4e6770453079ee3a48ea160f22ca5252882d103",
+      "original_sha256": "07ac3b02510a70a65c3979ef00fb4881c0e3905821920d6e9351926b2975f6f2"
+    },
+    {
+      "file": "socmartnet/__init__.py",
+      "bytes": 800,
+      "sha256": "80e6b6ddc6ec4f56a52de419ad08536018783ca3c6bd01fe0587ee1eacf85d0f",
+      "original_sha256": "80e6b6ddc6ec4f56a52de419ad08536018783ca3c6bd01fe0587ee1eacf85d0f"
+    },
+    {
+      "file": "socmartnet/evaluate.py",
+      "bytes": 3801,
+      "sha256": "b3de2aa0b9dd84fd519e8bbce8443b82f19a5a561bc396c451d58a6aa46cedb9",
+      "original_sha256": "b3de2aa0b9dd84fd519e8bbce8443b82f19a5a561bc396c451d58a6aa46cedb9"
+    },
+    {
+      "file": "socmartnet/fbsnn.py",
+      "bytes": 5228,
+      "sha256": "a133a3390218047d33a956b6f04a67d376fefd26ac9fa95876567aef634b739a",
+      "original_sha256": "a133a3390218047d33a956b6f04a67d376fefd26ac9fa95876567aef634b739a"
+    },
+    {
+      "file": "socmartnet/networks.py",
+      "bytes": 2992,
+      "sha256": "b72957cb8078acfc9846094f92164a850fa571312846efb2ab4eab5434a1f4da",
+      "original_sha256": "b72957cb8078acfc9846094f92164a850fa571312846efb2ab4eab5434a1f4da"
+    },
+    {
+      "file": "socmartnet/problems.py",
+      "bytes": 18936,
+      "sha256": "cf1c1c85495419dae5108080f72fb67735be42b195e66f792192a1dc50973ae2",
+      "original_sha256": "9d5136881b2e4f1fcebdf04cc2f34099765de5e70e4e250624f24f6658f269bd"
+    },
+    {
+      "file": "socmartnet/solver.py",
+      "bytes": 29047,
+      "sha256": "37926a20637bffef2d726df4efd963b8c63d7cbb96be49782d0283364422baec",
+      "original_sha256": "380220874cdbd03dcad810951b784727e74589233653869b7af6d8accb071b7e"
+    },
+    {
+      "file": "tools/aggregate_summary.py",
+      "bytes": 3152,
+      "sha256": "c276e77797b48d998f2fc85d8d7b0c0ae80b1e5ca37f771f56ac89bb9b52be68",
+      "original_sha256": "c276e77797b48d998f2fc85d8d7b0c0ae80b1e5ca37f771f56ac89bb9b52be68"
+    },
+    {
+      "file": "tools/run_original_v3.py",
+      "bytes": 7965,
+      "sha256": "a3e6c50ec29626d3059a0c3b388dc344ca0bd8cf0e55a9e73db12e3689e0d6dc",
+      "original_sha256": "a3e6c50ec29626d3059a0c3b388dc344ca0bd8cf0e55a9e73db12e3689e0d6dc"
+    },
+    {
+      "file": "tools/run_repeats.py",
+      "bytes": 1641,
+      "sha256": "cb9f14237950a0db50a79b1898d5ba5aa1518903c1757e33302961043fe8b291",
+      "original_sha256": "e83869a940352af5bc115a3a03c1e8dc348149c270634a6fd7b5a3fa8299f0ff"
+    }
+  ],
+  "curation": "Publication comments, docstrings and diagnostic/help text; computational AST checked against original source.",
+  "role": "Numerical runtime dependency closure"
+}

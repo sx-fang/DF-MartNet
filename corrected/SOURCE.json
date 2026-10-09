@@ -1,0 +1,67 @@
+{
+  "commit": "94cd9f622e8f7812b9b145bf7983e4297d2e2bd5",
+  "files": [
+    {
+      "file": "diagnostics.py",
+      "bytes": 4387,
+      "sha256": "281bdecb894a981daebac6ab5fc361b28b0ba37ee180a224348256114a1b285c",
+      "original_sha256": "e586c3de5f1fc6b9828fb744bcdb865d2d1d268143e3578ec9217a98a6a20d54"
+    },
+    {
+      "file": "examples.py",
+      "bytes": 155691,
+      "sha256": "2c64776469c7db22d4cb74def4b684835575916adad7588495bbe58011a89216",
+      "original_sha256": "cbe957f7b21b1ff85859d070f2ff3aa56b7f2c827e25fbde4532b8f30c886fc4"
+    },
+    {
+      "file": "loss_martnet.py",
+      "bytes": 17810,
+      "sha256": "120bed9c2fd9825d65cf187044b7fa33c11e2634443bc1c6fdae36a30756997c",
+      "original_sha256": "a63569584c15c0eaef506757344ce7e17d7ff6b8573855262edd4bd88535cb89"
+    },
+    {
+      "file": "networks.py",
+      "bytes": 7036,
+      "sha256": "71ad545fd9ca2c1812713284ea31cb2831ce8c42301b58c06ea51bb43d3e8a1f",
+      "original_sha256": "2c4cb0cad0f4afba6ea3d36f064621be979e00e0f73ccdc40a652c27efc20a5e"
+    },
+    {
+      "file": "runtask.py",
+      "bytes": 5596,
+      "sha256": "353106310be2b7d5fa93c7d0d0569d6e3385842e25be4d1416d322429613a13c",
+      "original_sha256": "353106310be2b7d5fa93c7d0d0569d6e3385842e25be4d1416d322429613a13c"
+    },
+    {
+      "file": "sampling.py",
+      "bytes": 5030,
+      "sha256": "b447762e73a4ced9aeaa7e52810f6359cc548a05e59c055a0768bc1bc50e8feb",
+      "original_sha256": "fea99695f147df308df3e007ab44d104addbcb3a5b32fc71448bad7f7bef16f6"
+    },
+    {
+      "file": "solver.py",
+      "bytes": 26071,
+      "sha256": "642eefbb346402d6485d2c7d6a9f7221118cc3bd7ca93651aa6f43d4ddb441f5",
+      "original_sha256": "92bdad970b88f9b45d69dae7fd9bbb831f727a61e8b74b61b4897c85e5c9986a"
+    },
+    {
+      "file": "train.py",
+      "bytes": 9288,
+      "sha256": "3fc36d1a82ffb639385f8b2c11c1c534a9c8601713c5e3ff26a453df19855a94",
+      "original_sha256": "dc375c8a8b62f89f2ed5d0f6df4312e7ef0410b012a9018c19cd0e3f32b2afa0"
+    },
+    {
+      "file": "utils.py",
+      "bytes": 7099,
+      "sha256": "32b4d2052a78440dec588c4bd33dfceb6df0784765bf88ba1fd60db81cd27218",
+      "original_sha256": "4c111bd60397e25957c93c5851e06ccd8b94ab33ebfac49bb24713b6a31ad4ba"
+    },
+    {
+      "file": "radial_control.py",
+      "bytes": 3908,
+      "sha256": "d16a59d446f40e75f8e428b3e0f33b3ddf15686f2d2fe0daf7a561c6024ee5b6",
+      "original_sha256": "f5e2a8f45a7ee82e426ba8679d9c8323d224a5aaf44fa50c8c52b6185e10ee7f"
+    }
+  ],
+  "curation": "Publication comments, docstrings and diagnostic/help text; computational AST checked against original source.",
+  "role": "Numerical runtime dependency closure"
+}

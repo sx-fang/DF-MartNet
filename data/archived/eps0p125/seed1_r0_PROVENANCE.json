@@ -1,0 +1,17 @@
+{
+  "case": "eps0p125",
+  "sample_id": "seed1_r0",
+  "history_source": {
+    "sha256": "e3439ce1c376fee00bf0b65a9d1b3abd8affcab29a8ed45b06a1d40408ccf391",
+    "curated_columns": [
+      "it",
+      "rel_l1err",
+      "rc",
+      "rt_solve",
+      "rt_log"
+    ]
+  },
+  "profile_source": {
+    "sha256": "8a023614536bb1fb7f0d57a928cb65a8ab20a28aee0516c00fcb802c8c4046a3"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "server": "YOUR_CLUSTER_NAME",
+  "partition": "YOUR_GPU_PARTITION",
+  "account": "YOUR_ACCOUNT",
+  "time": "3-00:00:00",
+  "cpus_per_gpu": 4,
+  "mem_gb": 192,
+  "python": "/absolute/path/to/your/venv/bin/python"
+}

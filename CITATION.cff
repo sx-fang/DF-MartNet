@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "Please cite the paper when using this research code."
+type: software
+title: "DF-MartNet: paper reproduction package"
+abstract: "Numerical reproduction of the manuscript snapshot dated October 9, 2026, bundled as docs/paper.pdf. The arXiv link identifies the earlier public preprint."
+version: "0.1.0-rc2"
+license: MIT
+date-released: "2026-10-09"
+repository-code: "https://github.com/sx-fang/DF-MartNet"
+authors:
+  - family-names: Cai
+    given-names: Wei
+  - family-names: Fang
+    given-names: Shuixin
+  - family-names: Zhang
+    given-names: Wenzhong
+  - family-names: Zhou
+    given-names: Tao
+preferred-citation:
+  type: article
+  title: "Martingale deep neural network for very high-dimensional stochastic optimal controls"
+  authors:
+    - family-names: Cai
+      given-names: Wei
+    - family-names: Fang
+      given-names: Shuixin
+    - family-names: Zhang
+      given-names: Wenzhong
+    - family-names: Zhou
+      given-names: Tao
+  url: "https://arxiv.org/abs/2408.14395"

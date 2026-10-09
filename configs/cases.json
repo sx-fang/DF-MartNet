@@ -1,0 +1,1702 @@
+{
+  "hjb1_d10000": {
+    "arms": [
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 5,
+        "gpus": 4,
+        "source": "paper_original/variant_a",
+        "config": "configs/paper_original/hjb1_d10000/seed1_r0.ini",
+        "config_sha256": "76a3e9f8b055554047f4de556c7a9900451be8dcf364231f5db4f908ed2a4a83",
+        "max_iter": 9000
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 5,
+        "gpus": 8,
+        "source": "paper_original/variant_c",
+        "config": "configs/paper_original/hjb1_d10000/seed2_r0.ini",
+        "config_sha256": "a153d162f30bd4ddf1e6efc1fa668bdbf8b01896fa4f03da5d950b957bf14857",
+        "max_iter": 9000
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 5,
+        "gpus": 8,
+        "source": "paper_original/variant_c",
+        "config": "configs/paper_original/hjb1_d10000/seed3_r0.ini",
+        "config_sha256": "3f6f9b78ffc2b88ae0495985511f8aec33aafc8f17a0cfa306368bd7fee8072f",
+        "max_iter": 9000
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 5,
+        "gpus": 8,
+        "source": "paper_original/variant_c",
+        "config": "configs/paper_original/hjb1_d10000/seed4_r0.ini",
+        "config_sha256": "abc566baf96d7865150ffd84efaf89d8a2f8c7971984a1d0d343bfa8af926a6c",
+        "max_iter": 9000
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 5,
+        "gpus": 8,
+        "source": "paper_original/variant_c",
+        "config": "configs/paper_original/hjb1_d10000/seed5_r0.ini",
+        "config_sha256": "6b4ff7d56cc8a18570fa7a7a2c6aacd8a36b3c8bf398b30f8fd6ad46edac8687",
+        "max_iter": 9000
+      }
+    ],
+    "kind": "hjb"
+  },
+  "hjb2_d10000": {
+    "arms": [
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_e",
+        "config": "configs/paper_original/hjb2_d10000/seed1_r0.ini",
+        "config_sha256": "7597ade810c606c05333e57d9d22a9bf76dd39f8c00d793c3bd98ad95a4eeace",
+        "max_iter": 9000
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_a",
+        "config": "configs/paper_original/hjb2_d10000/seed2_r0.ini",
+        "config_sha256": "0b90fa386e8c8fb7688cd0c272a2d5239d2faa587a9d151276f46b69177d8afc",
+        "max_iter": 9000
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_a",
+        "config": "configs/paper_original/hjb2_d10000/seed3_r0.ini",
+        "config_sha256": "9f5c8a504c118c7cca3e822537e0099e53e467e45f5c652632bb136016a3c69f",
+        "max_iter": 9000
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_a",
+        "config": "configs/paper_original/hjb2_d10000/seed4_r0.ini",
+        "config_sha256": "31d29538f840ab5440a9997fc8d2b7bd8a1a25df884e39903841cbc77761a32b",
+        "max_iter": 9000
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_a",
+        "config": "configs/paper_original/hjb2_d10000/seed5_r0.ini",
+        "config_sha256": "33fa36975c667fa5135fa7c7c77810d303f51dfa48c02f6fcb9ad5fbe31e8444",
+        "max_iter": 9000
+      }
+    ],
+    "kind": "hjb"
+  },
+  "hjb3_d10000": {
+    "arms": [
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_a",
+        "config": "configs/paper_original/hjb3_d10000/seed1_r0.ini",
+        "config_sha256": "b12045cd3eb8c88e5cc2adc9b1bdcc62c7b169d44fe2310b9f8f8d3b841098c7",
+        "max_iter": 9000
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_c",
+        "config": "configs/paper_original/hjb3_d10000/seed2_r0.ini",
+        "config_sha256": "9429af2124b6a3b41a830414901c02536c0cacd7ff21bfe9b68497999fbf0e50",
+        "max_iter": 9000
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_c",
+        "config": "configs/paper_original/hjb3_d10000/seed3_r0.ini",
+        "config_sha256": "d32ff9fa12589adb075d22e96246eed21d8b2919870eb42f9d709bc99a2c2d5f",
+        "max_iter": 9000
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_c",
+        "config": "configs/paper_original/hjb3_d10000/seed5_r0.ini",
+        "config_sha256": "eb121d6dc187fa985b728ffc1c09f39fdb463b597c4c8ee8abafb83275b473e2",
+        "max_iter": 9000
+      },
+      {
+        "id": "seed6_r0",
+        "seed": 6,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_c",
+        "config": "configs/paper_original/hjb3_d10000/seed6_r0.ini",
+        "config_sha256": "4fb1b929659cc5c3a2b4bf5e5f12151613b96142f193969d6a98263215db8c1d",
+        "max_iter": 9000
+      }
+    ],
+    "kind": "hjb"
+  },
+  "hjb3_d2000_w2010": {
+    "arms": [
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_e",
+        "config": "configs/paper_original/hjb3_d2000_w2010/seed1_r0.ini",
+        "config_sha256": "59983d1f0312803f194cdc3d79e7afadccf69a07f2932dffa00b6defdacb1bb3",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_a",
+        "config": "configs/paper_original/hjb3_d2000_w2010/seed2_r0.ini",
+        "config_sha256": "7d4817f98bc8f6c7ffb4fdd6a37941c67a6d191782ac2092db529251edaaef12",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_a",
+        "config": "configs/paper_original/hjb3_d2000_w2010/seed3_r0.ini",
+        "config_sha256": "c574327bfa1381d3879308ce89fbc02a5d03cd3db68ed3fee14e3f46c8d5259d",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_a",
+        "config": "configs/paper_original/hjb3_d2000_w2010/seed4_r0.ini",
+        "config_sha256": "e7839387b12acf498db93229c2cba6173f7b8abea562eddebb3071cf8ba121f3",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_a",
+        "config": "configs/paper_original/hjb3_d2000_w2010/seed5_r0.ini",
+        "config_sha256": "119291c232d4c58ee0ec06e1c40452e382c27d650efc371e1cd41ba3f2206c95",
+        "max_iter": 6000
+      }
+    ],
+    "kind": "hjb"
+  },
+  "hjb3_d2000_w10010": {
+    "arms": [
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_a",
+        "config": "configs/paper_original/hjb3_d2000_w10010/seed1_r0.ini",
+        "config_sha256": "2eeb03d182ea611d1da3dd5f14c6271653cbabaf807c2d7b7885f2478d51693e",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_c",
+        "config": "configs/paper_original/hjb3_d2000_w10010/seed2_r0.ini",
+        "config_sha256": "2b5fb894e7be8175473c58c013e869dd95291482eda93b729d197b5f82f7ef30",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_c",
+        "config": "configs/paper_original/hjb3_d2000_w10010/seed3_r0.ini",
+        "config_sha256": "c3931d2d91030c6ce24792eb468c8d6ede3e6ec50e8e75cde5f2a7a220f00093",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_c",
+        "config": "configs/paper_original/hjb3_d2000_w10010/seed4_r0.ini",
+        "config_sha256": "bcf4dd4c7650f653efe9a98c8bf1b7fb3c7eeaec1be8adcf2b5d55aaff97d4b0",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_c",
+        "config": "configs/paper_original/hjb3_d2000_w10010/seed5_r0.ini",
+        "config_sha256": "76f1b75c22af25455281e33a38b92cec87a1f5b26f8fec8128fe057bfe9f7cfa",
+        "max_iter": 6000
+      }
+    ],
+    "kind": "hjb"
+  },
+  "complex_dynamics": {
+    "arms": [
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_a",
+        "config": "configs/paper_original/complex_dynamics/seed1_r0.ini",
+        "config_sha256": "4285da28cb90bec641f89e3d5b5132b8239ad2ca2978033a1822ef900cced593",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_a",
+        "config": "configs/paper_original/complex_dynamics/seed2_r0.ini",
+        "config_sha256": "62252756645e8cadc8fe625208384e6c9f283a485bfe1a742bad32a5b324be71",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_a",
+        "config": "configs/paper_original/complex_dynamics/seed3_r0.ini",
+        "config_sha256": "20a73d0d251af23f408f33e364231b3ba2e021ab298561509efdb4dc7be1fe57",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_a",
+        "config": "configs/paper_original/complex_dynamics/seed4_r0.ini",
+        "config_sha256": "948a2f965ea6029cad8213373f6f2ba5e79ad74b0bd5ecb09832206d5c56380f",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_a",
+        "config": "configs/paper_original/complex_dynamics/seed5_r0.ini",
+        "config_sha256": "e0f1cad1a8e55ec5543c18cff76472a3882d3fe7e1c66b35b91752c6ea47afe4",
+        "max_iter": 6000
+      }
+    ],
+    "kind": "complex"
+  },
+  "compare_df_hjb2": {
+    "arms": [
+      {
+        "id": "seed0_r0",
+        "seed": 0,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/compare_df_hjb2/seed0_r0.ini",
+        "config_sha256": "5cba1d9a861137b2e20a40b3e8767382837b92241d1c36fc5e0f53f6bfec2205",
+        "max_iter": 10000
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/compare_df_hjb2/seed2_r0.ini",
+        "config_sha256": "d0f1965d28d564647806f7036c328c05d166ab0f2276022758bfa8b487571511",
+        "max_iter": 10000
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/compare_df_hjb2/seed3_r0.ini",
+        "config_sha256": "78ea288983ae205145a159d563e02dd7bbc1b4b75f8fc756c843d77f6355b9a1",
+        "max_iter": 10000
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/compare_df_hjb2/seed4_r0.ini",
+        "config_sha256": "d54e7ec17aa52fbb28fe0c3626e6c7d9c505f0189217733b6d44cda495214634",
+        "max_iter": 10000
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/compare_df_hjb2/seed5_r0.ini",
+        "config_sha256": "6d30f9c798ef95aedc06e71bf69a2a4a575909c34292d1eb4307ada0c7b38942",
+        "max_iter": 10000
+      }
+    ],
+    "kind": "hjb"
+  },
+  "compare_df_hjb3": {
+    "arms": [
+      {
+        "id": "seed0_r0",
+        "seed": 0,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/compare_df_hjb3/seed0_r0.ini",
+        "config_sha256": "c70d2b07eadbd22e688737441f3346a6a92fe592fcaef080401407a74e55f8ac",
+        "max_iter": 13000
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/compare_df_hjb3/seed2_r0.ini",
+        "config_sha256": "28156730d4a75f3920bf5f8106e45614a5ed06e304175d7f79b1405ad3819b71",
+        "max_iter": 13000
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/compare_df_hjb3/seed4_r0.ini",
+        "config_sha256": "af40aded19d55c90b9814d75b695ae2bcdf94ca34090d480cc089960bdb3a83d",
+        "max_iter": 13000
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/compare_df_hjb3/seed5_r0.ini",
+        "config_sha256": "460cb637c3e941ac9be3c8ea49df84877b02d4f9e6920720b92241cddd69f3fe",
+        "max_iter": 13000
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/compare_df_hjb3/seed3_r0.ini",
+        "config_sha256": "4b9b37d890379e61b4fe6ff99503dfad7059f2c2db00a6b37de1de6eef342ab0",
+        "max_iter": 13000
+      }
+    ],
+    "kind": "hjb"
+  },
+  "scalar_control": {
+    "arms": [
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_c",
+        "config": "configs/paper_original/scalar_control/seed1_r0.ini",
+        "config_sha256": "7a1acf2b5d2bbbf207cd8b50e4b9c4d4283f350bbd15ae2f8f6b1de56cc8a8ca",
+        "max_iter": 12000
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_c",
+        "config": "configs/paper_original/scalar_control/seed2_r0.ini",
+        "config_sha256": "eb14737b83c9367ae7ae21d4727bfcb7fc220a123da75655400c3c6300b2cc04",
+        "max_iter": 12000
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_c",
+        "config": "configs/paper_original/scalar_control/seed3_r0.ini",
+        "config_sha256": "f81832fe01edac2969e97db89f33c5bbab4574c875fd9a0a069103f15d0909bb",
+        "max_iter": 12000
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_c",
+        "config": "configs/paper_original/scalar_control/seed4_r0.ini",
+        "config_sha256": "30973091af7025af90f6e1002085e06c94e73c28b5732390c51cb48e990210c0",
+        "max_iter": 12000
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_c",
+        "config": "configs/paper_original/scalar_control/seed5_r0.ini",
+        "config_sha256": "f04ac6fb5b1a6f29d29f4612377b15c3072674e8fdfd29c3425f79200c695b6d",
+        "max_iter": 12000
+      }
+    ],
+    "kind": "k1"
+  },
+  "eps1": {
+    "arms": [
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_b",
+        "config": "configs/paper_original/eps1/seed1_r0.ini",
+        "config_sha256": "4169fbd27f6349190f3438c1f3ed72eca49ec77c67a9f5236c82deb3b0bc6de5",
+        "max_iter": 6000
+      }
+    ],
+    "kind": "eps"
+  },
+  "eps0p5": {
+    "arms": [
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_b",
+        "config": "configs/paper_original/eps0p5/seed1_r0.ini",
+        "config_sha256": "c503c6eca2ed538db5f6a773059c9ca84e872dd267f1d727c172f49c50d9ece4",
+        "max_iter": 6000
+      }
+    ],
+    "kind": "eps"
+  },
+  "eps0p25": {
+    "arms": [
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_b",
+        "config": "configs/paper_original/eps0p25/seed1_r0.ini",
+        "config_sha256": "88d0d3577ceccae113c0b96c43095a6e8806d75eee389a2aacc190dfd3a50aa0",
+        "max_iter": 6000
+      }
+    ],
+    "kind": "eps"
+  },
+  "eps0p125": {
+    "arms": [
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_b",
+        "config": "configs/paper_original/eps0p125/seed1_r0.ini",
+        "config_sha256": "490fec7e4152431fdc5e991b63b513afa05ff6b4c7d2635144d1c65ba0aef5b9",
+        "max_iter": 6000
+      }
+    ],
+    "kind": "eps"
+  },
+  "eps0": {
+    "arms": [
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_b",
+        "config": "configs/paper_original/eps0/seed1_r0.ini",
+        "config_sha256": "98640c3bae9eccd64b6c657257677b37754a7f134bd033821d36fccbffe31596",
+        "max_iter": 6000
+      }
+    ],
+    "kind": "eps"
+  },
+  "rho_75": {
+    "arms": [
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_75/seed1_r0.ini",
+        "config_sha256": "73394b58ab35f54fcc11ead924a9276417adf34a0e0a558ada9ba05efdf8237b",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_75/seed2_r0.ini",
+        "config_sha256": "28abf187eb43fc55e7257057bee9d536b22f2654a705251e07d8f202a1c04d20",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_75/seed3_r0.ini",
+        "config_sha256": "a5a1d37af4c5e814cf2c2e90f319720e74bdecc6fa69221bb4ca154459c3dac1",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_75/seed4_r0.ini",
+        "config_sha256": "4195d470710aab4e56b29b7cd82e48b0130ce97b2d12b0b2fbbede18c9d90d33",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_75/seed5_r0.ini",
+        "config_sha256": "6ecc86413eb9716b701f8dfa682dd5a54a5a792fcc810dbc26568c01097b0dab",
+        "max_iter": 6000
+      }
+    ],
+    "kind": "complex"
+  },
+  "rho_150": {
+    "arms": [
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_150/seed1_r0.ini",
+        "config_sha256": "75157cc87f4abd88f936314aeacfdf0ed064f748c96fd91857c75078b287fee2",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_150/seed2_r0.ini",
+        "config_sha256": "3445f9a79f3bd6724ea365028883fb78fe76f41cd568f8d64ff338a9c15cc3cd",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_150/seed3_r0.ini",
+        "config_sha256": "e76507d6d843d8ced16e1de44a4a9936e46eb90c7d4773f6f88559e8a824c767",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_150/seed4_r0.ini",
+        "config_sha256": "748e051d5b449deb8ab08db8dd7e11d27d89a9ee82bc8675c660117bd37d8c31",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_150/seed5_r0.ini",
+        "config_sha256": "a8cdbbbede9734664241eab961806482bb910e961bbc635eb848914b2c56ff1c",
+        "max_iter": 6000
+      }
+    ],
+    "kind": "complex"
+  },
+  "rho_300": {
+    "arms": [
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_300/seed1_r0.ini",
+        "config_sha256": "3d7cd8f46db47b265449e627faaa99c17069438cca640ff410cb5f56d6ad1911",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_300/seed2_r0.ini",
+        "config_sha256": "88eef5167a0b3461fed018feb1b1bc6d0a3a568e9a1d07dcba7ebafde94f1cf2",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_300/seed3_r0.ini",
+        "config_sha256": "9c1cb1791a76c43857baca1df0e132cd604a332102df0c27640381a59f848061",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_300/seed4_r0.ini",
+        "config_sha256": "700402a141a8a31f879d4930608b04446441c1f9dc0080ae8affa981e4146a26",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_300/seed5_r0.ini",
+        "config_sha256": "d67f1fcb683a18269e1027f5b8e72a6d219881781f0d4aa14a8200970fe86327",
+        "max_iter": 6000
+      }
+    ],
+    "kind": "complex"
+  },
+  "rho_600": {
+    "arms": [
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_600/seed1_r0.ini",
+        "config_sha256": "9071d479524c63c5ff5f9b53b8bc8f14fa381d1a2b73f81f87dec699e94b072d",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_600/seed2_r0.ini",
+        "config_sha256": "3bac931a0eb882cdd7bb692c929525525a13585d343417825b54e8d2e08db556",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_600/seed3_r0.ini",
+        "config_sha256": "82eecefdfa526e0ce520204459fc7dce0ace57c1364672af06043e6fd9b350bc",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_600/seed4_r0.ini",
+        "config_sha256": "180fbe3ac1bd0108e42146b43ad124687018d9ef9cd19e43bed930667386f743",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_600/seed5_r0.ini",
+        "config_sha256": "6121c3355d047a768d47f1582b8c194bb1a45fee410c057dee09695e7ba4a09d",
+        "max_iter": 6000
+      }
+    ],
+    "kind": "complex"
+  },
+  "rho_1200": {
+    "arms": [
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_1200/seed1_r0.ini",
+        "config_sha256": "c7b406d1d4f7f7d244b6af2a9b43c8e69dd8bba9065cdfefaa9bfde8387fb49a",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_1200/seed2_r0.ini",
+        "config_sha256": "8edae2e3041f83d0420db2e79f89dd1c7ff04213c3cd73e6d190c133cffe7135",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_1200/seed3_r0.ini",
+        "config_sha256": "5481e98806d76ce6a1c687bb7587181c6a78fe85ac89345faa817e655c2693a8",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_1200/seed4_r0.ini",
+        "config_sha256": "ebbd413057fad3ff9dfeb4f3b1db0415d0fa3e839d712cc5a7bd2c0674d2bf2e",
+        "max_iter": 6000
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/rho_1200/seed5_r0.ini",
+        "config_sha256": "4ca9d407387c6e6e2d80da30ef71fc5d954e7841108cd8846eca1613208e0821",
+        "max_iter": 6000
+      }
+    ],
+    "kind": "complex"
+  },
+  "timing_scpx_b128_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_b128_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_b128_s1.ini",
+        "config_sha256": "53840227f6ea51e9e80ed89d21143fa16e0dc7c5c065d0b6b8eb9f4a8ac39d1a",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_b256_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_b256_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_b256_s1.ini",
+        "config_sha256": "32b51a43ff6020902f165327621285d52cf481c3b26cfbf65d5f7a34f3a901a9",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_b32_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_b32_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_b32_s1.ini",
+        "config_sha256": "482fe888f3be14157409067dc0dca38db881c91c7d76981b09a30d1990800901",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_b512_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_b512_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_b512_s1.ini",
+        "config_sha256": "389ed4847693c5fff4da73f25738b5b86e7ce9237b4121cfc0aacad7be17b65c",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_b64_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_b64_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_b64_s1.ini",
+        "config_sha256": "bb72d33acfe880d6323b5a1bccd8167679f7307c6716147ce31dc7d1c8609a3f",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_d1024_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_d1024_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_d1024_s1.ini",
+        "config_sha256": "9456e4c4633687d175435d63e94c24e0a305d097bc5f263b1256a28239e1b70e",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_d16384_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_d16384_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_d16384_s1.ini",
+        "config_sha256": "f0525ad1c5b1844809e56167e7a60c3b5943101f5ee64ca8832f61ec132cf46b",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_d2048_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_d2048_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_d2048_s1.ini",
+        "config_sha256": "0e2c34e5ea5a297cbc5845344c1c3ddddf205b594bb0ca3e5c65ce3713ba5943",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_d4096_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_d4096_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_d4096_s1.ini",
+        "config_sha256": "81d4f634c018dffdaf8cf351ff02cf80c995ffa9805eeb74eb16e413bcb24960",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_d8192_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_d8192_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_d8192_s1.ini",
+        "config_sha256": "dc4fa12a4b23156ebac18a836c03bad6f104ad0d595fcea4f51c5bbc6b27cfe1",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_m1024_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_m1024_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_m1024_s1.ini",
+        "config_sha256": "66dd5c7f7c27c7f6a974dc37fe10b6de7e2acce6f576f1bfdd867b5065d3c597",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_m16384_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_m16384_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_m16384_s1.ini",
+        "config_sha256": "467d386eac5e07d4c01e1fd2c28973b93225525cfbfc9ba1ca0bcf5cdc002cac",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_m2048_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_m2048_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_m2048_s1.ini",
+        "config_sha256": "0377f476ac0cd4a9f8bf96beaf11bdf5d5fe96800a831a8574c4d19b8743ebe4",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_m4096_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_m4096_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_m4096_s1.ini",
+        "config_sha256": "6580d5d9a72ff40e1d0974422448560be0a8d4411cad5fa4d35f5933e4ebdec2",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_m8192_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_m8192_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_m8192_s1.ini",
+        "config_sha256": "325e2c0327bf31d7d04e43d0ef919ec4c5be92239f60630fafc4475bf87b56f0",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_n128_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_n128_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_n128_s1.ini",
+        "config_sha256": "19d8e67fceb153447ec9cef96ac14501300e4eef1acab97af6d7a03d2f6c0846",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_n16_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_n16_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_n16_s1.ini",
+        "config_sha256": "990d3f0a0205492bcb829ba4a69a3f55dc7256f3e0dee3c74b9288418256c9fd",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_n32_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_n32_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_n32_s1.ini",
+        "config_sha256": "058544461959ff20e1aa0b067125b9852df3a27d606e0d0ebab45951aacf2ff4",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_n64_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_n64_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_n64_s1.ini",
+        "config_sha256": "f8d96adc7eb4ed8d32bcb7b4d6d6025305f0691018641ed67bc2443955bf32a0",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "timing_scpx_n8_s1": {
+    "arms": [
+      {
+        "id": "timing_scpx_n8_s1",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "paper_original/variant_d",
+        "config": "configs/paper_original/performance_sweep/timing_scpx_n8_s1.ini",
+        "config_sha256": "814770942b191f295baca09e0caa2d1a086619872fc30cffe1d0a832d96644e8",
+        "max_iter": 200
+      }
+    ],
+    "kind": "timing"
+  },
+  "compare_official_hjb2": {
+    "arms": [
+      {
+        "id": "seed0_r0",
+        "seed": 0,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "third_party/socmartnet_refactored",
+        "config": "configs/paper_original/compare_official_hjb2/seed0_r0.json",
+        "config_sha256": "dfed5ceb2652d92f65766e589150d9feae9a0e8c77d18c5bd0ec7cf4bb253e03",
+        "max_iter": 6000,
+        "cli": [
+          "--example",
+          "hjblq",
+          "--dim",
+          "10000",
+          "--delta0",
+          "0.2",
+          "--preset",
+          "sisc",
+          "--dtype",
+          "float32",
+          "--max-iter",
+          "6000",
+          "--num-paths",
+          "10000",
+          "--renew-frac",
+          "0.2",
+          "--fd-residual",
+          "--lam-bar",
+          "1000",
+          "--no-debias-mart",
+          "--controlled-pool",
+          "--width",
+          "10010",
+          "--batch-size",
+          "64",
+          "--lr-uv",
+          "7.5714866e-06",
+          "--lr-rho",
+          "7.5714866e-05",
+          "--seed",
+          "0"
+        ],
+        "cli_sha256": "ee7b877309d0986bdf659ea56e5e19266d94051369f1eb6e5197147f49b891b1"
+      },
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "third_party/socmartnet_refactored_seed1to4",
+        "config": "configs/paper_original/compare_official_hjb2/seed1_r0.json",
+        "config_sha256": "319566b2598f9dff35b1d400bc4aece3304fe57a5c7d325723423dc317dbf22c",
+        "max_iter": 6000,
+        "cli": [
+          "--example",
+          "hjblq",
+          "--dim",
+          "10000",
+          "--delta0",
+          "0.2",
+          "--preset",
+          "sisc",
+          "--dtype",
+          "float32",
+          "--max-iter",
+          "6000",
+          "--num-paths",
+          "10000",
+          "--renew-frac",
+          "0.2",
+          "--fd-residual",
+          "--lam-bar",
+          "1000",
+          "--no-debias-mart",
+          "--controlled-pool",
+          "--width",
+          "10010",
+          "--batch-size",
+          "64",
+          "--lr-uv",
+          "7.5714866e-06",
+          "--lr-rho",
+          "7.5714866e-05",
+          "--seed",
+          "1"
+        ],
+        "cli_sha256": "fe80eec083dc90566444fd86203b0efa4db081cac2466d06d1a323cfcd24463a"
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "third_party/socmartnet_refactored_seed1to4",
+        "config": "configs/paper_original/compare_official_hjb2/seed2_r0.json",
+        "config_sha256": "2579b6ae21c2664df5335bb9c89528fb9d6ad08755538357e1cc4fb821a09bdd",
+        "max_iter": 6000,
+        "cli": [
+          "--example",
+          "hjblq",
+          "--dim",
+          "10000",
+          "--delta0",
+          "0.2",
+          "--preset",
+          "sisc",
+          "--dtype",
+          "float32",
+          "--max-iter",
+          "6000",
+          "--num-paths",
+          "10000",
+          "--renew-frac",
+          "0.2",
+          "--fd-residual",
+          "--lam-bar",
+          "1000",
+          "--no-debias-mart",
+          "--controlled-pool",
+          "--width",
+          "10010",
+          "--batch-size",
+          "64",
+          "--lr-uv",
+          "7.5714866e-06",
+          "--lr-rho",
+          "7.5714866e-05",
+          "--seed",
+          "2"
+        ],
+        "cli_sha256": "988c6ff1cf75609c30b998d0facce04dffb3c8047dd99734bfccb465177a9cd9"
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "third_party/socmartnet_refactored_seed1to4",
+        "config": "configs/paper_original/compare_official_hjb2/seed3_r0.json",
+        "config_sha256": "063ec8e0e68d094d1811a7616da18a53e16d117155870e0d0437aa0be3d0fea5",
+        "max_iter": 6000,
+        "cli": [
+          "--example",
+          "hjblq",
+          "--dim",
+          "10000",
+          "--delta0",
+          "0.2",
+          "--preset",
+          "sisc",
+          "--dtype",
+          "float32",
+          "--max-iter",
+          "6000",
+          "--num-paths",
+          "10000",
+          "--renew-frac",
+          "0.2",
+          "--fd-residual",
+          "--lam-bar",
+          "1000",
+          "--no-debias-mart",
+          "--controlled-pool",
+          "--width",
+          "10010",
+          "--batch-size",
+          "64",
+          "--lr-uv",
+          "7.5714866e-06",
+          "--lr-rho",
+          "7.5714866e-05",
+          "--seed",
+          "3"
+        ],
+        "cli_sha256": "bcc87cf7c770c5cde0b7df0701fefe820e0f02fd3e75fcf62d0dcf8b77f58ebc"
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "third_party/socmartnet_refactored_seed1to4",
+        "config": "configs/paper_original/compare_official_hjb2/seed4_r0.json",
+        "config_sha256": "249163b078b8b310e5419d21dbafdee658a07f2ef8c9b48301025b732282f4a1",
+        "max_iter": 6000,
+        "cli": [
+          "--example",
+          "hjblq",
+          "--dim",
+          "10000",
+          "--delta0",
+          "0.2",
+          "--preset",
+          "sisc",
+          "--dtype",
+          "float32",
+          "--max-iter",
+          "6000",
+          "--num-paths",
+          "10000",
+          "--renew-frac",
+          "0.2",
+          "--fd-residual",
+          "--lam-bar",
+          "1000",
+          "--no-debias-mart",
+          "--controlled-pool",
+          "--width",
+          "10010",
+          "--batch-size",
+          "64",
+          "--lr-uv",
+          "7.5714866e-06",
+          "--lr-rho",
+          "7.5714866e-05",
+          "--seed",
+          "4"
+        ],
+        "cli_sha256": "573c7b0e5e489fc87220665178c33df5c27062710b0537d5daa14d9555d2609c"
+      }
+    ],
+    "kind": "official"
+  },
+  "compare_official_hjb3": {
+    "arms": [
+      {
+        "id": "seed0_r0",
+        "seed": 0,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "third_party/socmartnet_refactored",
+        "config": "configs/paper_original/compare_official_hjb3/seed0_r0.json",
+        "config_sha256": "93c583fd15a3367319abd3f8735b0b5df04414a6af7fc04bedf96ad86ce9037f",
+        "max_iter": 6000,
+        "cli": [
+          "--example",
+          "hjblq",
+          "--dim",
+          "10000",
+          "--delta0",
+          "0.1",
+          "--preset",
+          "sisc",
+          "--dtype",
+          "float32",
+          "--max-iter",
+          "6000",
+          "--num-paths",
+          "10000",
+          "--renew-frac",
+          "0.2",
+          "--fd-residual",
+          "--lam-bar",
+          "1000",
+          "--no-debias-mart",
+          "--controlled-pool",
+          "--width",
+          "10010",
+          "--batch-size",
+          "64",
+          "--lr-uv",
+          "7.5714866e-06",
+          "--lr-rho",
+          "7.5714866e-05",
+          "--seed",
+          "0"
+        ],
+        "cli_sha256": "a783bce8681c63e4af3ade8b27c862c8b78a8dd7d795e00f673548219d3afec3"
+      },
+      {
+        "id": "seed1_r0",
+        "seed": 1,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "third_party/socmartnet_refactored_seed1to4",
+        "config": "configs/paper_original/compare_official_hjb3/seed1_r0.json",
+        "config_sha256": "0b89e9b0c2ea680210ba48f23d58b85281e3d119f89f144eb9ec3a23e84f3f0b",
+        "max_iter": 6000,
+        "cli": [
+          "--example",
+          "hjblq",
+          "--dim",
+          "10000",
+          "--delta0",
+          "0.1",
+          "--preset",
+          "sisc",
+          "--dtype",
+          "float32",
+          "--max-iter",
+          "6000",
+          "--num-paths",
+          "10000",
+          "--renew-frac",
+          "0.2",
+          "--fd-residual",
+          "--lam-bar",
+          "1000",
+          "--no-debias-mart",
+          "--controlled-pool",
+          "--width",
+          "10010",
+          "--batch-size",
+          "64",
+          "--lr-uv",
+          "7.5714866e-06",
+          "--lr-rho",
+          "7.5714866e-05",
+          "--seed",
+          "1"
+        ],
+        "cli_sha256": "57ae1fa1ede3bdd391358efab338ab618b1997162d27be70ed09bd1a4235dfb0"
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "third_party/socmartnet_refactored_seed1to4",
+        "config": "configs/paper_original/compare_official_hjb3/seed2_r0.json",
+        "config_sha256": "8eb6bf58689df0da3c4fdefa55d2bb66fae10a9111bba64ad17b6e8a49634867",
+        "max_iter": 6000,
+        "cli": [
+          "--example",
+          "hjblq",
+          "--dim",
+          "10000",
+          "--delta0",
+          "0.1",
+          "--preset",
+          "sisc",
+          "--dtype",
+          "float32",
+          "--max-iter",
+          "6000",
+          "--num-paths",
+          "10000",
+          "--renew-frac",
+          "0.2",
+          "--fd-residual",
+          "--lam-bar",
+          "1000",
+          "--no-debias-mart",
+          "--controlled-pool",
+          "--width",
+          "10010",
+          "--batch-size",
+          "64",
+          "--lr-uv",
+          "7.5714866e-06",
+          "--lr-rho",
+          "7.5714866e-05",
+          "--seed",
+          "2"
+        ],
+        "cli_sha256": "666ba5c5429647fa94ec2faccad702f0bc9cdb035ec81df0d8bd59e646e004b1"
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "third_party/socmartnet_refactored_seed1to4",
+        "config": "configs/paper_original/compare_official_hjb3/seed3_r0.json",
+        "config_sha256": "9d93c174dc46377f16736973e76b0ba8056356e63341c959c33c6ab7a8c7d606",
+        "max_iter": 6000,
+        "cli": [
+          "--example",
+          "hjblq",
+          "--dim",
+          "10000",
+          "--delta0",
+          "0.1",
+          "--preset",
+          "sisc",
+          "--dtype",
+          "float32",
+          "--max-iter",
+          "6000",
+          "--num-paths",
+          "10000",
+          "--renew-frac",
+          "0.2",
+          "--fd-residual",
+          "--lam-bar",
+          "1000",
+          "--no-debias-mart",
+          "--controlled-pool",
+          "--width",
+          "10010",
+          "--batch-size",
+          "64",
+          "--lr-uv",
+          "7.5714866e-06",
+          "--lr-rho",
+          "7.5714866e-05",
+          "--seed",
+          "3"
+        ],
+        "cli_sha256": "b9647967709fa74fcbbede5669c91472a82f2bb1128c82dfe71b27519be3e900"
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 8,
+        "source": "third_party/socmartnet_refactored_seed1to4",
+        "config": "configs/paper_original/compare_official_hjb3/seed4_r0.json",
+        "config_sha256": "88da2abc2fb59f3aada91af1c19f5ae41d35382123dfd589b63d6e239ebfbf62",
+        "max_iter": 6000,
+        "cli": [
+          "--example",
+          "hjblq",
+          "--dim",
+          "10000",
+          "--delta0",
+          "0.1",
+          "--preset",
+          "sisc",
+          "--dtype",
+          "float32",
+          "--max-iter",
+          "6000",
+          "--num-paths",
+          "10000",
+          "--renew-frac",
+          "0.2",
+          "--fd-residual",
+          "--lam-bar",
+          "1000",
+          "--no-debias-mart",
+          "--controlled-pool",
+          "--width",
+          "10010",
+          "--batch-size",
+          "64",
+          "--lr-uv",
+          "7.5714866e-06",
+          "--lr-rho",
+          "7.5714866e-05",
+          "--seed",
+          "4"
+        ],
+        "cli_sha256": "4d95431b2bcd896a6ff087fb9bb8a257f0d0cb00a0e46bdfab402b90e2f23b81"
+      }
+    ],
+    "kind": "official"
+  }
+}

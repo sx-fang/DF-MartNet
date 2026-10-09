@@ -1,0 +1,17 @@
+{
+  "case": "complex_dynamics",
+  "sample_id": "seed2_r0",
+  "history_source": {
+    "sha256": "3c53c6c6c99ae4d2738a54e8ff1714acb5de181545b9a5e14b6dbc8e7ec8747b",
+    "curated_columns": [
+      "it",
+      "rel_l1err",
+      "rc",
+      "rt_solve",
+      "rt_log"
+    ]
+  },
+  "profile_source": {
+    "sha256": "a2debe2ff3e31779391e0f51584426721c964b0ad5b457f4120b2338e8725c80"
+  }
+}

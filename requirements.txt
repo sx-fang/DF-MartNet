@@ -1,0 +1,9 @@
+# Install the appropriate CUDA wheel of torch separately, following PyTorch's
+# official instructions. See docs/environment.md before choosing its version.
+numpy>=1.26,<3
+pandas>=2.2,<3
+scipy>=1.12,<2
+matplotlib>=3.8,<4
+torch>=2.5,<3
+psutil>=5.9,<8
+pypdf>=6,<7

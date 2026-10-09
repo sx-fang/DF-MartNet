@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-09",
+  "package_version": "0.1.0-rc2",
+  "file": "docs/paper.pdf",
+  "bytes": 1854300,
+  "sha256": "df24bb4be2d67d56b782eb08d3b68c0f44cc95eb87ed6872d0e3ce6bfbc28a32",
+  "pages": 24,
+  "title": "Martingale deep neural network for very high-dimensional stochastic optimal controls",
+  "authors": [
+    "Wei Cai",
+    "Shuixin Fang",
+    "Wenzhong Zhang",
+    "Tao Zhou"
+  ],
+  "author_contact_emails": [
+    "cai@smu.edu",
+    "sxfang@amss.ac.cn",
+    "tzhou@lsec.cc.ac.cn",
+    "wenzhong@ustc.edu.cn"
+  ],
+  "arxiv_preprint_url": "https://arxiv.org/abs/2408.14395",
+  "reproduction_target": "The numerical reproduction target is this bundled manuscript snapshot. The arXiv link identifies the earlier public preprint.",
+  "copyright": "The manuscript and its figures are excluded from the code package MIT licence. Copyright remains with the respective rights holders; no additional manuscript or figure licence is granted.",
+  "public_attribution_text": [
+    "The work of WC is funded by Clements Chair of Applied Math. at SMU."
+  ]
+}
