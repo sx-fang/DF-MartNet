@@ -1877,23 +1877,23 @@
   },
   "engines/af4a053/SOURCE.json": {
     "bytes": 1713,
-    "sha256": "ea01b92d32cc2d8d80cc420b23d036aacf0666b9e68d91b87aa7d5d63cd6bdaa"
+    "sha256": "01134cafbe22fd0079bc53ee39839eb596749cea4df039cf1c3e5b3ddbf04e1f"
   },
   "engines/af4a053/diagnostics.py": {
     "bytes": 4528,
     "sha256": "6531222e0389adeb96f5f42e45c2fe3119d4525fdce2e2b215b74a23d78e0255"
   },
   "engines/af4a053/examples.py": {
-    "bytes": 239152,
-    "sha256": "4b1217b4d8c782f2b4b6937250b2f7ca119d24ee501c8c4a63939baa3306f944"
+    "bytes": 232499,
+    "sha256": "4a4ada1a46d999b5ec00b9f65fa3d1759024ba4155f6dc387d78541765dee7a2"
   },
   "engines/af4a053/loss_martnet.py": {
-    "bytes": 23835,
-    "sha256": "74eff148b9bfc824d4a898afec77078c5405fb68ec1abc9ef0267714e6191e38"
+    "bytes": 23280,
+    "sha256": "ff9580256ac010f7963125505dc687a8b7e947a75f93747707ad4a47a1b32d5e"
   },
   "engines/af4a053/networks.py": {
-    "bytes": 9377,
-    "sha256": "4f996545b24f14594cac17ed2af513602964e4d96da0b242d4b11592f32542ad"
+    "bytes": 9018,
+    "sha256": "572322a4f25ebc67e7bb1dc33d5d037cb33867489ac737fa40743467740d06eb"
   },
   "engines/af4a053/runtask.py": {
     "bytes": 5759,
@@ -1904,8 +1904,8 @@
     "sha256": "cf87576921e28e8c449cc08fbd4fbc123f50a29582c472624ba6f135fd921ee0"
   },
   "engines/af4a053/solver.py": {
-    "bytes": 39955,
-    "sha256": "f18a2a0d9dcba604256f35a20fdee9a4d64e6b06fd04d134956688334fabaa9d"
+    "bytes": 38402,
+    "sha256": "0488b3d91347669040fbaef16ffd4b83754832dc0162c701a6aa1d48723c1190"
   },
   "engines/af4a053/train.py": {
     "bytes": 10185,
