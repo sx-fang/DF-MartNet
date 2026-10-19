@@ -14,7 +14,6 @@ from torch.amp import autocast
 
 from utils import isin_ddp
 
-# Phase-3 radial control head (owner-approved plan
 # temp/hjb1_d10_d100_tuning/PLAN_PHASE3_RADIAL_CTRL_20260927.md).  Re-exported
 # here so callers that already import networks keep one import site; the
 # implementation lives in its own module to keep this file's diff minimal.
@@ -25,7 +24,6 @@ from radial_control import RadialControlHead, RadialControlUNet  # noqa: F401
 def zero_init_output_layer(net):
     """Zero the network's last linear layer (weight and bias).
 
-    Opt-in helper for the route-A rank-k example (owner-approved 2026-10-01):
     its optimal control is concentrated on one or two of the d output
     components and is ~0 elsewhere, while a freshly initialised FCNet emits
     O(1) values on all d components -- with d = 1e4 the quadratic control cost

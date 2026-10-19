@@ -102,7 +102,6 @@ def parse_problem(config, use_dist=False):
     # 2026-08-20: 300 = ceil-trim dropped the last two levels; use 320).
     problem.num_test_points = config.getint('Example', 'num_test_points',
                                             fallback=problem.num_test_points)
-    # Origin-point convergence diagnostic (owner-approved 2026-09-25,
     # first-500-iteration probe handoff): read-only per-iteration point
     # values / relative errors at (t0, z0*1_d) and a CRN origin-cost row
     # every x0_diag_cost_gap iterations.  Section [Diag] is optional; when
@@ -225,10 +224,8 @@ def parse_problem(config, use_dist=False):
     # keeps every existing INI unchanged when the key is absent).
     problem.s_range = config.getfloat('Example', 's_range',
                                       fallback=problem.s_range)
-    # SOCComplexK1 Phi-kernel decay (owner /goal 2026-09-05, round-2): the
     # shortened drift-feedback kernel Phi_i = sum phi_decay^k z_{i+k} that
     # cut the 513026 W3 drift-noise excess; hasattr-guarded so the BASE
-    # SOCComplex (q_decay kernel) is untouched.  Round 3 (2026-09-05) set
     # the K1 class default back to 0.9 after 513033 falsified 0.5 (coherent
     # feedback amplification x15); unset = K1 class default 0.9.
     if hasattr(problem, 'phi_decay'):
@@ -252,20 +249,16 @@ def parse_problem(config, use_dist=False):
     if hasattr(problem, 'time_freq'):
         problem.time_freq = config.getfloat('Example', 'time_freq',
                                             fallback=problem.time_freq)
-    # SOCComplexK1 diffusion strength (owner /goal 2026-09-06, round 4 /
     # scheme 3-prime): sigma = sqrt(2) c1 diag(m(x)) for THIS subclass
     # (Toeplitz removed, see SOCComplexK1._s_matvec); class default 0.20,
-    # round-4 grids {0.20, 0.25}.  hasattr-guarded like the knobs above;
     # unset = class default while the BASE SOCComplex keeps its own
     # c1 = 0.5 Toeplitz sigma untouched (no existing INI sets the key,
     # so B1/B2 are byte-identical).
     if hasattr(problem, 'c1'):
         problem.c1 = config.getfloat('Example', 'c1',
                                      fallback=problem.c1)
-    # SOCComplexK1 channel-direction DC weight (owner-approved 2026-09-06,
     # L1): q gains a chan_dc * 1_d addend before normalization so the
     # initial projection q.z0 spreads over X0 and the optimal push becomes
-    # state-dependent (round-5/eval-513230 lesson: a DC-free q makes the
     # best CONSTANT near-optimal on the S0/S1 surface).  Class default
     # 0.0 = the 3-prime q bitwise; hasattr-guarded, no existing INI sets
     # the key so the base family is byte-identical.
@@ -372,7 +365,6 @@ def parse_problem(config, use_dist=False):
     problem.dt_ref = eval(dt_ref_s) if dt_ref_s else None
     problem.qmc_pool_exp = config.getint('Training', 'qmc_pool_exp',
                                          fallback=16)
-    # hjb3ph_v1 read-only eval hook (owner approved 2026-09-21, campaign
     # "hjb3ph"): per-cadence history of the pooled pathwise RE_v on the
     # FROZEN hjb_vpt deployment-state cloud (states_<row>.npz from job
     # 533744 + its ref_v_<row>.npz).  New INI keys [PathHist]
@@ -423,7 +415,6 @@ def _build_net(config, dims, act_name, time_uniform_rad, shell_func=None,
                                fallback='float16')))
     if zero_last:
         # Opt-in zero init of the output layer (route-A rank-k example,
-        # owner-approved 2026-10-01); applied BEFORE the wrapper/DDP so the
         # parameters the optimizer sees are already zero.
         zero_init_output_layer(net)
     if net_wrapper is not None:
@@ -648,8 +639,6 @@ def solve(config, use_dist, sav_name=None):
     log_func = problem.make_logfunc(nets['v_theta'], nets['u_alpha'])
     loss_clt = MartNetLoss(problem, nets, use_dist=use_dist)
 
-    # Read-only per-iteration weight checkpoints (owner-approved decay-tuning
-    # round 1).  INI key `[Training] ckpt_iters` lists iterations at which the
     # v_theta/u_alpha CPU state_dicts are written as `<sav_path>ckpt_it<NNNN>
     # weights.pt`; the hook runs after the update/scheduler/sync and
     # before metric logging, performs NO collective and touches no training

@@ -105,13 +105,13 @@
     "release_file": "data/archived/hjb1_d10000/path_predictions.npz",
     "source_id": "asset_019",
     "source_sha256": "cda7c9cc8ba3551a45b1b95ce0447467aeb203af6725a13726947739761824ae",
-    "release_sha256": "ed92d9e02746f361571ef7dd700a60119979d670f1645b1e75453c61647c54a7"
+    "release_sha256": "87b87f2b9250f7cd0a1b41769ecaf855825446b02373fe1cd111c94bcee3e4f0"
   },
   {
     "release_file": "data/archived/hjb1_d10000/published_path_perseed.csv",
     "source_id": "asset_020",
     "source_sha256": "cd7cd307080c09a071ca22640f20bbf37656099c2aac18aeb504af2852bec2e4",
-    "release_sha256": "823f2d977b34cfec5548b645932e309a20ebfe3c182129af8108c69d4841ea63"
+    "release_sha256": "c04ba6d0487671142ead62046eb921a5bd4443c5f7a04400e8f3a0dc0d8c9b7d"
   },
   {
     "release_file": "data/archived/hjb1_d10000/published_path_levels.csv",
@@ -123,13 +123,13 @@
     "release_file": "data/archived/hjb2_d10000/path_predictions.npz",
     "source_id": "asset_022",
     "source_sha256": "b077bbc6fac672ff03bea96c0b3bff663de43425b9303c83a7641731dd26bec3",
-    "release_sha256": "6a3f813ca813e351fa8f2fd1fe34d0415b1326d7d2c65a805aadc1fa873a1bc3"
+    "release_sha256": "92b438e282f4d276b4e54119cc1b894b6578b24f0ff97cf312989ea53e35ed91"
   },
   {
     "release_file": "data/archived/hjb2_d10000/published_path_perseed.csv",
     "source_id": "asset_023",
     "source_sha256": "6ecf784e45078e622a8dc82e345ec2afc78f20a11c5354d3d536dacd4f70819a",
-    "release_sha256": "1108ad28a899710eec7a539666bd01b0ad2ee91122180f5b25579ce7fbbba808"
+    "release_sha256": "5de5c810b9e0efdd7a58fec2fcd7bcdf97cf92a47df5be320840a9d0b0045a2d"
   },
   {
     "release_file": "data/archived/hjb2_d10000/published_path_levels.csv",
@@ -141,13 +141,13 @@
     "release_file": "data/archived/hjb3_d10000/path_predictions.npz",
     "source_id": "asset_025",
     "source_sha256": "51c82c9fdf05c830437f21ab7bfedaf945a9caed14d07f5dc0986cae51f7970d",
-    "release_sha256": "28217e8c4ea299c7d534da994ee5ab051c4f970fb3356a9267a33b5c8c9d8305"
+    "release_sha256": "cabeb03f241bec5b8e718621ed28f7992fb6b0e38f99ed36458b74aec6c9033d"
   },
   {
     "release_file": "data/archived/hjb3_d10000/published_path_perseed.csv",
     "source_id": "asset_026",
     "source_sha256": "446cad0e8c7a25efd7e14b4851e4e1ca1edd80315ae0b0b6ad3de8166a75ecd3",
-    "release_sha256": "0a5ff853cf9c223414e8fe881d01176f5d4390a0859b25b684b8a4adb21fa7da"
+    "release_sha256": "52cada9ff02bcfdec94323a356313b89345b78598d91c15adf080a7557bd3f26"
   },
   {
     "release_file": "data/archived/hjb3_d10000/published_path_levels.csv",
@@ -159,13 +159,13 @@
     "release_file": "data/archived/hjb3_d2000_w2010/path_predictions.npz",
     "source_id": "asset_028",
     "source_sha256": "ef27bc8be88f59333289943027d41ee77dbaa044d7d7c054dcb33b3acfbca46a",
-    "release_sha256": "7746241d42d5a6299901c13c4cdc81db19a0490c08737c1e472c61d7f0b45e81"
+    "release_sha256": "4a76776951db418c03235d009c757e113cde970fdbb154e11b39878679be8d71"
   },
   {
     "release_file": "data/archived/hjb3_d2000_w2010/published_path_perseed.csv",
     "source_id": "asset_029",
     "source_sha256": "ad8c1a8b0a528fdb1a7f6f142f0e563d3f6b2d3011ca0d46ae0603e8c13ed850",
-    "release_sha256": "18db9b04e793373c15aa7e24797ced590912fde7044daa81eeaf511ca8c3f84b"
+    "release_sha256": "1c9e160944f70ec8640e400edba072334f80a699879822a8985a379393103cf2"
   },
   {
     "release_file": "data/archived/hjb3_d2000_w2010/published_path_levels.csv",
@@ -177,13 +177,13 @@
     "release_file": "data/archived/hjb3_d2000_w10010/path_predictions.npz",
     "source_id": "asset_031",
     "source_sha256": "70feac1c92fbe41e47a762953e5fe47ae93004537562d85e3f0090aeeeb34c77",
-    "release_sha256": "98c9d149655876a12567bf4718d982052982bade056aada9e8a10da53df0e182"
+    "release_sha256": "36fca3068bd39d01aa5fa403f8d1c861a00ced444d00668d42fcd1e6b5dc1a3d"
   },
   {
     "release_file": "data/archived/hjb3_d2000_w10010/published_path_perseed.csv",
     "source_id": "asset_032",
     "source_sha256": "8920ae86c85b3fa7e42d371221b4bec7f7407340aa511a5c7399e54dc5ac3dde",
-    "release_sha256": "4bf604d04958dc8cc887659c3969ac5f69d56914c42b56722311ce7b2260258b"
+    "release_sha256": "95a1cf6d9aad34e618b8f7f9953e73f674c1725b95dbfb6849310e543a11b7f7"
   },
   {
     "release_file": "data/archived/hjb3_d2000_w10010/published_path_levels.csv",

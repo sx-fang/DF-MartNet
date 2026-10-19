@@ -445,7 +445,6 @@ class SOCProblem:
         else:
             u_true = None
 
-        # hjb3ph_v1 read-only eval hook (owner approved 2026-09-21, campaign
         # "hjb3ph"): per-cadence history of the pooled pathwise RE_v on the
         # FROZEN hjb_vpt deployment-state cloud.  Config via new INI keys
         # [PathHist] states_npz / ref_npz / loggap (read in
@@ -1367,7 +1366,6 @@ class SOCComplexScalarExact(SOCComplex):
             raise ValueError('SOCComplexScalarExact requires d >= 3')
         self._scalar_geom_key = None
         self._scalar_geom = None
-        # Origin-point convergence diagnostic (owner-approved 2026-09-25,
         # first-500-iteration probe handoff).  Defaults = OFF, so every
         # existing INI / example keeps byte-identical training flow.  The
         # whole block is read-only: nothing here enters the loss or the
@@ -1501,7 +1499,6 @@ class SOCComplexScalarExact(SOCComplex):
     def make_logfunc(self, v_theta, u_alpha=None):
         """Preserve the S0/S1 value grid and add exact scalar u errors.
 
-        Read-only origin-point diagnostic (owner-approved 2026-09-25,
         first-500-iteration probe handoff), active ONLY when
         ``enable_x0_diag`` (INI key ``[Diag] x0_point_diag``) is set:
 
@@ -1621,7 +1618,6 @@ class SOCComplexScalarExact(SOCComplex):
 class SOCComplexRankKExact(SOCComplexScalarExact):
     """Manufactured benchmark with a d-dimensional control acting through a
     rank-k coherent channel, whose optimal control is concentrated on k slowly
-    moving components (owner-approved route A, 2026-10-01; design and gates in
     reports/27_scx_rank_exact/PLAN.md).
 
     Motivation: with the paper's full-matrix channel and a mean-type value
@@ -1837,7 +1833,6 @@ class SOCComplexK1(SOCComplex):
         (sin's full swing 2 amp), gamma^2 dials the effort scale; the
         steering cost of moving q.z by Delta is Delta^2/(2 gamma^2 tau).
 
-    CHANNEL DIRECTION q (scheme 3-prime, owner-approved 2026-09-06:
     SINGLE low-frequency mode, see _chan_q): q = cos(2 pi k j / d +
     2 pi phi), integer k = 3, one pinned-seed phase -- the gentlest
     single-index structure an MLP can learn (motivation below).
@@ -1880,11 +1875,9 @@ class SOCComplexK1(SOCComplex):
     below), drift_amp (drift-feedback amplitude, default 1.2 -- see
     below), c1 (diffusion strength, default 0.20 -- see the 3-prime
     paragraph below) and chan_dc (DC weight of q, default 0.0 = the
-    3-prime q bitwise -- see the chan_dc attribute, owner-approved L1
     2026-09-06); all hasattr-guarded in parse_problem, zero
     behavior change when unset.
 
-    phi_decay (owner /goal 2026-09-05): round 2 TRIED shortening the
     drift-feedback convolution kernel Phi_i = sum_k phi_decay^k z_{i+k}
     to 0.5 and run 513033 FALSIFIED that direction -- the feedback
     variance went 0.16 -> 2.46 (x15, coherent amplification: with the
@@ -1895,13 +1888,11 @@ class SOCComplexK1(SOCComplex):
     Phi_bar = O(10+), the sin argument winds fast, the cos response
     quasi-randomizes and self-cancels), NOT the kernel energy -- so the
     kernel is BACK to 0.9 (== the base q_decay kernel bitwise).  The
-    round-3 lever is drift_amp below.  The BASE SOCComplex._phi (q_decay
     kernel) is UNTOUCHED: B1/B2 and every other SOCComplex user keep
     byte-identical behavior; phi_decay = 0.9 reproduces the base kernel
     exactly (bitwise, smoke-checked), which stays the equivalence probe
     of the smoke suite.
 
-    drift_amp (owner /goal 2026-09-05, round-3 fix): THIS subclass scales
     down the drift-feedback amplitude b_i = drift_amp * sin(t + i0 +
     Phi_i(z)).  Why: under the phi_decay = 0.9 de-coherence mechanism the
     feedback variance scales ~ drift_amp^2 (the sin amplitude), band-
@@ -1909,13 +1900,11 @@ class SOCComplexK1(SOCComplex):
     zero-control y std 0.488 -> total variance 0.238 = sigma-side closed
     form 0.279^2 = 0.078 (pinned q, frozen m) + feedback ~0.16.  The W3
     budget total variance <= 0.4^2 = 0.16 leaves feedback <= 0.08 ->
-    drift_amp <= sqrt(0.08/0.04) ~ 1.4.  Round 3 grids drift_amp in
     {1.2, 1.0}: predicted feedback 0.058/0.040 -> zero-control std
     ~0.37/0.34 (gate 0.4), rho_0 ~ 0.93/0.94.  The BASE SOCComplex
     drift_amp = 2.0 (B' freeze) is UNTOUCHED: _b reads self.drift_amp so
     B1/B2 keep byte-identical behavior.
 
-    SCHEME 3-PRIME (owner-approved 2026-09-06, round 4): sigma is
     DE-TOEPLITZED for THIS subclass only -- sigma(x) w = sqrt(2) c1 *
     (m(x) * w), no _toep convolution (see _s_matvec) -- and the K1
     _mod lowf override is DELETED so m reverts to the BASE
@@ -1925,9 +1914,7 @@ class SOCComplexK1(SOCComplex):
     Together with the single low-frequency q (see _chan_q) and the c1
     override this replaces the cusp's high-frequency multi-mode
     single-index structure by a low-frequency single-index one that an
-    MLP can learn (round-3 training falsified the former: 513077-81
     anchor bias 0.28 vs B1 0.006).  CAVEAT (owner informed): the
-    per-coordinate z variance is ~4x smaller than round 3, which
     WEAKENS the Phi de-coherence (Phi_bar stays smaller, sin(t + i +
     Phi) less wound) -- the drift-feedback variance may exceed the
     drift_amp^2 prediction; the v7 variance decomposition measures
@@ -1940,18 +1927,14 @@ class SOCComplexK1(SOCComplex):
     chan_gain = 1.0
     phi_decay = 0.9
     drift_amp = 1.2
-    # diffusion strength (scheme 3-prime, owner-approved 2026-09-06):
     # sigma = sqrt(2) c1 diag(m(x)) for THIS subclass (Toeplitz removed,
     # see _s_matvec); the BASE SOCComplex keeps c1 = 0.5 with its
-    # Toeplitz sigma untouched.  Round 4 grids c1 in {0.20, 0.25} via
     # the INI key c1 (hasattr-guarded in parse_problem; no existing INI
     # sets the key, so the base family is byte-identical).
     c1 = 0.20
-    # DC weight of the channel direction (L1, owner-approved 2026-09-06):
     # q = (chan_dc * 1_d + cos(2 pi k j / d + phase)) / ||.||.  Default
     # 0.0 = the 3-prime q bitwise (the `if` in _chan_q keeps the addition
     # out of the tensor entirely, so existing behavior is unchanged).
-    # WHY (round-5/eval 513230 lesson): with a DC-free q the initial
     # projection y0 = q . z0 is ~the SAME number for every X0 on the
     # declared S0/S1 surface (on the diagonal curve exactly 0), so the
     # optimal push is state-independent and a single constant kappa
@@ -2010,12 +1993,10 @@ class SOCComplexK1(SOCComplex):
 
     def _s_matvec(self, x, w):
         """sigma(x) @ w = sqrt(2) * c1 * (m(x) * w) -- DIAGONAL diffusion
-        (scheme 3-prime, owner-approved 2026-09-06): the base's Toeplitz
         convolution T is REMOVED for THIS subclass only, so sigma =
         sqrt(2) c1 diag(m(x)) with m the BASE state-dependent modulation
         (the K1 lowf _mod override is deleted; under a diagonal sigma the
         state dependence is harmless and sigma's identity is restored).
-        Rationale: round 3 passed every verification gate (513036, gap
         58.1%) but the 5-seed training 513077-81 under-learned v (anchor
         bias 0.28 vs B1 0.006, cost_hat ~ zero control) -- with the
         single low-frequency q of 3-prime the Toeplitz band protection is
@@ -2030,7 +2011,6 @@ class SOCComplexK1(SOCComplex):
 
     def _chan_q(self, dtype, device):
         """Unit SINGLE low-frequency cosine profile (scheme 3-prime,
-        owner-approved 2026-09-06): q = cos(2 pi k j / d + 2 pi phi),
         normalized, with INTEGER mode k = 3 and ONE random phase phi
         drawn from the pinned CPU Generator (seed 20260905).  Why single
         low-frequency: rounds 1-3 used a 23-mode band-limited q at
@@ -2043,7 +2023,6 @@ class SOCComplexK1(SOCComplex):
         respect, so low frequencies are admissible.  Integer mode =>
         q . 1_d = 0 exactly (DC-free, discrete sum over full periods);
         DFT single peak at f = 3; cos never vanishes on all j so no
-        exact zero components.  L1 addend (owner-approved 2026-09-06):
         a DC weight chan_dc (default 0.0 = the 3-prime q bitwise)
         spreads the initial projection q.z0 so the optimal push becomes
         state-dependent -- see the chan_dc class attribute.  L2 addend
@@ -2065,7 +2044,6 @@ class SOCComplexK1(SOCComplex):
                 f"chan_dc={dc!r}.")
         key = (d, dc, coord, spike, str(device), dtype)
         if getattr(self, '_chan_q_key', None) != key:
-            # DEVICE PIN (carried from 60db9b3, round 3, owner /goal
             # 2026-09-05; MUST NOT regress): all accumulator allocations
             # below are pinned device='cpu' and the phase generator is a
             # CPU generator -- ambient-device invariant (runtask.py calls
@@ -2075,7 +2053,6 @@ class SOCComplexK1(SOCComplex):
             # final result moves to `device`.
             j = torch.arange(d, dtype=torch.float64, device='cpu')
             gen = torch.Generator(device='cpu').manual_seed(20260905)
-            # DTYPE PIN (carried from round 2, owner /goal 2026-09-05;
             # MUST NOT regress): torch.rand without an explicit dtype
             # follows the AMBIENT default, so fp64 zero-checks and fp32
             # training would draw DIFFERENT phases -> different q.
@@ -2086,7 +2063,6 @@ class SOCComplexK1(SOCComplex):
             phase = float(torch.rand(1, generator=gen, dtype=torch.float64,
                                      device='cpu'))
             q = torch.cos(2 * math.pi * 3 * j / d + 2 * math.pi * phase)
-            # L1 DC addend (owner-approved 2026-09-06): guarded so the
             # default chan_dc = 0.0 keeps the 3-prime q BITWISE (no
             # tensor addition at all); see the chan_dc class attribute
             # for the motivation (spread the initial projection so the
@@ -2188,8 +2164,7 @@ class SOCComplexK1(SOCComplex):
         c_hat > 2; certification is cost-side (see class docstring).
         STALE under scheme 3-prime (2026-09-06): sigma is diagonal here,
         so |s^-1 q| = |q/m| / (sqrt2 c1) <= 1/(sqrt2 c1 min m); the
-        T^-1 formula below is the round-1-3 Toeplitz-sigma form, kept
-        for the record and unused (no caller since round 2)."""
+        """
         if getattr(self, '_c_hat', None) is None:
             q = self._chan_q(torch.float64, torch.device('cpu'))
             n_inv = float(self._toep_inv_apply(q).norm())

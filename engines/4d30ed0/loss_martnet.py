@@ -89,7 +89,6 @@ class MartNetLoss:
                                   or self.w_ctr_last != 1.0):
             raise ValueError('anneal_last is mutually exclusive with '
                              'w_mart_last/w_ctr_last != 1.')
-        # anneal_frac (owner 2026-09-17 tuning pass): the anneal completes
         # within the first anneal_frac fraction of max_iter (default 1.0 =
         # the full-horizon linear schedule, bit-for-bit); smaller values
         # shorten the high-lambda exposure and leave more pure-baseline

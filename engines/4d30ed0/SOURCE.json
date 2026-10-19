@@ -14,18 +14,18 @@
     },
     {
       "file": "examples.py",
-      "bytes": 240341,
-      "sha256": "593fa8d2eb46b1e8dd4a58cbb9d1a1c5a8d2fda254622a73103ee07e1ee0cb4a"
+      "bytes": 233663,
+      "sha256": "bdc6c069f9011a69fc782f93754948cc94bb7205e9e93b4ce2ccb26c133290a5"
     },
     {
       "file": "loss_martnet.py",
-      "bytes": 33269,
-      "sha256": "caf3f5e1198abd09e59802224c6e63383c42326a6ad5072675e7c56a9f94eb87"
+      "bytes": 32549,
+      "sha256": "1393f7f4565217d055097bdf094af530252fee9ca5dce7e42f50ffeabc5edfb6"
     },
     {
       "file": "networks.py",
-      "bytes": 9721,
-      "sha256": "97b5c591b3613981f9d049cac53941fbc46b8f46f06ff151e08ed9d4d9d7735a"
+      "bytes": 9357,
+      "sha256": "8cca9993c00924c42fe268ac6e183ff1bb57f78e58f154d0bb5d8011fc0de4af"
     },
     {
       "file": "runtask.py",
@@ -39,8 +39,8 @@
     },
     {
       "file": "solver.py",
-      "bytes": 40542,
-      "sha256": "23ae275525b47cbd4b1eb43284bcb4caf8efdccc2ac29a16503fe858922e19ef"
+      "bytes": 38978,
+      "sha256": "0c2ae8f0ebd59fc378e1c11c1d90e507c90870b5fd3ad88d8d482103946f34ee"
     },
     {
       "file": "train.py",

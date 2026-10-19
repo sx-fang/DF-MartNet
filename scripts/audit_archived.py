@@ -39,14 +39,15 @@ def main():
         re=nums(final,'rel_l1err');rc=[abs(x) for x in nums(final,'rc')];rt=nums(final,'rt_solve')
         with np.load(DATA/key/'path_predictions.npz',allow_pickle=False) as z:
             ref=z['v_star'];pred=z['v_hat_all']
-            assert ref.shape==(4096,) and pred.shape[1:]==(4096,) and np.isfinite(pred).all() and np.isfinite(ref).all()
-            path=[float(np.abs(p-ref).sum()/np.abs(ref).sum()) for p in pred]
+            refs=[ref]*len(pred) if ref.ndim==1 else list(ref)
+            assert pred.shape[1:]==(4096,) and all(r.shape==(4096,) for r in refs) and np.isfinite(pred).all() and all(np.isfinite(r).all() for r in refs)
+            path=[float(np.abs(p-r).sum()/np.abs(r).sum()) for p,r in zip(pred,refs)]
             check(key+' path layers',all(np.count_nonzero(z['level_of']==i)==128 for i in range(32)),n_runs=len(path),n_states=4096,n_levels=32)
             pool=rows(DATA/key/'published_path_perseed.csv')
             check(key+' saved path metrics',max(abs(v-float(p['RE_v'])) for v,p in zip(path,pool))<1e-14)
         measured={'re_native':statistics.mean(re),'re_native_sd':statistics.stdev(re),'re_path':statistics.mean(path),
-                  're_path_sd':statistics.stdev(path),'rc_abs':statistics.mean(rc),'rc_abs_sd':statistics.stdev(rc),'rt_solve':statistics.median(rt)}
-        rounding={k:'.2e' if k=='re_native' else '.0f' if k=='rt_solve' else '.1e' for k in measured}
+                  're_path_sd':statistics.stdev(path),'rc_abs':statistics.mean(rc),'rc_abs_sd':statistics.stdev(rc),'rt_solve':statistics.mean(rt)}
+        rounding={k:'.2e' if k in ('re_native','re_path','rc_abs') else '.0f' if k=='rt_solve' else '.1e' for k in measured}
         matches={k:float(format(v,rounding[k]))==paper[k] for k,v in measured.items()}
         report['table1'][key]={'recomputed':measured,'printed':paper,'rounded_match':matches,'n_native':len(re),'n_path':len(path),
                               'rt_solve_MAD':statistics.median(abs(v-statistics.median(rt)) for v in rt)}

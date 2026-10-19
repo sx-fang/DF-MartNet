@@ -17,7 +17,7 @@ engines/4d30ed0/
   sampling.py     solver.py    train.py         utils.py
 ```
 
-Scheduling scripts, tuning drivers and diagnostics are deliberately absent.
+Scheduling scripts, calibration drivers and diagnostics are deliberately absent.
 Which case uses which code path is recorded in `ENGINE_PINS.csv`.
 
 Figures 4 and 5 come from the pre-October code paths that the released package
