@@ -6,8 +6,7 @@ snapshots. The twelve entry points select these runs. HJB group and individual
 entries share configurations. The package includes 95 DF INIs and ten
 reference-method CLI records. Labels such as `seed1_r0` identify samples.
 
-Each source directory has a `SOURCE.json` containing original and public file
-hashes. These snapshots provide the numerical executors used by the example
+Code paths pinned to a named engine commit live under `engines/` (Figure 6 uses `engines/af4a053`; the HJB tables and Figures 2-3 use `engines/4d30ed0`), each with a `SOURCE.json`; the `paper_original/` and `third_party/` directories carry the older original and public file hashes. These snapshots provide the numerical executors used by the example
 entries. Public hashes describe the bundled files and remain distinct from
 their original-input hashes.
 

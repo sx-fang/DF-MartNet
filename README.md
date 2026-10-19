@@ -7,11 +7,11 @@ evaluation, tables and figures. Bundled numerical data also support direct
 regeneration of the paper's tables and plots.
 
 The reproduction target is the [bundled manuscript](docs/paper.pdf), dated
-October 9, 2026. The [arXiv preprint](https://arxiv.org/abs/2408.14395) is the
+October 19, 2026. The [arXiv preprint](https://arxiv.org/abs/2408.14395) is the
 earlier public version. The manuscript's date, file hash and package version
 are recorded in [snapshot metadata](docs/paper_snapshot.json).
 
-**Version: 0.1.0-rc2.** DF-MartNet code, the bundled SOC-MartNet reference
+**Version: 0.2.0-rc1.** DF-MartNet code, the bundled SOC-MartNet reference
 implementations, documentation and curated data use the [MIT licence](LICENSE);
 see [licence scope](LICENSE_STATUS.md).
 The manuscript PDF and its figures have separate copyright and are excluded

@@ -17,7 +17,7 @@ history curves. The publication diagnostic `rc_signed_fp32` uses
 `re_path` pools absolute errors over all deployment states before dividing by
 the pooled absolute reference. HJB uses 128 origin-started paths, 32
 preterminal layers, a dedicated Brownian stream with seed 20260821, strict
-float32 feedback/value nets, and a shared M=1000000 reference. The historical
+float32 feedback/value nets, and a reference evaluated on each run's own deployment states (M=1000000); the per-run reference arrays are bundled. The historical
 HJB-2/narrow pools contain seeds2–5 and use seed2 as guide; the other HJB pools
 use their first selected seed as guide. The source choice and sample counts are recorded with each output.
 
@@ -27,12 +27,11 @@ sorted for QQ. The historical order-statistic stride is `max(1,N//500)`, with
 both extreme order statistics retained. Per-seed path RE is computed on raw
 paired values, not on sorted or subsampled QQ data.
 
-Epsilon choices 1, 1/2, 1/4, 1/8, 0 each use seed1. The value comparator is
+Epsilon choices 1, 1/2, 1/4, 1/8, 0 each use five independent runs. The value comparator is
 the epsilon=0 reference. `rel_l1err` gives the relative difference to this
 comparator. Origin `rc_signed_fp32` compares policy cost to the same reference.
 Policy-cost profiles use4096 paths per point,101 S0 points, and seeds
-20260921 + 10000*epsilon_index + point_index. Monte Carlo SE is separate from
-seed SD. No across-epsilon SD is computed.
+20260921 + 10000*epsilon_index + point_index. Monte Carlo SE is separate from seed SD; the published bands use the across-run sample SD.
 
 Training curves use their saved samples without smoothing. Figure 4 preserves
 its original exception: each run's time is normalised to the group median final
@@ -40,14 +39,13 @@ time and errors are linearly interpolated onto 400 time points. DF's time is
 `rt_solve+rt_log`; official SOC-MartNet's is its native in-loop `rt`, excluding
 reference precomputation. The underlying per-run curves and unnormalised times are also exported.
 
-Table 1 RT uses median native `rt_solve`. Timing sweeps use 150 consecutive
+Table 1 RT uses the mean native `rt_solve`. Timing sweeps use 150 consecutive
 outer-iteration deltas at iterations51–200, after the first50 intervals, and
 report median and MAD. The original Figure 6/7 harvest uses the maximum of the
 first native GPU-memory column (rank0) over saved iterations, in MiB. The
 timing output also names the all-rank maximum separately; these are allocated
 memory readings, not device utilisation. One timing repeat has
-no between-repeat SD. Figure 6 uses its historical mean runtime/memory ratios,
-not Table 1's median runtime. Hardware and dtype accompany timing output.
+no between-repeat SD. Figure 6 uses the mean value error, mean absolute native RC, mean runtime and median GPU memory of the six-group r campaign. Hardware and dtype accompany timing output.
 
 Sample SD uses ddof=1. The archived complex-profile generator used ddof=0 for
 its profile band; that historical choice is preserved and labelled in CSV.
