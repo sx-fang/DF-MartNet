@@ -24,8 +24,8 @@
     "sha256": "53bedc80ff9a08717a63c8017af01ab77920976f48ccd32ecda5d0ea180d1ed2"
   },
   "README.md": {
-    "bytes": 18163,
-    "sha256": "f3fb962e6556a19bce6ad426d2592ff110b6e5860e3b71f9ce1f48834224206d"
+    "bytes": 18496,
+    "sha256": "fde76ac7f64598339aa0aa77cf890eb1f50b98e8a8a2b627e4c80ee84656613e"
   },
   "configs/cases.json": {
     "bytes": 52110,
@@ -654,6 +654,10 @@
   "data/ASSET_PROVENANCE.json": {
     "bytes": 22963,
     "sha256": "d20dfeb2b460c35634342b0e7c2d78ded565139e9d210cd305c8a94684dd30b6"
+  },
+  "data/RAW_MANIFEST.json": {
+    "bytes": 9632,
+    "sha256": "0aa29911a1cf201c0ba02d85436d3433502f5b0ce720f623d7b7aa2da498828b"
   },
   "data/archived/SELECTIONS.json": {
     "bytes": 23058,
@@ -1804,8 +1808,8 @@
     "sha256": "2c654d389e7bd7f37fd726f6f0d179e8ddb633d5787340f0a32e6bc4dc72396b"
   },
   "docs/data_sources.md": {
-    "bytes": 2078,
-    "sha256": "3e2b35ef0b4f1c816e57d2b9f44d3df4ccfdc642b3102111af581e9ac4860b61"
+    "bytes": 2195,
+    "sha256": "e18474c3bef9768946bb3f4bceaa851db1e0776bb8fb557be71fc53883a0cb9f"
   },
   "docs/environment.md": {
     "bytes": 1416,

@@ -30,3 +30,5 @@ All bundled-data inputs are included. Full mode produces final weights during
 training; it requires no historical checkpoint download or author account.
 DF-MartNet code, the bundled SOC-MartNet reference implementations and curated
 data use MIT; see `LICENSE_STATUS.md` for the manuscript's separate scope.
+
+The release also carries a `raw-data.tar.gz` asset; `data/RAW_MANIFEST.json` records its members, sizes and hashes.

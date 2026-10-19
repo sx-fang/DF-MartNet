@@ -21,6 +21,14 @@ The default source choice, `paper_original`, uses the supplied source snapshots
 and experiment configurations for paper reproduction. Run outputs record the
 bundled-data mode uses the paper's saved numerical data.
 
+## Raw data asset
+
+The native training logs behind Table 1, Figures 2-3 and Figure 6, together
+with the five epsilon evaluation tables, ship as a single `raw-data.tar.gz`
+release asset (25.3 MB). `data/RAW_MANIFEST.json` lists every member with its
+size and SHA-256, together with the archive SHA-256; verify them before
+unpacking.
+
 ## Run one example
 
 Download this repository, or clone it:
