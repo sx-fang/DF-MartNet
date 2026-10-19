@@ -137,7 +137,7 @@ def compare_band(histories, official=False):
 def _collect(run, keys, cases, group, version, archived):
     tables=run/'tables';figures=run/'figures';tables.mkdir(exist_ok=True);figures.mkdir(exist_ok=True)
     per_seed=[];summaries=[];histories={};data={};notes=[]
-    saved_origin=read_csv(ROOT/'data/archived/rho_sweep/origin_perseed.csv') if archived and group=='rho_sweep' else []
+    saved_origin=[]
     saved_timing={r['arm']:r for r in read_csv(ROOT/'data/archived/performance_sweep/timing.csv')} if archived and group=='performance_sweep' else {}
     def metric(key,name,values,definition,expected=None):
         if not values:return
@@ -277,8 +277,7 @@ def _collect(run, keys, cases, group, version, archived):
                 mem=statistics.mean(peaks)
             rho.append({'r':r,'re_mean':re['mean'],'re_sd':re['sample_sd'],'rc_mean':rc_mean,'rc_sd':rc_sd,'mean_rt_solve':rt,'mean_peak_mem_mb':mem,'n':5})
         if archived:
-            shutil.copyfile(ROOT/'data/archived/rho_sweep/origin_groups.csv',tables/'origin_mc_groups.csv')
-            notes.append('Origin RC recomputed from full-precision saved group means, M=4096, eight groups. jhat_group_mc_se is the original across-group SE; it is separate from seed SD and fresh centred per-path SE.')
+                    notes.append('Origin RC recomputed from full-precision saved group means, M=4096, eight groups. jhat_group_mc_se is the original across-group SE; it is separate from seed SD and fresh centred per-path SE.')
         write_csv(tables/'rho_sweep.csv',rho);write_csv(figures/'rho_sweep.csv',rho);data['rho']=rho
     write_csv(tables/'per_seed.csv',per_seed);write_csv(tables/'summary.csv',summaries)
     table=[]

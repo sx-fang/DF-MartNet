@@ -63,17 +63,19 @@ def main():
         ok=len(native)==201 and len(deltas)==150 and min(deltas)>0 and float(f'{median:.6f}')==float(published['median_s']) and float(f'{mad:.6f}')==float(published['MAD_s']) and memory==float(published['peak_mem'])
         timing_checks.append(dict(arm=tag,passed=ok,median_s=median,MAD_s=mad,peak_mem_MiB=memory,n_deltas=len(deltas)))
     report['timing']=timing_checks;check('20 native timing histories',all(r['passed'] for r in timing_checks),configurations=len(timing_checks))
-    origins=rows(DATA/'rho_sweep/origin_perseed.csv');groups=rows(DATA/'rho_sweep/origin_groups.csv');rho=[]
-    for p in origins:
-        g=[float(r['jhat']) for r in groups if r['case']==p['case'] and r['arm']==p['arm']]
-        mean=statistics.mean(g);ref=float(p['v_reference_origin']);se=statistics.stdev(g)/math.sqrt(len(g))
-        check(p['case']+'/'+p['arm']+' origin groups',len(g)==8 and abs(mean-float(p['jhat_origin_fp32']))<1e-14 and abs((mean-ref)/abs(ref)-float(p['rc_signed_fp32']))<1e-14 and abs(se-float(p['jhat_group_mc_se']))<1e-14)
-    for p in rows(DATA/'rho_sweep/origin_cost_summary.csv'):
-        vals=[abs(float(r['rc_signed_fp32'])) for r in origins if r['case']=='rho_'+p['r']]
-        avg=statistics.mean(vals);sd=statistics.stdev(vals)
-        matches=all(abs(float(p['final_s'+str(s)])-abs(float(next(r for r in origins if r['case']=='rho_'+p['r'] and int(r['seed'])==s)['rc_signed_fp32'])))<5.1e-7 for s in range(1,6))
-        rho.append(dict(r=int(p['r']),mean=avg,sample_sd=sd,published_mean=float(p['mean_REc']),published_sd=float(p['SD_REc']),rounded_perseed_match=matches))
-    report['rho_origin']=rho;check('rho origin published rounding',all(r['rounded_perseed_match'] for r in rho),runs=len(origins))
+    rho=[]
+    for p in rows(DATA/'rho_sweep/final_runs.csv'):
+        if p['dim']!='scpx10k':continue
+        key='rho_'+str(int(float(p['r'])))
+        finals=[]
+        for arm in cases[key]['arms']:
+            hist=rows(DATA/key/(arm['id']+'_history.csv'));finals.append(hist[-1])
+        re=[float(r['rel_l1err']) for r in finals];rt=[float(r['rt_solve']) for r in finals]
+        ok=(len(re)==int(p['n']) and abs(statistics.mean(re)-float(p['mean_rel_l1err']))<1e-12
+            and abs(statistics.stdev(re)-float(p['sd_rel_l1err']))<1e-12
+            and abs(statistics.mean(rt)-float(p['mean_rt_solve']))<1e-6)
+        rho.append(dict(r=int(float(p['r'])),mean=statistics.mean(re),sample_sd=statistics.stdev(re),passed=ok))
+    report['rho_finals']=rho;check('rho final statistics from histories',all(r['passed'] for r in rho),configurations=len(rho))
     comparisons=[]
     for eq in ['hjb2','hjb3']:
         for method,tag in [('df','df'),('official','reference')]:

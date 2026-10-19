@@ -627,9 +627,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_75/seed1_r0.ini",
-        "config_sha256": "73394b58ab35f54fcc11ead924a9276417adf34a0e0a558ada9ba05efdf8237b",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_75_s1.ini",
+        "config_sha256": "6761f5859d40fdd9c2eb9e7febfbfd577f82c9d26126f9155c34688358e48c90",
         "max_iter": 6000
       },
       {
@@ -638,9 +638,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_75/seed2_r0.ini",
-        "config_sha256": "28abf187eb43fc55e7257057bee9d536b22f2654a705251e07d8f202a1c04d20",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_75_s2.ini",
+        "config_sha256": "b69e31d838ee86cc5bdcad3d4667cb67d9aa0bcaa4856f9499aedc40ca474375",
         "max_iter": 6000
       },
       {
@@ -649,9 +649,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_75/seed3_r0.ini",
-        "config_sha256": "a5a1d37af4c5e814cf2c2e90f319720e74bdecc6fa69221bb4ca154459c3dac1",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_75_s3.ini",
+        "config_sha256": "f4aabe03ce74150b9f260341cadd360feb137ccfb0250df15ec8cc85e5f435be",
         "max_iter": 6000
       },
       {
@@ -660,9 +660,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_75/seed4_r0.ini",
-        "config_sha256": "4195d470710aab4e56b29b7cd82e48b0130ce97b2d12b0b2fbbede18c9d90d33",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_75_s4.ini",
+        "config_sha256": "bd939962c820348c2c78d14a16f0ef6432df05398087009bb0e04a3cfeed1a52",
         "max_iter": 6000
       },
       {
@@ -671,9 +671,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_75/seed5_r0.ini",
-        "config_sha256": "6ecc86413eb9716b701f8dfa682dd5a54a5a792fcc810dbc26568c01097b0dab",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_75_s5.ini",
+        "config_sha256": "8e45069ef93a569bba08cfda750ed30719f6b6d06aba05c9a3a06fcbe521ba67",
         "max_iter": 6000
       }
     ],
@@ -687,9 +687,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_150/seed1_r0.ini",
-        "config_sha256": "75157cc87f4abd88f936314aeacfdf0ed064f748c96fd91857c75078b287fee2",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_150_s1.ini",
+        "config_sha256": "725625d612ef1a8517f43f8af76ba0688262e1b226493482f30c491b59851ed6",
         "max_iter": 6000
       },
       {
@@ -698,9 +698,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_150/seed2_r0.ini",
-        "config_sha256": "3445f9a79f3bd6724ea365028883fb78fe76f41cd568f8d64ff338a9c15cc3cd",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_150_s2.ini",
+        "config_sha256": "84f650456219971a983f28a3ca0d53840e1cc1c9f6b5996a5550878d3c58c0e9",
         "max_iter": 6000
       },
       {
@@ -709,9 +709,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_150/seed3_r0.ini",
-        "config_sha256": "e76507d6d843d8ced16e1de44a4a9936e46eb90c7d4773f6f88559e8a824c767",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_150_s3.ini",
+        "config_sha256": "ecb6052f355c9d7035886edf5e40539cd4b380a3a1d31eb98e7708429cd66374",
         "max_iter": 6000
       },
       {
@@ -720,9 +720,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_150/seed4_r0.ini",
-        "config_sha256": "748e051d5b449deb8ab08db8dd7e11d27d89a9ee82bc8675c660117bd37d8c31",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_150_s4.ini",
+        "config_sha256": "6cf3ddc16a11af5c589a2ded206295059edfc88d937004fc8c7b8f1bef34a1b1",
         "max_iter": 6000
       },
       {
@@ -731,9 +731,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_150/seed5_r0.ini",
-        "config_sha256": "a8cdbbbede9734664241eab961806482bb910e961bbc635eb848914b2c56ff1c",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_150_s5.ini",
+        "config_sha256": "66630e27d87ae7b394789782d1b1347456e1f76e320b8385b2b7df59db5219b6",
         "max_iter": 6000
       }
     ],
@@ -747,9 +747,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_300/seed1_r0.ini",
-        "config_sha256": "3d7cd8f46db47b265449e627faaa99c17069438cca640ff410cb5f56d6ad1911",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_300_s1.ini",
+        "config_sha256": "fd5d3c4840d28c14caa1626ae1b2c647f35ab4347c55df67bf22216574805816",
         "max_iter": 6000
       },
       {
@@ -758,9 +758,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_300/seed2_r0.ini",
-        "config_sha256": "88eef5167a0b3461fed018feb1b1bc6d0a3a568e9a1d07dcba7ebafde94f1cf2",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_300_s2.ini",
+        "config_sha256": "ebeaa0a2d16c1175a77919ef3c6e26a6071ef58a2f8fc000b9ef8483408e9614",
         "max_iter": 6000
       },
       {
@@ -769,9 +769,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_300/seed3_r0.ini",
-        "config_sha256": "9c1cb1791a76c43857baca1df0e132cd604a332102df0c27640381a59f848061",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_300_s3.ini",
+        "config_sha256": "64474f3fe5ea7689a281007027ad5fd55520b61f3641588d80b509ee9a31261e",
         "max_iter": 6000
       },
       {
@@ -780,9 +780,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_300/seed4_r0.ini",
-        "config_sha256": "700402a141a8a31f879d4930608b04446441c1f9dc0080ae8affa981e4146a26",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_300_s4.ini",
+        "config_sha256": "be44ec88765b8c305589ec4e09892a7826bc6213bd9c9f7592ba45261140e9c5",
         "max_iter": 6000
       },
       {
@@ -791,9 +791,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_300/seed5_r0.ini",
-        "config_sha256": "d67f1fcb683a18269e1027f5b8e72a6d219881781f0d4aa14a8200970fe86327",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_300_s5.ini",
+        "config_sha256": "dd03391545c2965e9b0eff3663149e6c410941e1a2d4ad5b7ddb675758fc127a",
         "max_iter": 6000
       }
     ],
@@ -807,9 +807,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_600/seed1_r0.ini",
-        "config_sha256": "9071d479524c63c5ff5f9b53b8bc8f14fa381d1a2b73f81f87dec699e94b072d",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_600_s1.ini",
+        "config_sha256": "177fb7d6d508ee771a089eb8dbba922719c12c97642c198d9caf3a254839b241",
         "max_iter": 6000
       },
       {
@@ -818,9 +818,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_600/seed2_r0.ini",
-        "config_sha256": "3bac931a0eb882cdd7bb692c929525525a13585d343417825b54e8d2e08db556",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_600_s2.ini",
+        "config_sha256": "847adfa4149906cba3d46db2a535a8dae96902cc1c1e8f981ce6c6ac8d9b744a",
         "max_iter": 6000
       },
       {
@@ -829,9 +829,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_600/seed3_r0.ini",
-        "config_sha256": "82eecefdfa526e0ce520204459fc7dce0ace57c1364672af06043e6fd9b350bc",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_600_s3.ini",
+        "config_sha256": "d732baaa34e390cf0ee3757366fdf1450f4b85b0d01ae604da1d78188a8b328e",
         "max_iter": 6000
       },
       {
@@ -840,9 +840,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_600/seed4_r0.ini",
-        "config_sha256": "180fbe3ac1bd0108e42146b43ad124687018d9ef9cd19e43bed930667386f743",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_600_s4.ini",
+        "config_sha256": "1dcf9b650165c9906549f3d8a807e56b7727b4324be3ca093c3408ff28198198",
         "max_iter": 6000
       },
       {
@@ -851,9 +851,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_600/seed5_r0.ini",
-        "config_sha256": "6121c3355d047a768d47f1582b8c194bb1a45fee410c057dee09695e7ba4a09d",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_600_s5.ini",
+        "config_sha256": "03f44e1fdb216f1f4883d625bdd46ac0b7b840bd01e8e27929efe59cd78c6ec8",
         "max_iter": 6000
       }
     ],
@@ -867,9 +867,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_1200/seed1_r0.ini",
-        "config_sha256": "c7b406d1d4f7f7d244b6af2a9b43c8e69dd8bba9065cdfefaa9bfde8387fb49a",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_1200_s1.ini",
+        "config_sha256": "500b7750256108d9d94b04e0b96464435f93be157c0136284580f525a7ff4567",
         "max_iter": 6000
       },
       {
@@ -878,9 +878,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_1200/seed2_r0.ini",
-        "config_sha256": "8edae2e3041f83d0420db2e79f89dd1c7ff04213c3cd73e6d190c133cffe7135",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_1200_s2.ini",
+        "config_sha256": "c61c2791d68ee667b909b58b826fa20ee2547a398823d04d83f6b87e53a44ed6",
         "max_iter": 6000
       },
       {
@@ -889,9 +889,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_1200/seed3_r0.ini",
-        "config_sha256": "5481e98806d76ce6a1c687bb7587181c6a78fe85ac89345faa817e655c2693a8",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_1200_s3.ini",
+        "config_sha256": "fd3bb025eb5bec83186b694103e9d2cdac56abb71fc8781f81cce83d39be763e",
         "max_iter": 6000
       },
       {
@@ -900,9 +900,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_1200/seed4_r0.ini",
-        "config_sha256": "ebbd413057fad3ff9dfeb4f3b1db0415d0fa3e839d712cc5a7bd2c0674d2bf2e",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_1200_s4.ini",
+        "config_sha256": "75adb2eb5e02b4b91e798b799c7df6e0c8a37ac7d57797848510b3c3b70e43d8",
         "max_iter": 6000
       },
       {
@@ -911,9 +911,9 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
-        "config": "configs/paper_original/rho_1200/seed5_r0.ini",
-        "config_sha256": "4ca9d407387c6e6e2d80da30ef71fc5d954e7841108cd8846eca1613208e0821",
+        "source": "engines/af4a053",
+        "config": "configs/revision/rho/rho_1200_s5.ini",
+        "config_sha256": "f13fca59041b6fdeb0cdc142e3c66e7f143c6b493eaa4366b22c8d1a8c24aea8",
         "max_iter": 6000
       }
     ],
