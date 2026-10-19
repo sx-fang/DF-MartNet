@@ -57,31 +57,31 @@
     "release_file": "data/archived/epsilon_sweep/cost_eps0.csv",
     "source_id": "asset_011",
     "source_sha256": "de0feee7d655aab81182daba1a3ae3da9f7c6acc84ace3626cd2fcc2fe2f0cb6",
-    "release_sha256": "de0feee7d655aab81182daba1a3ae3da9f7c6acc84ace3626cd2fcc2fe2f0cb6"
+    "release_sha256": "941d9faffd8ba7d278d62f0221ae756473d328a055b0dc6043ed0f83807859d2"
   },
   {
     "release_file": "data/archived/epsilon_sweep/cost_eps1.csv",
     "source_id": "asset_012",
     "source_sha256": "9c841a69c1175b2b6e6918e331fca3ef116ead3b9cd5775f563161198f6180a5",
-    "release_sha256": "9c841a69c1175b2b6e6918e331fca3ef116ead3b9cd5775f563161198f6180a5"
+    "release_sha256": "66b322901ece0f62aa541cd9775714e4734c91ab02d6e98f08573daf4421f887"
   },
   {
     "release_file": "data/archived/epsilon_sweep/cost_eps2.csv",
     "source_id": "asset_013",
     "source_sha256": "8489490449f00f4326dc38844fa42431d80e1b02344ab1ce99aa80278b39f5e3",
-    "release_sha256": "8489490449f00f4326dc38844fa42431d80e1b02344ab1ce99aa80278b39f5e3"
+    "release_sha256": "1622de072d44826503a89efc53e813e80eef8e88f69a99a0f3b791ce347a947f"
   },
   {
     "release_file": "data/archived/epsilon_sweep/cost_eps4.csv",
     "source_id": "asset_014",
     "source_sha256": "b95b96624165f8ee91ed82bcc66692d60784568752d491c9e3ca2643f5165cf0",
-    "release_sha256": "b95b96624165f8ee91ed82bcc66692d60784568752d491c9e3ca2643f5165cf0"
+    "release_sha256": "24ff466f731cb29651cf13de413ac83eaea9242c243adef0b883ee0d8d82473b"
   },
   {
     "release_file": "data/archived/epsilon_sweep/cost_eps8.csv",
     "source_id": "asset_015",
     "source_sha256": "9cc6f332610cb1b3a9d9f74cb42c76e570c2425a5434657244f57e05dd48b1a9",
-    "release_sha256": "9cc6f332610cb1b3a9d9f74cb42c76e570c2425a5434657244f57e05dd48b1a9"
+    "release_sha256": "431805dc43616de57af654dd19cf38854c485583e6dc6eeb1e6fca5c431127f7"
   },
   {
     "release_file": "data/archived/scalar_control/published_rc_history.csv",
