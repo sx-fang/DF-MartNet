@@ -1,0 +1,13 @@
+case,paper_object,engine,status,note
+hjb1_d10000,Table 1 row 1 and Figure 2,engines/4d30ed0,verified,core modules byte-identical in the archived runs and in the 2026-10-16 seed-1 batch
+hjb2_d10000,Table 1 row 2 and Figure 2,engines/4d30ed0,verified,same as above
+hjb3_d10000,Table 1 row 3 and Figure 2,engines/4d30ed0,verified,same as above
+hjb3_d2000_w2010,Table 1 row 4 and Figure 3,engines/4d30ed0,verified,same as above
+hjb3_d2000_w10010,Table 1 row 5 and Figure 3,engines/4d30ed0,verified,same as above
+hjb_table,Table 1 and Figures 2-3,engines/4d30ed0,verified,aggregate entry over the five HJB cases
+rho_sweep,Figure 6,engines/4d30ed0,verified,core modules identical to the 2026-10-17 r-sweep engine
+performance_sweep,Figure 7,engines/4d30ed0,verified,recorded anchor of the 20 accepted timing runs
+scalar_control,Figure 8,engines/4d30ed0,verified,core modules unchanged from the 2026-10-16 K1 campaign
+epsilon_sweep,Figure 9,engines/4d30ed0,verified,core modules unchanged from the 2026-10-16 epsilon family
+comparison,Figure 4,paper_original/variants,unchanged_from_rc2,pre-October code paths already pinned in the released package
+complex_dynamics,Figure 5,paper_original/variant_a,unchanged_from_rc2,pre-October code path already pinned in the released package

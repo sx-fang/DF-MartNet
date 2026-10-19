@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "kind": "engine",
+  "commit": "4d30ed0836376f4427ffe43549f3272e2c388f41",
+  "commit_short": "4d30ed0",
+  "commit_subject": "2026-10-16 Preserve original Fig4 and Fig7 bodies in compatibility driver",
+  "verified_against": "archived run code (byte-identical core modules)",
+  "modules": "DF-MartNet core modules only",
+  "files": [
+    {
+      "file": "diagnostics.py",
+      "bytes": 4528,
+      "sha256": "6531222e0389adeb96f5f42e45c2fe3119d4525fdce2e2b215b74a23d78e0255"
+    },
+    {
+      "file": "examples.py",
+      "bytes": 240341,
+      "sha256": "593fa8d2eb46b1e8dd4a58cbb9d1a1c5a8d2fda254622a73103ee07e1ee0cb4a"
+    },
+    {
+      "file": "loss_martnet.py",
+      "bytes": 33269,
+      "sha256": "caf3f5e1198abd09e59802224c6e63383c42326a6ad5072675e7c56a9f94eb87"
+    },
+    {
+      "file": "networks.py",
+      "bytes": 9721,
+      "sha256": "97b5c591b3613981f9d049cac53941fbc46b8f46f06ff151e08ed9d4d9d7735a"
+    },
+    {
+      "file": "runtask.py",
+      "bytes": 5759,
+      "sha256": "eb11c22b32789af83727ff8852abe53f2430f4c6236258e09fc6f00f310cfc59"
+    },
+    {
+      "file": "sampling.py",
+      "bytes": 6962,
+      "sha256": "9696020e84940187b1ddc4db0a1288b5115fc2bfcee5f7944719a6c95af02c13"
+    },
+    {
+      "file": "solver.py",
+      "bytes": 40542,
+      "sha256": "23ae275525b47cbd4b1eb43284bcb4caf8efdccc2ac29a16503fe858922e19ef"
+    },
+    {
+      "file": "train.py",
+      "bytes": 10129,
+      "sha256": "968c2991b8c735375ff0ddf22cda6d4abcc694037f1a0eb41e8b5bf9a5a990e4"
+    },
+    {
+      "file": "utils.py",
+      "bytes": 8999,
+      "sha256": "ae821f80e8191b85b0519b0451343b1b198dc11aebd28cdadb41d3afffdfce7e"
+    }
+  ]
+}
