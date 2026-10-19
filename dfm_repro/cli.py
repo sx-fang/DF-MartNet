@@ -57,7 +57,7 @@ def local_full(run, keys, cases, args, digest):
     command([sys.executable,'-B','-m','dfm_repro.gpu_worker','check','--gpus',gpus],run/'raw/resource_check.log')
     source_snapshot=run/'source'
     if not source_snapshot.exists():
-        for sub in ['paper_original','corrected','third_party','dfm_repro','configs']:
+        for sub in ['paper_original','third_party','dfm_repro','configs']:
             shutil.copytree(ROOT/sub,source_snapshot/sub,ignore=shutil.ignore_patterns('__pycache__'))
         json_write(run/'source_files.json',fingerprints([p for p in source_snapshot.rglob('*') if p.is_file()],source_snapshot))
     validate_files(json_read(run/'source_files.json'),source_snapshot)
@@ -65,7 +65,7 @@ def local_full(run, keys, cases, args, digest):
         case=cases[key]
         for arm in case['arms']:
             work=run/'cases'/key/arm['id'];work.mkdir(parents=True,exist_ok=True)
-            source=source_snapshot/('corrected' if args.version=='corrected' and case['kind']!='official' else arm['source'])
+            source=source_snapshot/arm['source']
             config=work/'actual.ini'
             if not config.exists() and case['kind']!='official':
                 cfg=configparser.ConfigParser(interpolation=configparser.ExtendedInterpolation())
@@ -150,7 +150,7 @@ def main(case=None):
     parser=argparse.ArgumentParser(description='Train, evaluate, collect and plot one paper case.')
     parser.add_argument('--case',default=case,required=case is None)
     parser.add_argument('--mode',choices=['full','archived'],default='full')
-    parser.add_argument('--version',choices=['paper_original','corrected'],default='paper_original')
+    parser.add_argument('--version',choices=['paper_original'],default='paper_original')
     parser.add_argument('--backend',choices=['local','slurm'],default='local')
     parser.add_argument('--site',type=Path,default=ROOT/'slurm/site.json')
     parser.add_argument('--output-root',type=Path,default=Path(os.environ.get('DFM_RESULTS','results')))

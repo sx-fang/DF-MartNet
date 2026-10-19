@@ -22,9 +22,6 @@ def main():
                 c=configparser.ConfigParser(interpolation=configparser.ExtendedInterpolation());c.read(ROOT/a['config'])
                 assert c.getint('Environment','seed')==a['seed'];assert c.getint('Training','max_iter')==a['max_iter']
                 for k in ['lr0_v','lr0_u','lr0_rho','decay_rate']:assert expression(c.get('Optimizer',k))>0
-    corrected=json_read(ROOT/'corrected/SOURCE.json')
-    for f in corrected['files']:
-        assert sha256(ROOT/'corrected'/f['file'])==f['sha256']
     for record in json_read(ROOT/'data/ASSET_PROVENANCE.json'):
         assert (ROOT/record['release_file']).is_file()
         if record.get('release_sha256'):assert sha256(ROOT/record['release_file'])==record['release_sha256']

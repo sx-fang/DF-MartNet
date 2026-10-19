@@ -8,9 +8,8 @@ reference-method CLI records. Labels such as `seed1_r0` identify samples.
 
 Each source directory has a `SOURCE.json` containing original and public file
 hashes. These snapshots provide the numerical executors used by the example
-entries. The optional `corrected` source is based on commit
-`94cd9f622e8f7812b9b145bf7983e4297d2e2bd5`. Public hashes describe the bundled
-files and remain distinct from their original-input hashes.
+entries. Public hashes describe the bundled files and remain distinct from
+their original-input hashes.
 
 Adjacent `*_PROVENANCE.json` files record sample IDs and input hashes.
 `data/ASSET_PROVENANCE.json` records content-source IDs and bundled-file

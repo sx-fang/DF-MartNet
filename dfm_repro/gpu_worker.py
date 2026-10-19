@@ -110,7 +110,7 @@ def evaluate(args):
     first=arms[0]
     path_arms=arms[1:] if plan['version']=='paper_original' and case in ('hjb2_d10000','hjb3_d2000_w2010') else arms
     guide=path_arms[0]
-    src=source_root/('corrected' if plan['version']=='corrected' else guide['source'])
+    src=source_root/guide['source']
     solver=use_source(src);import utils
     torch.set_default_device('cuda:0');torch.set_default_dtype(torch.float32)
     torch.set_float32_matmul_precision('highest')

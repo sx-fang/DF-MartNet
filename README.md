@@ -18,9 +18,7 @@ The manuscript PDF and its figures have separate copyright and are excluded
 from the package's MIT licence.
 
 The default source choice, `paper_original`, uses the supplied source snapshots
-and experiment configurations for paper reproduction. `--version corrected`
-selects the alternative path-group sampling and DDP-statistics implementation
-with the same supplied numerical settings. Run outputs record the source choice;
+and experiment configurations for paper reproduction. Run outputs record the
 bundled-data mode uses the paper's saved numerical data.
 
 ## Run one example
