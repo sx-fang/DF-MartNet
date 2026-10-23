@@ -18,20 +18,27 @@ history curves. The publication diagnostic `rc_signed_fp32` uses
 the pooled absolute reference. HJB uses 128 origin-started paths, 32
 preterminal layers, a dedicated Brownian stream with seed 20260821, strict
 float32 feedback/value nets, and a reference evaluated on each run's own deployment states (M=1000000); the per-run reference arrays are bundled. The historical
-HJB-2/narrow pools contain seeds2–5 and use seed2 as guide; the other HJB pools
-use their first selected seed as guide. The source choice and sample counts are recorded with each output.
+arrays contain all five seeds 1–5. Each reference row corresponds to the same
+run's learned-control trajectories; no shared guide policy is used. The source
+choice, weight hashes and sample counts are recorded with fresh outputs.
 
 The scalar-control QQ plot pools the five prescribed runs and all 31 interior
 layers, each containing 4096 states. True and predicted values are independently
 sorted for QQ. The historical order-statistic stride is `max(1,N//500)`, with
 both extreme order statistics retained. Per-seed path RE is computed on raw
-paired values, not on sorted or subsampled QQ data.
+paired values over all 32 preterminal layers including t0, not on sorted or
+subsampled QQ data. Fresh QQ-only errors have separate `*_qq_interior` fields.
 
 Epsilon choices 1, 1/2, 1/4, 1/8, 0 each use five independent runs. The value comparator is
 the epsilon=0 reference. `rel_l1err` gives the relative difference to this
 comparator. Origin `rc_signed_fp32` compares policy cost to the same reference.
-Policy-cost profiles use4096 paths per point,101 S0 points, and seeds
-20260921 + 10000*epsilon_index + point_index. Monte Carlo SE is separate from seed SD; the published bands use the across-run sample SD.
+Policy-cost profiles use 4096 paths per point, 101 S0 points, and seeds
+20260921 + 10000*epsilon_index + point_index, where epsilon_index is
+0, 1, 2, 3, 4 for epsilon=1, 1/2, 1/4, 1/8, 0 respectively.
+The exact saved seed at every point is in `per_seed_profiles.csv`; all five
+training runs use that same cost-evaluation stream at a given coordinate.
+Monte Carlo SE is separate from seed SD; the published bands use across-run
+sample SD. Value shading and cost error bars both show mean ± 2 SD.
 
 Training curves use their saved samples without smoothing. Figure 4 preserves
 its original exception: each run's time is normalised to the group median final
@@ -62,3 +69,13 @@ The mean and sample SD across five seeds are recomputed from full-precision
 group values, rather than the rounded publication summary. Fresh runs store
 individual path costs and use centred sample SD divided by sqrt(M); this
 diagnostic is explicitly separate from the native logger and old group SE.
+Figure 6 RC uses the final native signed RC's absolute value, averaged across
+the five selected runs; the supplemental origin-cost diagnostic does not replace it.
+
+Training branch points, pilot paths, policy-cost paths and reference paths are
+global counts. Runtime workers split integers by quotient and remainder using
+the actual DDP world size, then weight sums and gradients by the actual counts.
+The startup log and training record include the global budget, every rank's
+share and the budget protocol version. Invalid sampler minimum shares raise an
+error rather than enlarging the configured budget. Reference path simulation
+uses N=100; deployment paths use the submitted N=32.

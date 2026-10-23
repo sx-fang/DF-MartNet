@@ -14,6 +14,7 @@ import sys
 import time
 import uuid
 from .common import ROOT, json_read, json_write, sha256, package_digest, validate_files, fingerprints
+from .protocol import evaluation_counts, validate_execution_sources
 
 HJB=['hjb1_d10000','hjb2_d10000','hjb3_d10000','hjb3_d2000_w2010','hjb3_d2000_w10010']
 GROUPS={'hjb_table':HJB,'comparison':['compare_df_hjb2','compare_df_hjb3','compare_official_hjb2','compare_official_hjb3'],
@@ -50,17 +51,36 @@ def completed_stage(run, key, pins, callback, resume):
         json_write(state_path,state);raise
     state['finished_utc']=datetime.now(timezone.utc).isoformat();json_write(state_path,state)
 
+def freeze_sources(run, keys, cases):
+    """Freeze the complete selected source closure before executing a worker."""
+    source_snapshot=run/'source'
+    roots={'dfm_repro','configs','data'}
+    for key in keys:
+        for arm in cases[key]['arms']:
+            relative=Path(arm['source'])
+            if relative.is_absolute() or '..' in relative.parts:
+                raise ValueError('Source must stay inside the publication package')
+            roots.add(relative.parts[0])
+            if not (ROOT/relative/'solver.py').is_file() and cases[key]['kind']!='official':
+                raise FileNotFoundError(ROOT/relative/'solver.py')
+    if not source_snapshot.exists():
+        for sub in sorted(roots):
+            shutil.copytree(ROOT/sub,source_snapshot/sub,ignore=shutil.ignore_patterns('__pycache__'))
+        json_write(run/'source_files.json',fingerprints([p for p in source_snapshot.rglob('*') if p.is_file()],source_snapshot))
+    validate_files(json_read(run/'source_files.json'),source_snapshot)
+    for key in keys:
+        for arm in cases[key]['arms']:
+            entry='run.py' if cases[key]['kind']=='official' else 'solver.py'
+            if not (source_snapshot/arm['source']/entry).is_file():
+                raise FileNotFoundError(source_snapshot/arm['source']/entry)
+    return source_snapshot
+
 def local_full(run, keys, cases, args, digest):
     if sys.platform!='linux': raise RuntimeError('Full numerical execution requires a Linux GPU compute node; CPU/Windows fallback is disabled.')
     # The resource probe runs on the allocation, before any solver import.
     gpus=max(a['gpus'] for k in keys for a in cases[k]['arms'])
     command([sys.executable,'-B','-m','dfm_repro.gpu_worker','check','--gpus',gpus],run/'raw/resource_check.log')
-    source_snapshot=run/'source'
-    if not source_snapshot.exists():
-        for sub in ['paper_original','third_party','dfm_repro','configs']:
-            shutil.copytree(ROOT/sub,source_snapshot/sub,ignore=shutil.ignore_patterns('__pycache__'))
-        json_write(run/'source_files.json',fingerprints([p for p in source_snapshot.rglob('*') if p.is_file()],source_snapshot))
-    validate_files(json_read(run/'source_files.json'),source_snapshot)
+    source_snapshot=freeze_sources(run,keys,cases)
     for key in keys:
         case=cases[key]
         for arm in case['arms']:
@@ -74,6 +94,12 @@ def local_full(run, keys, cases, args, digest):
                 cfg.read(original)
                 cfg.set('Environment','output_dir',str(work/'training'))
                 cfg.set('Environment','save_weights','True')
+                if not cfg.has_section('Reproduction'):cfg.add_section('Reproduction')
+                cost_count=evaluation_counts(key,case)['cost_paths']
+                # The historical Example.M_rc remains byte-for-byte in its
+                # source INI. This explicit field binds the total cost-path
+                # count to the paper (HJB 32768; other reported examples 4096).
+                cfg.set('Reproduction','global_cost_paths',str(cost_count))
                 # repeat_time remains in the INI. The adapter runs only selected r0;
                 # the paper used r0, not a mean of this INI's five sequential repeats.
                 with config.open('w',encoding='utf-8') as f:cfg.write(f)
@@ -89,8 +115,7 @@ def local_full(run, keys, cases, args, digest):
                 return [p for p in (work/'training').rglob('*') if p.is_file()]+[work/'training_console.log',work/'training_record.json']
             completed_stage(run,train_key,inputs,train_stage,args.resume)
         if case['kind'] not in ('timing','official') and not key.startswith('compare_'):
-            # Shared state distribution comes from the first prescribed guide arm.
-            # The reference is evaluated once and used by every selected final net.
+            # Each run is evaluated on trajectories driven by its own final policy.
             evaluation=run/'cases'/key/'evaluation';spec=evaluation/'eval_spec.json'
             evaluation.mkdir(exist_ok=True)
             plan={'kind':case['kind'],'case':key,'arms':case['arms'],'version':args.version,'case_dir':str(run/'cases'/key),'source_root':str(source_snapshot)}
@@ -158,6 +183,7 @@ def main(case=None):
     parser.add_argument('--dry-run',action='store_true')
     args=parser.parse_args()
     cases=json_read(ROOT/'configs/cases.json');keys=resolve_cases(args.case,cases)
+    validate_execution_sources({key:cases[key] for key in keys})
     digest=package_digest()
     if args.dry_run:
         print(json.dumps({'case':args.case,'version':args.version,'mode':args.mode,'case_keys':keys,

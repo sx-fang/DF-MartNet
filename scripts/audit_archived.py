@@ -11,6 +11,7 @@ import json
 import math
 import statistics
 import sys
+import hashlib
 
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data/archived'
@@ -52,6 +53,28 @@ def main():
         report['table1'][key]={'recomputed':measured,'printed':paper,'rounded_match':matches,'n_native':len(re),'n_path':len(path),
                               'rt_solve_MAD':statistics.median(abs(v-statistics.median(rt)) for v in rt)}
         check(key+' printed Table 1',all(matches.values()))
+        profiles=[]
+        pins=json.loads((DATA/'HJB_PLOT_SOURCES.json').read_text())
+        for arm in cases[key]['arms']:
+            file=DATA/key/(arm['id']+'_profile.csv')
+            pin=next(p for p in pins if p['release_file']==file.relative_to(ROOT).as_posix())
+            profiles.append(len(rows(file))==101 and pin['selection']['seed']==arm['seed']
+                and hashlib.sha256(file.read_bytes()).hexdigest()==pin['release_sha256'])
+        check(key+' submitted five-run plotting cohort',len(profiles)==5 and all(profiles),seeds=[a['seed'] for a in cases[key]['arms']])
+    for key in ['eps1','eps0p5','eps0p25','eps0p125','eps0']:
+        samples=[r for r in rows(DATA/'epsilon_sweep/per_seed_profiles.csv') if r['case']==key]
+        diffs=[]
+        published=rows(DATA/'epsilon_sweep/published_profiles.csv')
+        for i,p in enumerate(published):
+            group=[r for r in samples if int(r['point'])==i]
+            assert {r['arm'] for r in group}=={a['id'] for a in cases[key]['arms']}
+            tag={'eps0p5':'eps2','eps0p25':'eps4','eps0p125':'eps8'}.get(key,key)
+            v=nums(group,'v_pred');j=nums(group,'jhat')
+            diffs.extend([abs(statistics.mean(v)-float(p['v_pred_'+tag])),
+                abs(statistics.stdev(v)-float(p['v_sd_'+tag])),
+                abs(statistics.mean(j)-float(p['jhat_'+tag])),
+                abs(statistics.stdev(j)-float(p['jhat_sd_'+tag]))])
+        check(key+' five-run value/cost mean and sample SD',len(samples)==505 and max(diffs)<1e-13,max_abs_difference=max(diffs))
     timing=rows(DATA/'performance_sweep/timing.csv')
     timing_checks=[]
     for published in timing:

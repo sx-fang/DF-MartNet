@@ -1,0 +1,72 @@
+{
+  "hjb1_d10000": {
+    "arms": [
+      "seed1_r0",
+      "seed2_r0",
+      "seed3_r0",
+      "seed4_r0",
+      "seed5_r0"
+    ],
+    "n_paths": 128,
+    "n_levels": 32,
+    "dt": 0.03125,
+    "trajectory_control": "each run own learned feedback",
+    "array_sha256": "87b87f2b9250f7cd0a1b41769ecaf855825446b02373fe1cd111c94bcee3e4f0"
+  },
+  "hjb2_d10000": {
+    "arms": [
+      "seed1_r0",
+      "seed2_r0",
+      "seed3_r0",
+      "seed4_r0",
+      "seed5_r0"
+    ],
+    "n_paths": 128,
+    "n_levels": 32,
+    "dt": 0.03125,
+    "trajectory_control": "each run own learned feedback",
+    "array_sha256": "92b438e282f4d276b4e54119cc1b894b6578b24f0ff97cf312989ea53e35ed91"
+  },
+  "hjb3_d10000": {
+    "arms": [
+      "seed1_r0",
+      "seed2_r0",
+      "seed3_r0",
+      "seed4_r0",
+      "seed5_r0"
+    ],
+    "n_paths": 128,
+    "n_levels": 32,
+    "dt": 0.03125,
+    "trajectory_control": "each run own learned feedback",
+    "array_sha256": "cabeb03f241bec5b8e718621ed28f7992fb6b0e38f99ed36458b74aec6c9033d"
+  },
+  "hjb3_d2000_w2010": {
+    "arms": [
+      "seed1_r0",
+      "seed2_r0",
+      "seed3_r0",
+      "seed4_r0",
+      "seed5_r0"
+    ],
+    "n_paths": 128,
+    "n_levels": 32,
+    "dt": 0.03125,
+    "trajectory_control": "each run own learned feedback",
+    "array_sha256": "4a76776951db418c03235d009c757e113cde970fdbb154e11b39878679be8d71"
+  },
+  "hjb3_d2000_w10010": {
+    "arms": [
+      "seed1_r0",
+      "seed2_r0",
+      "seed3_r0",
+      "seed4_r0",
+      "seed5_r0"
+    ],
+    "n_paths": 128,
+    "n_levels": 32,
+    "dt": 0.03125,
+    "trajectory_control": "each run own learned feedback",
+    "array_sha256": "36fca3068bd39d01aa5fa403f8d1c861a00ced444d00668d42fcd1e6b5dc1a3d"
+  }
+}

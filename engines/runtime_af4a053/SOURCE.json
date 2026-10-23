@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "kind": "repaired_execution_copy",
+  "base_source": "engines/af4a053",
+  "base_source_manifest_sha256": "01134cafbe22fd0079bc53ee39839eb596749cea4df039cf1c3e5b3ddbf04e1f",
+  "corrections": [
+    "disjoint pilot groups and count-weighted DDP statistics",
+    "independent detached reduction buffers",
+    "exact global MC, pilot and branch-point budgets",
+    "complete local imports",
+    "memory bookkeeping uses actual process group"
+  ],
+  "files": [
+    {
+      "file": "aligned_linear.py",
+      "bytes": 6588,
+      "sha256": "d3fb7be866e39da097fa7fd590562282d7ef1f48a487c0ac37829d0174396744"
+    },
+    {
+      "file": "diagnostics.py",
+      "bytes": 4415,
+      "sha256": "e586c3de5f1fc6b9828fb744bcdb865d2d1d268143e3578ec9217a98a6a20d54"
+    },
+    {
+      "file": "examples.py",
+      "bytes": 228924,
+      "sha256": "eee0c1162d66df3f1859fd1bc3b859cf639a992f52b084769439ebd20046ff97"
+    },
+    {
+      "file": "fused_rmsprop.py",
+      "bytes": 7905,
+      "sha256": "171f21c71c90904d392969c8602e0e8449b10891cc5e5bc05c63dde9c7c44af2"
+    },
+    {
+      "file": "loss_martnet.py",
+      "bytes": 32549,
+      "sha256": "1393f7f4565217d055097bdf094af530252fee9ca5dce7e42f50ffeabc5edfb6"
+    },
+    {
+      "file": "networks.py",
+      "bytes": 9018,
+      "sha256": "572322a4f25ebc67e7bb1dc33d5d037cb33867489ac737fa40743467740d06eb"
+    },
+    {
+      "file": "radial_control.py",
+      "bytes": 7229,
+      "sha256": "ecd80784774023a8ab2133cb5016602a8974f7433fa2136946ed52c844b57f3b"
+    },
+    {
+      "file": "runtask.py",
+      "bytes": 5596,
+      "sha256": "353106310be2b7d5fa93c7d0d0569d6e3385842e25be4d1416d322429613a13c"
+    },
+    {
+      "file": "sample_budgets.py",
+      "bytes": 2446,
+      "sha256": "b8c7096d7fe52773b33512a684b1bd425e5f3e56dda6dea6e21f4cc7b4205088"
+    },
+    {
+      "file": "sampling.py",
+      "bytes": 6821,
+      "sha256": "967e95e6e2d0a1bdd614260f268e9aacc36aa801f4b0680837d4af11993cdcd7"
+    },
+    {
+      "file": "solver.py",
+      "bytes": 39087,
+      "sha256": "92bf5a801be8e50445a6d708765d67aeaa7d81f6df14d7ac337be7f5fd54a30a"
+    },
+    {
+      "file": "train.py",
+      "bytes": 9934,
+      "sha256": "fa2ad317b683650941fac3e257bf5eaf43a4e4f9914db86720a7732d8729b4cd"
+    },
+    {
+      "file": "utils.py",
+      "bytes": 11930,
+      "sha256": "e47d19b14b82690de954fcf2b4d4e9763bfd76cf157a5de06ce69fd7cae9d528"
+    }
+  ],
+  "publication_curation": "Dependency module docstrings omit private preparation references; computational AST unchanged."
+}

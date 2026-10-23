@@ -7,10 +7,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb1_s1.ini",
         "config_sha256": "3f2ef004026f3bb9e8bc3221146feb8962d041af5179fd5f6f7009ba944e2a29",
-        "max_iter": 9000
+        "max_iter": 9000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed2_r0",
@@ -18,10 +19,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb1_s2.ini",
         "config_sha256": "bee9bcf8d5f2c395d7c752f7114370ab629c9467641165c2a68b09a87c84319d",
-        "max_iter": 9000
+        "max_iter": 9000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed3_r0",
@@ -29,10 +31,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb1_s3.ini",
         "config_sha256": "7844b33d0bb66b6944c58d4de5b6cbb4689212de934125dac728f5824cce8a27",
-        "max_iter": 9000
+        "max_iter": 9000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed4_r0",
@@ -40,10 +43,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb1_s4.ini",
         "config_sha256": "2f9c0ed14d975555f1401da8e594ea4c6bcf2dfee02343024a12f2a927dcbd46",
-        "max_iter": 9000
+        "max_iter": 9000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed5_r0",
@@ -51,10 +55,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb1_s5.ini",
         "config_sha256": "b322e1532dd20518d526da3a25b2d860b8c51afd91ddc26ad0f690d0c85b68f8",
-        "max_iter": 9000
+        "max_iter": 9000,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "hjb"
@@ -67,10 +72,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb2_s1.ini",
         "config_sha256": "c48bda860653e5796cf3c08a954433598c5dcc27d6a58973e202404f58ea6c53",
-        "max_iter": 9000
+        "max_iter": 9000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed2_r0",
@@ -78,10 +84,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb2_s2.ini",
         "config_sha256": "82b576818ea2adf130edd91264337d4557407c3e4be6ee1f9118b4b33cefeca1",
-        "max_iter": 9000
+        "max_iter": 9000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed3_r0",
@@ -89,10 +96,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb2_s3.ini",
         "config_sha256": "dd5a0e108eea01ac92d4543a0d16976049ca82f44bb3da6140ec3cac36f3862e",
-        "max_iter": 9000
+        "max_iter": 9000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed4_r0",
@@ -100,10 +108,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb2_s4.ini",
         "config_sha256": "a8d3190cd33bd61d025ac61e1388c41a7b3c90094fdba6058efccba2ae9f4c83",
-        "max_iter": 9000
+        "max_iter": 9000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed5_r0",
@@ -111,10 +120,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb2_s5.ini",
         "config_sha256": "2a289b066eef2a55195fdb8010cf1d7d10cb157cbf9833a9dcdd080d5243f483",
-        "max_iter": 9000
+        "max_iter": 9000,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "hjb"
@@ -127,10 +137,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb3_d10_s1.ini",
         "config_sha256": "f2c111d694e331c5c7c74077f0231268a50565c4af526963a8641c0987407421",
-        "max_iter": 9000
+        "max_iter": 9000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed2_r0",
@@ -138,10 +149,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb3_d10_s2.ini",
         "config_sha256": "975a0c548bf6293dc47f8ae1e461b45161fbd68ad355041fc6aabb521d0d20f3",
-        "max_iter": 9000
+        "max_iter": 9000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed3_r0",
@@ -149,10 +161,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb3_d10_s3.ini",
         "config_sha256": "d61fdacfdd5863d36a7c4866f4db1c13730535bae237bb7bb8f2ee2e1ee4694f",
-        "max_iter": 9000
+        "max_iter": 9000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed4_r0",
@@ -160,10 +173,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb3_d10_s4.ini",
         "config_sha256": "8f22d2652431ad83271c77598e98eeb2bd7f0d27fa14cd4cbbfe88c0ba0f8a27",
-        "max_iter": 9000
+        "max_iter": 9000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed5_r0",
@@ -171,10 +185,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb3_d10_s5.ini",
         "config_sha256": "3f57ea1b6572b1dadd813a8e7cd6cd1ed2b7d3b2e5dfe4bec73d358752edd39b",
-        "max_iter": 9000
+        "max_iter": 9000,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "hjb"
@@ -187,10 +202,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb3_d2000_w2010_s1.ini",
         "config_sha256": "6585cd6408bb214a674216bd43ebfafffb6cbf41b1fa710062a19229b560f4fa",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed2_r0",
@@ -198,10 +214,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb3_d2000_w2010_s2.ini",
         "config_sha256": "0e85d3bba39561818ac73b097cfcb64f0137b66824d0769c281958ca22e8c302",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed3_r0",
@@ -209,10 +226,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb3_d2000_w2010_s3.ini",
         "config_sha256": "e48bb2f737269981c63b910ce5265de26586dc35a281fbc51ecd04586ad7b2d5",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed4_r0",
@@ -220,10 +238,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb3_d2000_w2010_s4.ini",
         "config_sha256": "924aecb1d3b7e658601fb814437bc1c50b049b053a7c68659b5934aa21fab76b",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed5_r0",
@@ -231,10 +250,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb3_d2000_w2010_s5.ini",
         "config_sha256": "5ff1ffca9db56f85689bea0b9e433a5f0ba90dd64f5bf097fcc3e16b4bdb22b6",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "hjb"
@@ -247,10 +267,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb3_d2000_w10010_s1.ini",
         "config_sha256": "1b9bf986b5113927ffea4c1d2bd8ff064bc6b464aa28030025002598cd8008d8",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed2_r0",
@@ -258,10 +279,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb3_d2000_w10010_s2.ini",
         "config_sha256": "41fd578d64c539a07dccd3d53f5109fcd6f9e394dc059abf845970cc74c98d90",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed3_r0",
@@ -269,10 +291,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb3_d2000_w10010_s3.ini",
         "config_sha256": "df74ce273afb6bf8a8d11263016bb0db65df1012b29d6bc00fd796ca6a0f7bf2",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed4_r0",
@@ -280,10 +303,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb3_d2000_w10010_s4.ini",
         "config_sha256": "c06a2a6793ea8b89ae0b464b96af8caf0cc36d668259595029c233c06342acfa",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed5_r0",
@@ -291,10 +315,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 5,
         "gpus": 8,
-        "source": "engines/4d30ed0",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/revision/hjb/hjb3_d2000_w10010_s5.ini",
         "config_sha256": "01eb4f561fa493f5577a7151267c1807c622cc863e8c663220fceffa03c2358d",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "hjb"
@@ -307,10 +332,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_a",
+        "source": "engines/runtime_complex",
         "config": "configs/paper_original/complex_dynamics/seed1_r0.ini",
         "config_sha256": "4285da28cb90bec641f89e3d5b5132b8239ad2ca2978033a1822ef900cced593",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "paper_original/variant_a"
       },
       {
         "id": "seed2_r0",
@@ -318,10 +344,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_a",
+        "source": "engines/runtime_complex",
         "config": "configs/paper_original/complex_dynamics/seed2_r0.ini",
         "config_sha256": "62252756645e8cadc8fe625208384e6c9f283a485bfe1a742bad32a5b324be71",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "paper_original/variant_a"
       },
       {
         "id": "seed3_r0",
@@ -329,10 +356,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_a",
+        "source": "engines/runtime_complex",
         "config": "configs/paper_original/complex_dynamics/seed3_r0.ini",
         "config_sha256": "20a73d0d251af23f408f33e364231b3ba2e021ab298561509efdb4dc7be1fe57",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "paper_original/variant_a"
       },
       {
         "id": "seed4_r0",
@@ -340,10 +368,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_a",
+        "source": "engines/runtime_complex",
         "config": "configs/paper_original/complex_dynamics/seed4_r0.ini",
         "config_sha256": "948a2f965ea6029cad8213373f6f2ba5e79ad74b0bd5ecb09832206d5c56380f",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "paper_original/variant_a"
       },
       {
         "id": "seed5_r0",
@@ -351,10 +380,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_a",
+        "source": "engines/runtime_complex",
         "config": "configs/paper_original/complex_dynamics/seed5_r0.ini",
         "config_sha256": "e0f1cad1a8e55ec5543c18cff76472a3882d3fe7e1c66b35b91752c6ea47afe4",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "paper_original/variant_a"
       }
     ],
     "kind": "complex"
@@ -367,10 +397,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 8,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_comparison",
         "config": "configs/paper_original/compare_df_hjb2/seed0_r0.ini",
         "config_sha256": "5cba1d9a861137b2e20a40b3e8767382837b92241d1c36fc5e0f53f6bfec2205",
-        "max_iter": 10000
+        "max_iter": 10000,
+        "base_source": "paper_original/variant_d"
       },
       {
         "id": "seed2_r0",
@@ -378,10 +409,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 8,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_comparison",
         "config": "configs/paper_original/compare_df_hjb2/seed2_r0.ini",
         "config_sha256": "d0f1965d28d564647806f7036c328c05d166ab0f2276022758bfa8b487571511",
-        "max_iter": 10000
+        "max_iter": 10000,
+        "base_source": "paper_original/variant_d"
       },
       {
         "id": "seed3_r0",
@@ -389,10 +421,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 8,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_comparison",
         "config": "configs/paper_original/compare_df_hjb2/seed3_r0.ini",
         "config_sha256": "78ea288983ae205145a159d563e02dd7bbc1b4b75f8fc756c843d77f6355b9a1",
-        "max_iter": 10000
+        "max_iter": 10000,
+        "base_source": "paper_original/variant_d"
       },
       {
         "id": "seed4_r0",
@@ -400,10 +433,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 8,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_comparison",
         "config": "configs/paper_original/compare_df_hjb2/seed4_r0.ini",
         "config_sha256": "d54e7ec17aa52fbb28fe0c3626e6c7d9c505f0189217733b6d44cda495214634",
-        "max_iter": 10000
+        "max_iter": 10000,
+        "base_source": "paper_original/variant_d"
       },
       {
         "id": "seed5_r0",
@@ -411,10 +445,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 8,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_comparison",
         "config": "configs/paper_original/compare_df_hjb2/seed5_r0.ini",
         "config_sha256": "6d30f9c798ef95aedc06e71bf69a2a4a575909c34292d1eb4307ada0c7b38942",
-        "max_iter": 10000
+        "max_iter": 10000,
+        "base_source": "paper_original/variant_d"
       }
     ],
     "kind": "hjb"
@@ -427,10 +462,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 8,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_comparison",
         "config": "configs/paper_original/compare_df_hjb3/seed0_r0.ini",
         "config_sha256": "c70d2b07eadbd22e688737441f3346a6a92fe592fcaef080401407a74e55f8ac",
-        "max_iter": 13000
+        "max_iter": 13000,
+        "base_source": "paper_original/variant_d"
       },
       {
         "id": "seed2_r0",
@@ -438,10 +474,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 8,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_comparison",
         "config": "configs/paper_original/compare_df_hjb3/seed2_r0.ini",
         "config_sha256": "28156730d4a75f3920bf5f8106e45614a5ed06e304175d7f79b1405ad3819b71",
-        "max_iter": 13000
+        "max_iter": 13000,
+        "base_source": "paper_original/variant_d"
       },
       {
         "id": "seed4_r0",
@@ -449,10 +486,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 8,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_comparison",
         "config": "configs/paper_original/compare_df_hjb3/seed4_r0.ini",
         "config_sha256": "af40aded19d55c90b9814d75b695ae2bcdf94ca34090d480cc089960bdb3a83d",
-        "max_iter": 13000
+        "max_iter": 13000,
+        "base_source": "paper_original/variant_d"
       },
       {
         "id": "seed5_r0",
@@ -460,10 +498,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 8,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_comparison",
         "config": "configs/paper_original/compare_df_hjb3/seed5_r0.ini",
         "config_sha256": "460cb637c3e941ac9be3c8ea49df84877b02d4f9e6920720b92241cddd69f3fe",
-        "max_iter": 13000
+        "max_iter": 13000,
+        "base_source": "paper_original/variant_d"
       },
       {
         "id": "seed3_r0",
@@ -471,10 +510,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 8,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_comparison",
         "config": "configs/paper_original/compare_df_hjb3/seed3_r0.ini",
         "config_sha256": "4b9b37d890379e61b4fe6ff99503dfad7059f2c2db00a6b37de1de6eef342ab0",
-        "max_iter": 13000
+        "max_iter": 13000,
+        "base_source": "paper_original/variant_d"
       }
     ],
     "kind": "hjb"
@@ -487,10 +527,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_c",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/scalar_control/seed1_r0.ini",
         "config_sha256": "7a1acf2b5d2bbbf207cd8b50e4b9c4d4283f350bbd15ae2f8f6b1de56cc8a8ca",
-        "max_iter": 12000
+        "max_iter": 12000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed2_r0",
@@ -498,10 +539,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_c",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/scalar_control/seed2_r0.ini",
         "config_sha256": "eb14737b83c9367ae7ae21d4727bfcb7fc220a123da75655400c3c6300b2cc04",
-        "max_iter": 12000
+        "max_iter": 12000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed3_r0",
@@ -509,10 +551,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_c",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/scalar_control/seed3_r0.ini",
         "config_sha256": "f81832fe01edac2969e97db89f33c5bbab4574c875fd9a0a069103f15d0909bb",
-        "max_iter": 12000
+        "max_iter": 12000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed4_r0",
@@ -520,10 +563,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_c",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/scalar_control/seed4_r0.ini",
         "config_sha256": "30973091af7025af90f6e1002085e06c94e73c28b5732390c51cb48e990210c0",
-        "max_iter": 12000
+        "max_iter": 12000,
+        "base_source": "engines/4d30ed0"
       },
       {
         "id": "seed5_r0",
@@ -531,10 +575,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_c",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/scalar_control/seed5_r0.ini",
         "config_sha256": "f04ac6fb5b1a6f29d29f4612377b15c3072674e8fdfd29c3425f79200c695b6d",
-        "max_iter": 12000
+        "max_iter": 12000,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "k1"
@@ -547,13 +592,65 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_b",
-        "config": "configs/paper_original/eps1/seed1_r0.ini",
-        "config_sha256": "4169fbd27f6349190f3438c1f3ed72eca49ec77c67a9f5236c82deb3b0bc6de5",
-        "max_iter": 6000
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps1_s1.ini",
+        "config_sha256": "2abaa9b1c93402a2daf8abb2587714c5fc8725078e05663a45eb2b50afd562e6",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps1_s2.ini",
+        "config_sha256": "3f750847da1add44784f103594067be96cb454433a7155396d428c18bab42572",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps1_s3.ini",
+        "config_sha256": "9b84c7e46f78b88df10e2b12a54648eaab4128ff4581ee2850919fc61c45b936",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps1_s4.ini",
+        "config_sha256": "1be04df8c668f1cc00a61c18391993cc343e46ff9fc3edac9aecf6eb36b7200c",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps1_s5.ini",
+        "config_sha256": "448b146d2a27afb1488cdb6f0485fa9688a5b53a27aae171119ac4f285e311dd",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
       }
     ],
-    "kind": "eps"
+    "kind": "eps",
+    "archived_history_arms": [
+      "seed1_r0"
+    ]
   },
   "eps0p5": {
     "arms": [
@@ -563,13 +660,65 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_b",
-        "config": "configs/paper_original/eps0p5/seed1_r0.ini",
-        "config_sha256": "c503c6eca2ed538db5f6a773059c9ca84e872dd267f1d727c172f49c50d9ece4",
-        "max_iter": 6000
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0p5_s1.ini",
+        "config_sha256": "9f676033b317700a18ed41416ceb476d59fe4c2582814ada1d8b1ab38ce54934",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0p5_s2.ini",
+        "config_sha256": "92c0a279427c1621a03c41e86836556858d8279f43b2dd3572f6558e8943c1da",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0p5_s3.ini",
+        "config_sha256": "431847cd77baab033e8eed2bb66510b89fff6893c7d3fbe4d58ac137d3e40665",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0p5_s4.ini",
+        "config_sha256": "b51e17594d0354d0e8de7e84ba1f5aa412801d89486163595e11593fce7a6c19",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0p5_s5.ini",
+        "config_sha256": "d9a559c4815290c1958c71c2dea2343b989cbbf7cb9b249e003e378b8f992864",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
       }
     ],
-    "kind": "eps"
+    "kind": "eps",
+    "archived_history_arms": [
+      "seed1_r0"
+    ]
   },
   "eps0p25": {
     "arms": [
@@ -579,13 +728,65 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_b",
-        "config": "configs/paper_original/eps0p25/seed1_r0.ini",
-        "config_sha256": "88d0d3577ceccae113c0b96c43095a6e8806d75eee389a2aacc190dfd3a50aa0",
-        "max_iter": 6000
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0p25_s1.ini",
+        "config_sha256": "37a7f2b0079ab5b01e0266409d831e6faba7265ec19091823ffe09fc982ca47f",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0p25_s2.ini",
+        "config_sha256": "644af74886df4688ca7c3573c6178ce29f28726b7e02769697a32d4d2665b95a",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0p25_s3.ini",
+        "config_sha256": "c2c9187577875aed0bfc5b3faa0a0bf67d9d16c4b110338e2fcca2e420acbacd",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0p25_s4.ini",
+        "config_sha256": "d0d878d108533b76335ff4e414ad57404616feb63598ed3a847ddc7cdb3f7f0b",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0p25_s5.ini",
+        "config_sha256": "9f657fc8047c0e0b4c7dc4c0f8cd77c021354a151c0395a65ce9dd297b8f640b",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
       }
     ],
-    "kind": "eps"
+    "kind": "eps",
+    "archived_history_arms": [
+      "seed1_r0"
+    ]
   },
   "eps0p125": {
     "arms": [
@@ -595,13 +796,65 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_b",
-        "config": "configs/paper_original/eps0p125/seed1_r0.ini",
-        "config_sha256": "490fec7e4152431fdc5e991b63b513afa05ff6b4c7d2635144d1c65ba0aef5b9",
-        "max_iter": 6000
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0p125_s1.ini",
+        "config_sha256": "32f68e8e88361c2326e0ef714221613771929a45d03a18765f036f38a3bd7e2a",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0p125_s2.ini",
+        "config_sha256": "f25a6316961b9e0ea73cc6dfe81b9927f0b3e87c78dba52d0486f4443d17c31e",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0p125_s3.ini",
+        "config_sha256": "5a74f3e96b41654ae7a5adf2bf8819a4e9e2158c5f785402151909d01bd74891",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0p125_s4.ini",
+        "config_sha256": "ba50e02276ee023af37be45a39f52047695dc227167952a69033561ffe5e04f8",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0p125_s5.ini",
+        "config_sha256": "71253beede0d448f330fbd49b6bc4c43417024d4ab71cf143f6b830e5b272bcb",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
       }
     ],
-    "kind": "eps"
+    "kind": "eps",
+    "archived_history_arms": [
+      "seed1_r0"
+    ]
   },
   "eps0": {
     "arms": [
@@ -611,13 +864,65 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_b",
-        "config": "configs/paper_original/eps0/seed1_r0.ini",
-        "config_sha256": "98640c3bae9eccd64b6c657257677b37754a7f134bd033821d36fccbffe31596",
-        "max_iter": 6000
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0_s1.ini",
+        "config_sha256": "9628dc838aac4d2c864cbc4dbca7c83fcd0162df08cdb0fb354fae8811826a14",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed2_r0",
+        "seed": 2,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0_s2.ini",
+        "config_sha256": "1c1df9b579394da0a26a774c6c2fb2891d7fd849d9704f09da4ddf47ea642fd3",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed3_r0",
+        "seed": 3,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0_s3.ini",
+        "config_sha256": "1108b529c1feaa91833f8342e24f05611aeb11ade4e700f8066551988f6c4c68",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed4_r0",
+        "seed": 4,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0_s4.ini",
+        "config_sha256": "76ff97217f81f2979e4753465003f60afa9de9e8ed8b7f7b280aed29de95cc06",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
+      },
+      {
+        "id": "seed5_r0",
+        "seed": 5,
+        "selected_repeat": 0,
+        "original_repeat_time": 1,
+        "gpus": 4,
+        "source": "engines/runtime_4d30ed0",
+        "config": "configs/submitted/epsilon/eps0_s5.ini",
+        "config_sha256": "00c91d2e286fc7412b9fe4b0e5dcba98e278430996238b4771c6a2eb272e21ea",
+        "max_iter": 6000,
+        "base_source": "engines/4d30ed0"
       }
     ],
-    "kind": "eps"
+    "kind": "eps",
+    "archived_history_arms": [
+      "seed1_r0"
+    ]
   },
   "rho_75": {
     "arms": [
@@ -627,10 +932,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_75_s1.ini",
         "config_sha256": "6761f5859d40fdd9c2eb9e7febfbfd577f82c9d26126f9155c34688358e48c90",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed2_r0",
@@ -638,10 +944,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_75_s2.ini",
         "config_sha256": "b69e31d838ee86cc5bdcad3d4667cb67d9aa0bcaa4856f9499aedc40ca474375",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed3_r0",
@@ -649,10 +956,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_75_s3.ini",
         "config_sha256": "f4aabe03ce74150b9f260341cadd360feb137ccfb0250df15ec8cc85e5f435be",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed4_r0",
@@ -660,10 +968,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_75_s4.ini",
         "config_sha256": "bd939962c820348c2c78d14a16f0ef6432df05398087009bb0e04a3cfeed1a52",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed5_r0",
@@ -671,10 +980,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_75_s5.ini",
         "config_sha256": "8e45069ef93a569bba08cfda750ed30719f6b6d06aba05c9a3a06fcbe521ba67",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       }
     ],
     "kind": "complex"
@@ -687,10 +997,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_150_s1.ini",
         "config_sha256": "725625d612ef1a8517f43f8af76ba0688262e1b226493482f30c491b59851ed6",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed2_r0",
@@ -698,10 +1009,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_150_s2.ini",
         "config_sha256": "84f650456219971a983f28a3ca0d53840e1cc1c9f6b5996a5550878d3c58c0e9",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed3_r0",
@@ -709,10 +1021,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_150_s3.ini",
         "config_sha256": "ecb6052f355c9d7035886edf5e40539cd4b380a3a1d31eb98e7708429cd66374",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed4_r0",
@@ -720,10 +1033,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_150_s4.ini",
         "config_sha256": "6cf3ddc16a11af5c589a2ded206295059edfc88d937004fc8c7b8f1bef34a1b1",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed5_r0",
@@ -731,10 +1045,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_150_s5.ini",
         "config_sha256": "66630e27d87ae7b394789782d1b1347456e1f76e320b8385b2b7df59db5219b6",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       }
     ],
     "kind": "complex"
@@ -747,10 +1062,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_300_s1.ini",
         "config_sha256": "fd5d3c4840d28c14caa1626ae1b2c647f35ab4347c55df67bf22216574805816",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed2_r0",
@@ -758,10 +1074,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_300_s2.ini",
         "config_sha256": "ebeaa0a2d16c1175a77919ef3c6e26a6071ef58a2f8fc000b9ef8483408e9614",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed3_r0",
@@ -769,10 +1086,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_300_s3.ini",
         "config_sha256": "64474f3fe5ea7689a281007027ad5fd55520b61f3641588d80b509ee9a31261e",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed4_r0",
@@ -780,10 +1098,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_300_s4.ini",
         "config_sha256": "be44ec88765b8c305589ec4e09892a7826bc6213bd9c9f7592ba45261140e9c5",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed5_r0",
@@ -791,10 +1110,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_300_s5.ini",
         "config_sha256": "dd03391545c2965e9b0eff3663149e6c410941e1a2d4ad5b7ddb675758fc127a",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       }
     ],
     "kind": "complex"
@@ -807,10 +1127,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_600_s1.ini",
         "config_sha256": "177fb7d6d508ee771a089eb8dbba922719c12c97642c198d9caf3a254839b241",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed2_r0",
@@ -818,10 +1139,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_600_s2.ini",
         "config_sha256": "847adfa4149906cba3d46db2a535a8dae96902cc1c1e8f981ce6c6ac8d9b744a",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed3_r0",
@@ -829,10 +1151,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_600_s3.ini",
         "config_sha256": "d732baaa34e390cf0ee3757366fdf1450f4b85b0d01ae604da1d78188a8b328e",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed4_r0",
@@ -840,10 +1163,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_600_s4.ini",
         "config_sha256": "1dcf9b650165c9906549f3d8a807e56b7727b4324be3ca093c3408ff28198198",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed5_r0",
@@ -851,10 +1175,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_600_s5.ini",
         "config_sha256": "03f44e1fdb216f1f4883d625bdd46ac0b7b840bd01e8e27929efe59cd78c6ec8",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       }
     ],
     "kind": "complex"
@@ -867,10 +1192,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_1200_s1.ini",
         "config_sha256": "500b7750256108d9d94b04e0b96464435f93be157c0136284580f525a7ff4567",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed2_r0",
@@ -878,10 +1204,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_1200_s2.ini",
         "config_sha256": "c61c2791d68ee667b909b58b826fa20ee2547a398823d04d83f6b87e53a44ed6",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed3_r0",
@@ -889,10 +1216,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_1200_s3.ini",
         "config_sha256": "fd3bb025eb5bec83186b694103e9d2cdac56abb71fc8781f81cce83d39be763e",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed4_r0",
@@ -900,10 +1228,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_1200_s4.ini",
         "config_sha256": "75adb2eb5e02b4b91e798b799c7df6e0c8a37ac7d57797848510b3c3b70e43d8",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       },
       {
         "id": "seed5_r0",
@@ -911,10 +1240,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "engines/af4a053",
+        "source": "engines/runtime_af4a053",
         "config": "configs/revision/rho/rho_1200_s5.ini",
         "config_sha256": "f13fca59041b6fdeb0cdc142e3c66e7f143c6b493eaa4366b22c8d1a8c24aea8",
-        "max_iter": 6000
+        "max_iter": 6000,
+        "base_source": "engines/af4a053"
       }
     ],
     "kind": "complex"
@@ -927,10 +1257,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_b128_s1.ini",
         "config_sha256": "53840227f6ea51e9e80ed89d21143fa16e0dc7c5c065d0b6b8eb9f4a8ac39d1a",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -943,10 +1274,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_b256_s1.ini",
         "config_sha256": "32b51a43ff6020902f165327621285d52cf481c3b26cfbf65d5f7a34f3a901a9",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -959,10 +1291,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_b32_s1.ini",
         "config_sha256": "482fe888f3be14157409067dc0dca38db881c91c7d76981b09a30d1990800901",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -975,10 +1308,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_b512_s1.ini",
         "config_sha256": "389ed4847693c5fff4da73f25738b5b86e7ce9237b4121cfc0aacad7be17b65c",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -991,10 +1325,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_b64_s1.ini",
         "config_sha256": "bb72d33acfe880d6323b5a1bccd8167679f7307c6716147ce31dc7d1c8609a3f",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -1007,10 +1342,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_d1024_s1.ini",
         "config_sha256": "9456e4c4633687d175435d63e94c24e0a305d097bc5f263b1256a28239e1b70e",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -1023,10 +1359,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_d16384_s1.ini",
         "config_sha256": "f0525ad1c5b1844809e56167e7a60c3b5943101f5ee64ca8832f61ec132cf46b",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -1039,10 +1376,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_d2048_s1.ini",
         "config_sha256": "0e2c34e5ea5a297cbc5845344c1c3ddddf205b594bb0ca3e5c65ce3713ba5943",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -1055,10 +1393,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_d4096_s1.ini",
         "config_sha256": "81d4f634c018dffdaf8cf351ff02cf80c995ffa9805eeb74eb16e413bcb24960",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -1071,10 +1410,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_d8192_s1.ini",
         "config_sha256": "dc4fa12a4b23156ebac18a836c03bad6f104ad0d595fcea4f51c5bbc6b27cfe1",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -1087,10 +1427,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_m1024_s1.ini",
         "config_sha256": "66dd5c7f7c27c7f6a974dc37fe10b6de7e2acce6f576f1bfdd867b5065d3c597",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -1103,10 +1444,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_m16384_s1.ini",
         "config_sha256": "467d386eac5e07d4c01e1fd2c28973b93225525cfbfc9ba1ca0bcf5cdc002cac",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -1119,10 +1461,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_m2048_s1.ini",
         "config_sha256": "0377f476ac0cd4a9f8bf96beaf11bdf5d5fe96800a831a8574c4d19b8743ebe4",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -1135,10 +1478,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_m4096_s1.ini",
         "config_sha256": "6580d5d9a72ff40e1d0974422448560be0a8d4411cad5fa4d35f5933e4ebdec2",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -1151,10 +1495,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_m8192_s1.ini",
         "config_sha256": "325e2c0327bf31d7d04e43d0ef919ec4c5be92239f60630fafc4475bf87b56f0",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -1167,10 +1512,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_n128_s1.ini",
         "config_sha256": "19d8e67fceb153447ec9cef96ac14501300e4eef1acab97af6d7a03d2f6c0846",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -1183,10 +1529,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_n16_s1.ini",
         "config_sha256": "990d3f0a0205492bcb829ba4a69a3f55dc7256f3e0dee3c74b9288418256c9fd",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -1199,10 +1546,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_n32_s1.ini",
         "config_sha256": "058544461959ff20e1aa0b067125b9852df3a27d606e0d0ebab45951aacf2ff4",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -1215,10 +1563,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_n64_s1.ini",
         "config_sha256": "f8d96adc7eb4ed8d32bcb7b4d6d6025305f0691018641ed67bc2443955bf32a0",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"
@@ -1231,10 +1580,11 @@
         "selected_repeat": 0,
         "original_repeat_time": 1,
         "gpus": 4,
-        "source": "paper_original/variant_d",
+        "source": "engines/runtime_4d30ed0",
         "config": "configs/paper_original/performance_sweep/timing_scpx_n8_s1.ini",
         "config_sha256": "814770942b191f295baca09e0caa2d1a086619872fc30cffe1d0a832d96644e8",
-        "max_iter": 200
+        "max_iter": 200,
+        "base_source": "engines/4d30ed0"
       }
     ],
     "kind": "timing"

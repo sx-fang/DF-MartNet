@@ -35,9 +35,10 @@ def generate(run,keys,cases,group,data):
         decorate(ax,'s','signed point error' if error else 'Value');ax.legend(fontsize=7)
     def merged(ax,key):
         rs=[r for r in data[key]['profiles'] if r['curve']=='diag'];s=arr(rs,'s');m=arr(rs,'v_mean');sd=arr(rs,'v_sd')
-        true=data[key]['true'];st=arr(true,'s');mask=np.abs(st)<=1.5+1e-12
-        ax.plot(st[mask],arr(true,'v0')[mask],'k-',lw=1.4,label='wide reference at t=0')
-        ax.plot(st[mask],arr(true,'vT')[mask],'k--',lw=1.4,label='wide reference at t=T')
+        true=data[key]['true']
+        for name,style,label in [('t0','k-','wide reference at t=0'),('terminal','k--','wide reference at t=T')]:
+            st=arr(true[name],'s');mask=np.abs(st)<=1.5+1e-12
+            ax.plot(st[mask],arr(true[name],'value')[mask],style,lw=1.4,label=label)
         ax.plot(s,m,'o',color='red',ms=2.4,label='prediction at t=0')
         ax.fill_between(s,m-2*sd,m+2*sd,color='#ffcccc',alpha=.8,lw=0)
         ax.set_xlim(-1.5,1.5);decorate(ax,'s','Value');ax.legend(fontsize=7,loc='lower left')
@@ -105,10 +106,16 @@ def generate(run,keys,cases,group,data):
         fig,ax=plt.subplots(figsize=(7,4.7))
         for key,c,eps in zip(keys,['#1f77b4','#ff7f0e','#2ca02c','#d62728','#9467bd'],[1,.5,.25,.125,0]):
             rs=data[key]['cost'];s=arr(rs,'s');v=arr(rs,'v_pred');j=arr(rs,'jhat');ax.plot(s,v,color=c,label='epsilon='+str(eps))
-            # Original markers are order-preserving sampled coordinates; every
-            # point and its independent MC SE remain in the underlying CSV.
+            v_sd=arr(rs,'v_sd');j_sd=arr(rs,'jhat_sd')
+            if not np.isfinite(v_sd).all() or not np.isfinite(j_sd).all():
+                raise ValueError('Figure 9 requires the five-run sample SD at every coordinate')
+            ax.fill_between(s,v-2*v_sd,v+2*v_sd,color=c,alpha=.18,lw=0)
+            # The 21 displayed cost coordinates retain the paper's ordering;
+            # the error bars are across-run SD, never conditional MC SE.
             idx=np.unique(np.concatenate((np.arange(0,len(s),5),[len(s)-1])))
-            ax.plot(s[idx],j[idx],'o',color=c,ms=3,mfc='none')
+            ax.errorbar(s[idx],j[idx],yerr=2*j_sd[idx],fmt='o',color=c,ms=3,mfc='none',capsize=2,lw=.8)
+            if key=='eps0' and all(r.get('v_ref') not in ('',None) for r in rs):
+                ax.plot(s,arr(rs,'v_ref'),'k--',lw=1.2)
         decorate(ax,'s','Value / policy cost');ax.legend(fontsize=8);save(fig,'figure9_epsilon_sweep')
         fig,ax=plt.subplots(figsize=(7,4))
         for key in keys:

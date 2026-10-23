@@ -64,19 +64,39 @@
       "seed5_r0"
     ],
     "eps1": [
-      "seed1_r0"
+      "seed1_r0",
+      "seed2_r0",
+      "seed3_r0",
+      "seed4_r0",
+      "seed5_r0"
     ],
     "eps0p5": [
-      "seed1_r0"
+      "seed1_r0",
+      "seed2_r0",
+      "seed3_r0",
+      "seed4_r0",
+      "seed5_r0"
     ],
     "eps0p25": [
-      "seed1_r0"
+      "seed1_r0",
+      "seed2_r0",
+      "seed3_r0",
+      "seed4_r0",
+      "seed5_r0"
     ],
     "eps0p125": [
-      "seed1_r0"
+      "seed1_r0",
+      "seed2_r0",
+      "seed3_r0",
+      "seed4_r0",
+      "seed5_r0"
     ],
     "eps0": [
-      "seed1_r0"
+      "seed1_r0",
+      "seed2_r0",
+      "seed3_r0",
+      "seed4_r0",
+      "seed5_r0"
     ],
     "rho_75": [
       "seed1_r0",
@@ -112,6 +132,80 @@
       "seed3_r0",
       "seed4_r0",
       "seed5_r0"
+    ],
+    "timing_scpx_b128_s1": [
+      "timing_scpx_b128_s1"
+    ],
+    "timing_scpx_b256_s1": [
+      "timing_scpx_b256_s1"
+    ],
+    "timing_scpx_b32_s1": [
+      "timing_scpx_b32_s1"
+    ],
+    "timing_scpx_b512_s1": [
+      "timing_scpx_b512_s1"
+    ],
+    "timing_scpx_b64_s1": [
+      "timing_scpx_b64_s1"
+    ],
+    "timing_scpx_d1024_s1": [
+      "timing_scpx_d1024_s1"
+    ],
+    "timing_scpx_d16384_s1": [
+      "timing_scpx_d16384_s1"
+    ],
+    "timing_scpx_d2048_s1": [
+      "timing_scpx_d2048_s1"
+    ],
+    "timing_scpx_d4096_s1": [
+      "timing_scpx_d4096_s1"
+    ],
+    "timing_scpx_d8192_s1": [
+      "timing_scpx_d8192_s1"
+    ],
+    "timing_scpx_m1024_s1": [
+      "timing_scpx_m1024_s1"
+    ],
+    "timing_scpx_m16384_s1": [
+      "timing_scpx_m16384_s1"
+    ],
+    "timing_scpx_m2048_s1": [
+      "timing_scpx_m2048_s1"
+    ],
+    "timing_scpx_m4096_s1": [
+      "timing_scpx_m4096_s1"
+    ],
+    "timing_scpx_m8192_s1": [
+      "timing_scpx_m8192_s1"
+    ],
+    "timing_scpx_n128_s1": [
+      "timing_scpx_n128_s1"
+    ],
+    "timing_scpx_n16_s1": [
+      "timing_scpx_n16_s1"
+    ],
+    "timing_scpx_n32_s1": [
+      "timing_scpx_n32_s1"
+    ],
+    "timing_scpx_n64_s1": [
+      "timing_scpx_n64_s1"
+    ],
+    "timing_scpx_n8_s1": [
+      "timing_scpx_n8_s1"
+    ],
+    "compare_official_hjb2": [
+      "seed0_r0",
+      "seed1_r0",
+      "seed2_r0",
+      "seed3_r0",
+      "seed4_r0"
+    ],
+    "compare_official_hjb3": [
+      "seed0_r0",
+      "seed1_r0",
+      "seed2_r0",
+      "seed3_r0",
+      "seed4_r0"
     ]
   },
   "native_final_records": [
@@ -908,5 +1002,22 @@
       "history_available": true,
       "arm": "seed5_r0"
     }
-  ]
+  ],
+  "archived_history_subsets": {
+    "eps1": [
+      "seed1_r0"
+    ],
+    "eps0p5": [
+      "seed1_r0"
+    ],
+    "eps0p25": [
+      "seed1_r0"
+    ],
+    "eps0p125": [
+      "seed1_r0"
+    ],
+    "eps0": [
+      "seed1_r0"
+    ]
+  }
 }

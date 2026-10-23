@@ -83,17 +83,23 @@ def path_archived(key, case, figure_dir):
     path=ROOT/'data/archived'/key/'path_predictions.npz'
     metrics=[];layers=[]
     with np.load(path,allow_pickle=False) as z:
-        ref=z['v_star'];pred=z['v_hat_all'];times=z['t_all'];levels=z['level_of']
-        if ref.shape!=(4096,) or pred.shape[1:]!=(4096,) or not np.isfinite(pred).all() or not np.isfinite(ref).all():raise ValueError('Invalid shared path arrays')
-        for tag,p in zip(z['arms'],pred):
-            seed=int(str(tag).removeprefix('s'))
-            arm=next(a for a in case['arms'] if a['seed']==seed)
-            metrics.append({'arm':arm['id'],'seed':seed,'re_path':float(np.abs(p-ref).sum()/np.abs(ref).sum()),'n_states':4096})
-            for k in range(32):
+        ref=z['v_star'];pred=z['v_hat_all'];levels=z['level_of']
+        protocol=json_read(ROOT/'data/archived/path_protocol.json')[key]
+        arms=case['arms'];n_paths=protocol['n_paths'];n_levels=protocol['n_levels']
+        if [a['id'] for a in arms]!=protocol['arms'] or sha256(path)!=protocol['array_sha256']:
+            raise ValueError('Path run order or saved-array identity differs from its protocol')
+        shape=(len(arms),n_paths*n_levels)
+        if ref.shape!=shape or pred.shape!=shape or levels.shape!=(shape[1],) or not np.isfinite(pred).all() or not np.isfinite(ref).all():
+            raise ValueError('Invalid per-run deployment-path arrays')
+        for arm,p,truth in zip(arms,pred,ref):
+            seed=arm['seed'];denom=np.abs(truth).sum()
+            if denom<=0:raise ValueError('Undefined relative path error with a zero reference norm')
+            metrics.append({'arm':arm['id'],'seed':seed,'re_path':float(np.abs(p-truth).sum()/denom),'n_states':shape[1]})
+            for k in range(n_levels):
                 mask=levels==k
-                if mask.sum()!=128:raise ValueError('Incorrect path time-layer count')
-                layers.append({'arm':arm['id'],'seed':seed,'layer':k,'t':float(times[mask][0]),'n':128,
-                               're_v':float(np.abs(p[mask]-ref[mask]).sum()/np.abs(ref[mask]).sum())})
+                if mask.sum()!=n_paths:raise ValueError('Incorrect path time-layer count')
+                layers.append({'arm':arm['id'],'seed':seed,'layer':k,'t':k*protocol['dt'],'n':n_paths,
+                               're_v':float(np.abs(p[mask]-truth[mask]).sum()/np.abs(truth[mask]).sum())})
     write_csv(figure_dir/(key+'_path_layers.csv'),layers)
     return metrics
 
@@ -114,6 +120,33 @@ def qq_quantiles(files, destination):
         idx=np.unique(np.concatenate(([0],np.arange(stride,n-1,stride),[n-1])))
         write_csv(destination/('scalar_qq_'+pref+'.csv'),[{'index':int(i),'n_pooled':n,'q_reference':float(t[i]),'q_prediction':float(p[i])} for i in idx])
     return stats
+
+def epsilon_profile_stats(samples, arm_ids):
+    """Across-run mean/sample SD; never substitute conditional MC uncertainty."""
+    if len(arm_ids)!=5 or len(set(arm_ids))!=5:
+        raise ValueError('The submitted epsilon profiles require five distinct prescribed runs')
+    grouped={arm:{} for arm in arm_ids}
+    for row in samples:
+        if row['arm'] not in grouped:raise ValueError('Unexpected epsilon profile run')
+        s=float(row['s'])
+        if not finite(s) or s in grouped[row['arm']]:raise ValueError('Duplicate/nonfinite epsilon profile coordinate')
+        if not finite(row.get('v_pred')) or not finite(row.get('jhat')):
+            raise ValueError('Missing/nonfinite epsilon profile prediction or policy cost')
+        grouped[row['arm']][s]=row
+    coordinates=sorted(grouped[arm_ids[0]])
+    if len(coordinates)!=101 or any(sorted(grouped[a])!=coordinates for a in arm_ids):
+        raise ValueError('All five epsilon profiles must cover the same 101 coordinates')
+    result=[]
+    for s in coordinates:
+        rows=[grouped[a][s] for a in arm_ids]
+        v=summary([r['v_pred'] for r in rows]);j=summary([r['jhat'] for r in rows])
+        row={'s':s,'v_pred':v['mean'],'v_sd':v['sample_sd'],'jhat':j['mean'],
+             'jhat_sd':j['sample_sd'],'gap':j['mean']-v['mean'],'n':5,'ddof':1}
+        if all(finite(r.get('v_ref')) for r in rows):row['v_ref']=statistics.mean(float(r['v_ref']) for r in rows)
+        mc=[float(r['jhat_se']) for r in rows if finite(r.get('jhat_se'))]
+        if mc:row['conditional_mc_se_max']=max(mc)
+        result.append(row)
+    return result
 
 def compare_band(histories, official=False):
     import numpy as np
@@ -137,7 +170,6 @@ def compare_band(histories, official=False):
 def _collect(run, keys, cases, group, version, archived):
     tables=run/'tables';figures=run/'figures';tables.mkdir(exist_ok=True);figures.mkdir(exist_ok=True)
     per_seed=[];summaries=[];histories={};data={};notes=[]
-    saved_origin=[]
     saved_timing={r['arm']:r for r in read_csv(ROOT/'data/archived/performance_sweep/timing.csv')} if archived and group=='performance_sweep' else {}
     def metric(key,name,values,definition,expected=None):
         if not values:return
@@ -145,7 +177,11 @@ def _collect(run, keys, cases, group, version, archived):
         summaries.append(dict(case=key,metric=name,**st,expected_n=expected or st['n'],definition=definition))
     for key in keys:
         case=cases[key];kind=case['kind'];rs_all=[];seed_rows=[]
-        for arm in case['arms']:
+        selected=case['arms']
+        if archived and 'archived_history_arms' in case:
+            selected=[a for a in selected if a['id'] in case['archived_history_arms']]
+            notes.append(key+': saved training histories cover '+str(len(selected))+' runs; policy-cost profiles use all five saved runs.')
+        for arm in selected:
             if archived:
                 path=ROOT/'data/archived'/('performance_sweep' if kind=='timing' else key)/(arm['id']+'_history.csv')
             else:
@@ -166,7 +202,7 @@ def _collect(run, keys, cases, group, version, archived):
                 if finite(last.get(col)):item[col]=float(last[col])
             if not archived:
                 record=json_read(run/'cases'/key/arm['id']/'training_record.json')
-                item['actual_jobid']=record.get('jobid');item['gpu']=record.get('gpu','see resource_check.log');item['world_size']=arm['gpus']
+                item['actual_jobid']=record.get('jobid');item['gpu']=record.get('gpu','see resource_check.log');item['world_size']=record['world_size']
                 item['actual_host']=record.get('host');item['actual_server']=json_read(run/'slurm_job.json')['server'] if (run/'slurm_job.json').is_file() else record.get('host')
                 item['weight_export_seconds']=record.get('weight_export_seconds')
             seed_rows.append(item)
@@ -183,9 +219,8 @@ def _collect(run, keys, cases, group, version, archived):
                 row=next(r for r in seed_rows if r['arm']==p['arm'])
                 for col in ['re_path','re_t0_s0s1','jhat_origin_fp32','jhat_mc_sd','jhat_mc_se','rc_signed_fp32']:
                     if finite(p.get(col)):row[col]=float(p[col])
-            expected_path=4 if archived and key in ('hjb2_d10000','hjb3_d2000_w2010') else 4 if version=='paper_original' and key in ('hjb2_d10000','hjb3_d2000_w2010') else len(case['arms'])
+            expected_path=len(case['arms'])
             if sum('re_path' in r for r in seed_rows)!=expected_path:raise ValueError('Incomplete prescribed path pool')
-            if expected_path==4:notes.append(key+': Native table metrics n=5; archived path metrics n=4, guided by seed2.')
             if not archived:
                 layers=[]
                 for arm in case['arms']:
@@ -200,26 +235,27 @@ def _collect(run, keys, cases, group, version, archived):
                 for pref in ['u','v']:shutil.copyfile(ROOT/f'data/archived/scalar_control/qq_{pref}.csv',figures/f'scalar_qq_{pref}.csv')
                 vals=read_csv(ROOT/'data/archived/scalar_control/qq_perseed.csv')
                 for row in seed_rows:
-                    v=next(v for v in vals if int(v['seed'])==row['seed']);row.update(re_path=float(v['re_v_path']),re_u_path=float(v['re_u_path']))
+                    v=next(v for v in vals if int(v['seed'])==row['seed'])
+                    row.update(re_path=row['rel_l1err_ualoop'],re_u_path=row['rel_l1err_u_ualoop'],
+                               re_v_qq_interior=float(v['re_v_path']),re_u_qq_interior=float(v['re_u_path']))
             else:
                 vals=qq_quantiles([(a['id'],run/'cases'/key/'evaluation'/(a['id']+'_qq.npz')) for a in case['arms']],figures)
+                full_path=read_csv(run/'cases'/key/'evaluation/per_seed_eval.csv')
                 for row in seed_rows:
-                    v=next(v for v in vals if v['arm']==row['arm']);row.update(re_path=v['re_v_path'],re_u_path=v['re_u_path'])
+                    v=next(v for v in vals if v['arm']==row['arm'])
+                    complete=next(v for v in full_path if v['arm']==row['arm'])
+                    row.update(re_path=float(complete['re_path']),re_u_path=float(complete['re_u_path']),
+                               re_v_qq_interior=v['re_v_path'],re_u_qq_interior=v['re_u_path'])
         elif not archived and kind in ('complex','eps'):
             vals=read_csv(run/'cases'/key/'evaluation/per_seed_eval.csv')
             for row in seed_rows:
                 v=next(v for v in vals if v['arm']==row['arm'])
                 for col in ['re_t0_s0s1','jhat_origin_fp32','jhat_mc_se','rc_signed_fp32']:
                     if finite(v.get(col)):row[col]=float(v[col])
-        if archived and key.startswith('rho_'):
-            for row in seed_rows:
-                v=next(v for v in saved_origin if v['case']==key and v['arm']==row['arm'])
-                for col in ['rc_signed_fp32','jhat_origin_fp32','jhat_group_mc_se','v_reference_origin','M_cost','groups']:
-                    row[col]=float(v[col])
         for name in ['re_native','rc_abs','re_path','re_u_path','rt_solve','rt_log','rt_total','rt','re_t0_s0s1','jhat_origin_fp32','rc_signed_fp32']:
             values=[r[name] for r in seed_rows if name in r]
             definition={'re_native':'final native logger RE; see grid definition in docs/metrics.md',
-                        're_path':'pooled L1 over fixed deployment states; sample SD across available prescribed arms',
+                        're_path':'pooled L1 over each run own learned-policy deployment states; sample SD across prescribed arms',
                         'rc_abs':'absolute native final signed RC; native denominator may be signed',
                         'rc_signed_fp32':'publication diagnostic (Jhat - Vref)/abs(Vref)',
                         'rt_solve':'native cumulative solver seconds, excluding rt_log',
@@ -227,7 +263,7 @@ def _collect(run, keys, cases, group, version, archived):
                         'rt':'official native in-loop clock; reference precomputation excluded'}.get(name,name)
             if key.startswith('eps') and key!='eps0' and name=='re_native':definition='final difference to epsilon=0 reference; not perturbed true RE'
             if key.startswith('eps') and key!='eps0' and name=='rc_signed_fp32':definition='relative policy-cost gap to epsilon=0 Vref; not perturbed true RC'
-            metric(key,name,values,definition,len(case['arms']))
+            metric(key,name,values,definition,len(selected))
         per_seed+=seed_rows
         for field in ['rel_l1err','rc','rel_l1err_ualoop','rel_l1err_u_ualoop']:
             band=aggregates(rs_all,field,absolute=field=='rc' and key!='scalar_control')
@@ -237,22 +273,27 @@ def _collect(run, keys, cases, group, version, archived):
             data[key]={'comparison':band};continue
         if key.startswith('rho_'):continue
         if key.startswith('eps'):
-            tag=EPS[key]
-            if archived:cost=read_csv(ROOT/'data/archived/epsilon_sweep'/('cost_'+tag+'.csv'))
-            else:cost=read_csv(run/'cases'/key/'evaluation'/(case['arms'][0]['id']+'_eps_cost.csv'))
+            if archived:
+                samples=[r for r in read_csv(ROOT/'data/archived/epsilon_sweep/per_seed_profiles.csv') if r['case']==key]
+            else:
+                samples=[dict(r,case=key,arm=a['id'],training_seed=a['seed']) for a in case['arms']
+                         for r in read_csv(run/'cases'/key/'evaluation'/(a['id']+'_eps_cost.csv'))]
+            cost=epsilon_profile_stats(samples,[a['id'] for a in case['arms']])
+            write_csv(figures/(key+'_cost_profile_per_seed.csv'),samples)
             write_csv(figures/(key+'_cost_profile.csv'),cost);data[key]={'cost':cost};continue
         files=[ROOT/'data/archived'/key/(a['id']+'_profile.csv') if archived else run/'cases'/key/a['id']/'training/selected_r0_resonline_data.csv' for a in case['arms']]
         profiles=profile_rows(files,ddof=0 if archived and key=='complex_dynamics' else 1)
         write_csv(figures/(key+'_profiles.csv'),profiles);data[key]={'profiles':profiles}
         if key in HJB[:3]:
             if archived:
-                label={'hjb1_d10000':'hjb1','hjb2_d10000':'hjb3a','hjb3_d10000':'hjb3b'}[key]
-                true=[{'s':r['s'],'v0':r[label+'_v0'],'vT':r[label+'_vT']} for r in read_csv(ROOT/'data/archived/hjb_table/true_profiles.csv')]
+                true={name:read_csv(ROOT/'data/archived/hjb_table'/(key+'_'+name+'.csv')) for name in ['t0','terminal']}
             else:
                 import numpy as np
                 with np.load(run/'cases'/key/'evaluation/profiles.npz',allow_pickle=False) as z:
-                    true=[dict(s=float(s),v0=float(v),vT=float(t)) for s,v,t in zip(z['s_true_wide'],z['v_true_wide'],z['v_terminal_wide'])]
-            write_csv(figures/(key+'_true_profile.csv'),true);data[key]['true']=true
+                    true={'t0':[dict(s=float(s),value=float(v)) for s,v in zip(z['s_true_wide'],z['v_true_wide'])],
+                          'terminal':[dict(s=float(s),value=float(v)) for s,v in zip(z['s_terminal_wide'],z['v_terminal_wide'])]}
+            for name,points in true.items():write_csv(figures/(key+'_'+name+'_reference.csv'),points)
+            data[key]['true']=true
     if any(cases[k]['kind']=='timing' for k in keys):
         for r in data['timing']:
             r.update(clock='delta rt_solve at it=51..200; 50 warm-up intervals',hardware='4 x A100 (historical)' if archived else 'see raw/resource_check.log',dtype='float32 + native bf16 autocast',repeat=1)
@@ -263,8 +304,8 @@ def _collect(run, keys, cases, group, version, archived):
         perf={int(r['r']):r for r in read_csv(ROOT/'data/archived/rho_sweep/final_runs.csv') if r['dim']=='scpx10k'}
         for key in keys:
             r=int(key.removeprefix('rho_'));re=next(x for x in summaries if x['case']==key and x['metric']=='re_native')
-            cost=[abs(x['rc_signed_fp32']) for x in per_seed if x['case']==key];st=summary(cost)
-            if st['n']!=len(cases[key]['arms']):raise ValueError('Missing prescribed origin-cost evaluation')
+            cost=[x['rc_abs'] for x in per_seed if x['case']==key];st=summary(cost)
+            if st['n']!=len(cases[key]['arms']):raise ValueError('Missing prescribed native final cost evaluation')
             rc_mean=st['mean'];rc_sd=st['sample_sd']
             if archived:
                 rt=float(perf[r]['mean_rt_solve']);mem=float(perf[r]['mean_peak_mem_mb'])
@@ -276,8 +317,6 @@ def _collect(run, keys, cases, group, version, archived):
                     peaks.append(max(float(row[memcol]) for row in h if finite(row.get(memcol))))
                 mem=statistics.mean(peaks)
             rho.append({'r':r,'re_mean':re['mean'],'re_sd':re['sample_sd'],'rc_mean':rc_mean,'rc_sd':rc_sd,'mean_rt_solve':rt,'mean_peak_mem_mb':mem,'n':5})
-        if archived:
-                    notes.append('Origin RC recomputed from full-precision saved group means, M=4096, eight groups. jhat_group_mc_se is the original across-group SE; it is separate from seed SD and fresh centred per-path SE.')
         write_csv(tables/'rho_sweep.csv',rho);write_csv(figures/'rho_sweep.csv',rho);data['rho']=rho
     write_csv(tables/'per_seed.csv',per_seed);write_csv(tables/'summary.csv',summaries)
     table=[]
@@ -287,19 +326,19 @@ def _collect(run, keys, cases, group, version, archived):
         cfg=configparser.ConfigParser(interpolation=configparser.ExtendedInterpolation());cfg.read(ROOT/cases[key]['arms'][0]['config'])
         row={'case':key,'d':cfg.getint('Example','dim_x')-1,'width_v':expression(cfg.get('Network','width_v')),'hidden_v':cfg.getint('Network','num_hidden_v')}
         for name in ['re_native','re_path','rc_abs']:row.update({name:st(name).get('mean'),name+'_sd':st(name).get('sample_sd'),name+'_n':st(name).get('n')})
-        row['rt_solve_median']=st('rt_solve').get('median');row['rt_solve_MAD']=st('rt_solve').get('mad');table.append(row)
+        row['rt_solve_mean']=st('rt_solve').get('mean');row['rt_solve_median']=st('rt_solve').get('median');row['rt_solve_MAD']=st('rt_solve').get('mad');table.append(row)
     if table:
         write_csv(tables/'table1.csv',table)
         tex=[]
         for r in table:
             def pair(n):return '--' if r[n] is None else f"{r[n]:.3e} ({r[n+'_sd']:.2e}; n={r[n+'_n']})" if r[n+'_sd'] is not None else f"{r[n]:.3e} (n=1)"
-            tex.append(r['case'].replace('_',r'\_')+' & '+str(r['d'])+' & '+pair('re_native')+' & '+pair('re_path')+' & '+pair('rc_abs')+' & '+f"{r['rt_solve_median']:.0f}"+r' \\')
+            tex.append(r['case'].replace('_',r'\_')+' & '+str(r['d'])+' & '+pair('re_native')+' & '+pair('re_path')+' & '+pair('rc_abs')+' & '+f"{r['rt_solve_mean']:.0f}"+r' \\')
         (tables/'table1_rows.tex').write_text('\n'.join(tex)+'\n',encoding='utf-8')
     from .plots import generate
     generate(run,keys,cases,group,data)
     notes+=['Final iteration metrics only; no oracle best or replacement seeds.',
             'Iteration curves use unsmoothed saved samples. Comparison curves retain the historical time interpolation and median-speed normalisation.',
-            'Single epsilon arms are separate parameter choices; each records its own sample count.']
+            'Every epsilon profile aggregates the five prescribed independent runs; seed SD is distinct from conditional Monte Carlo SE.']
     if archived:notes.append('Archived mode: tables and figures regenerated from the bundled saved data.')
     else:notes.append('Full mode: tables and figures use the current run\'s final measurements and recorded hardware.')
     figures_index=sorted(p.name for p in figures.glob('*.pdf'))

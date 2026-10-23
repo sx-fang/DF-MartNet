@@ -3,9 +3,9 @@ message: "Please cite the paper when using this research code."
 type: software
 title: "DF-MartNet: paper reproduction package"
 abstract: "Numerical reproduction of the manuscript snapshot dated October 19, 2026, bundled as docs/paper.pdf. The arXiv link identifies the earlier public preprint."
-version: "0.2.0-rc1"
+version: "0.2.0-rc2"
 license: MIT
-date-released: "2026-10-19"
+date-released: "2026-10-23"
 repository-code: "https://github.com/sx-fang/DF-MartNet"
 authors:
   - family-names: Cai

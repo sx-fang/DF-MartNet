@@ -1,6 +1,6 @@
 # Environment and resources
 
-The paper reports Python 3.12, PyTorch 2.5.1 and A100-SXM4-80GB GPUs.
+The paper reports Python 3.12, PyTorch 2.11 and A100-SXM4-80GB GPUs.
 Use a Linux CUDA compute node with the GPU allocation specified for each run
 in `paper_manifest.csv`.
 
@@ -14,6 +14,10 @@ Numerical execution uses distributed CUDA, autocast and dense neural networks.
 The complete configurations and iteration counts are supplied in the package;
 CPU execution is disabled. Group entries execute serial stages in one allocation.
 Independent examples can be scheduled in separate allocations.
+The separate `tests/compute_regressions.py` script permits synthetic CPU/Gloo
+regressions on a declared dedicated Linux compute node. It does not run a
+paper configuration. Its recorded validation used Python 3.12.14 and PyTorch
+2.14.0 on CPU; this does not establish full CUDA or paper-version equivalence.
 
 Bundled-data mode uses NumPy and Matplotlib. Numerical executors also use
 Pandas, SciPy, psutil and PyTorch. The reference comparison uses its included

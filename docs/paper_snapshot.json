@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "snapshot_date": "2026-10-19",
-  "package_version": "0.2.0-rc1",
+  "package_version": "0.2.0-rc2",
   "file": "docs/paper.pdf",
   "bytes": 1864262,
   "sha256": "97a48ed973b0a6eaa2d5e6dd699e5dfab24ac3ca97ef26ca39a5c54fb5937f7b",

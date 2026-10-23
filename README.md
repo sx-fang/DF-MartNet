@@ -11,21 +11,26 @@ October 19, 2026. The [arXiv preprint](https://arxiv.org/abs/2408.14395) is the
 earlier public version. The manuscript's date, file hash and package version
 are recorded in [snapshot metadata](docs/paper_snapshot.json).
 
-**Version: 0.2.0-rc1.** DF-MartNet code, the bundled SOC-MartNet reference
+**Version: 0.2.0-rc2.** DF-MartNet code, the bundled SOC-MartNet reference
 implementations, documentation and curated data use the [MIT licence](LICENSE);
 see [licence scope](LICENSE_STATUS.md).
 The manuscript PDF and its figures have separate copyright and are excluded
 from the package's MIT licence.
 
-The default source choice, `paper_original`, uses the supplied source snapshots
-and experiment configurations for paper reproduction. Run outputs record the
-bundled-data mode uses the paper's saved numerical data.
+The `paper_original` protocol uses the submitted runs' configurations and
+source families. Full execution uses the repaired runtime copies listed in
+[`ENGINE_PINS.csv`](ENGINE_PINS.csv); their original snapshots remain unchanged.
+Run outputs record both identities. Archived mode uses the paper's saved data.
+See [validation and repair scope](docs/validation.md) for the checks performed
+and the remaining limits of from-scratch reproduction.
 
 ## Raw data asset
 
 The native training logs behind Table 1, Figures 2-3 and Figure 6, together
 with the five epsilon evaluation tables, ship as a single `raw-data.tar.gz`
-release asset (25.3 MB). `data/RAW_MANIFEST.json` lists every member with its
+release asset (25.3 MB), available from the
+[v0.2.0-rc1 release](https://github.com/sx-fang/DF-MartNet/releases/download/v0.2.0-rc1/raw-data.tar.gz).
+`data/RAW_MANIFEST.json` lists every member with its
 size and SHA-256, together with the archive SHA-256; verify them before
 unpacking.
 
@@ -98,12 +103,12 @@ required.
 | `rho_sweep/run.py` | Figure 6; five dimensions of the test network | 4 |
 | `performance_sweep/run.py` | Figure 7; 20 short timing configurations | 4 |
 | `scalar_control/run.py` | Figure 8; value/control path metrics and QQ | 4 |
-| `epsilon_sweep/run.py` | Figure 9; one seed per epsilon | 4 |
+| `epsilon_sweep/run.py` | Figure 9; five seeds per epsilon | 4 |
 
 The seeds, selected repeats, world sizes, configuration
 hashes, source variants and public sample identities are in
-[`paper_manifest.csv`](paper_manifest.csv). HJB-3 uses the supplied
-seed pool 1, 2, 3, 5, 6. Official comparison seeds are 0–4. The manifest gives
+[`paper_manifest.csv`](paper_manifest.csv). The five HJB cohorts and each
+epsilon use seeds 1–5. Official comparison seeds are 0–4. The manifest gives
 the GPU allocation for each individual run. Selected runs are retained in the
 output tables and figures.
 
@@ -167,7 +172,7 @@ percentage, RE/RC fields store ratios: multiply by 100 to display percent.
 | `max_iter`; native `it`, exported `final_it` | $I$; iteration index $i$ | `it=0` is recorded after the first optimisation cycle. The preserved code runs labels `0..max_iter`, hence `max_iter+1` cycles; the label must not be read as the completed-cycle count. |
 | `[Optimizer] lr0_v`, `lr0_u`, `lr0_rho` | Initial $\delta_0$, $\delta_1$, $\delta_2$ in Algorithm 1 | Initial learning rates for $v_\theta,u_\alpha,\rho_\eta$, respectively. Algorithm 1's $\delta_0$ differs from the dimension-dependent prefactor also called $\delta_0$ in the parameter-settings paragraph. |
 | `decay_stepgap`, `decay_rate` | Iteration-dependent learning-rate decay | Discrete scheduler interval and multiplier implementing the decay; consult the actual INI rather than assuming continuous decay at every cycle. |
-| `[Example] M_rc`; diagnostic `M_cost`, cost-profile `M` | $M_{\mathrm{test}}$ for $\hat J$ | Number of policy-cost Monte Carlo paths per starting point. Distinct from the retained training paths $M$. |
+| `[Reproduction] global_cost_paths`; diagnostic `M_cost`, cost-profile `M` | $M_{\mathrm{test}}$ for $\hat J$ | Global policy-cost paths per starting point: 32768 for Table 1 HJB, 4096 for the other reported examples. Historical `Example.M_rc` is retained in the input INI; the portable runtime binds its global meaning explicitly. Distinct from the retained training paths $M$. |
 | Evaluation `n_paths`; archived path identifiers | $M_{\mathrm{test}}$ for path RE | Number of deployment paths. HJB/complex path-value tests use 128, whereas the scalar-control test uses 4096; this need not equal the cost-path count. |
 | `[Example] M_mc`; reference metadata `M_mc` | Reference Monte Carlo sample size | Reference-solution budget, distinct from both training $M$ and deployment $M_{\mathrm{test}}$. |
 | `problem.eps`; epsilon-case `name` | $\epsilon$ | Perturbation parameter selected by the problem class: `CoupledDriftS0`, `CoupledDriftEps2S0`, `CoupledDriftEps4S0`, `CoupledDriftEps8S0`, `CoupledDriftEps0S0` give $1,1/2,1/4,1/8,0$. |
@@ -188,7 +193,7 @@ percentage, RE/RC fields store ratios: multiply by 100 to display percent.
 | `jhat_mc_sd`, `jhat_std`; `jhat_mc_se`, `jhat_se`, `band2se` | Cost-sample SD; Monte Carlo SE | Fresh SE is centred sample SD divided by the square root of the cost-path count; `band2se` is twice that SE. Historical `jhat_group_mc_se` uses saved group means and is named separately. |
 | Summary `mean`, `sample_sd`; Table 1 `*_sd`; profile/history `sd`, `ddof` | Mean and SD across the selected runs | Metric sample SD uses `ddof=1`; one run has no cross-seed SD. Historical complex-profile bands use the recorded `ddof=0`. These SDs are distinct from Monte Carlo SE. |
 | `seed`, `repeat`, `arm`; summary `n`, Table 1 `*_n` | Independent-run identities and available-run count | Read counts by context: profile/summary `n` counts runs; path-layer `n` counts states; timing `n_deltas` counts intervals. None is training $M$. |
-| Native `rt_solve`; table `rt_solve_median`, `rt_solve_MAD` | RT (seconds), with the published table clock | Cumulative solver time excluding metric/logging time. Table 1 uses the median across runs; MAD is the median absolute deviation. |
+| Native `rt_solve`; table `rt_solve_mean`, `rt_solve_median`, `rt_solve_MAD` | RT (seconds), with the published table clock | Cumulative solver time excluding metric/logging time. Table 1 uses the mean across runs; median and MAD are separate diagnostics. |
 | Native `rt_log`, DF `rt_total`; official `rt` | Separate wall-clock components / Figure 4 time axis | DF comparison time uses `rt_solve+rt_log`; official `rt` is its native in-loop clock excluding reference precomputation. The clocks are not interchangeable end-to-end times. |
 | Timing `median_s`, `MAD_s`, `n_deltas` | Figure 7 per-iteration runtime and dispersion | Median/MAD of 150 solver-time deltas at iterations 51–200, after 50 warm-up intervals; not cross-seed SD. |
 | Native `peak_memory_cuda*_MB`; `peak_mem`, `peak_mem_all_ranks` | GPU memory in Figures 6–7 | Values are MiB despite the native `MB` suffix. Published harvest uses the peak of the first GPU column; the all-rank peak is exported separately. |
@@ -217,12 +222,12 @@ figure statistics from the bundled arrays and CSVs.
 
 ## Citation and publication
 
-Citation metadata are in `CITATION.cff`. Use release/tag name `v0.1.0-rc2`;
-Python represents this version as `0.1.0rc2`. DF-MartNet and the bundled
+Citation metadata are in `CITATION.cff`. The package version is `0.2.0-rc2`;
+Python represents this version as `0.2.0rc2`. DF-MartNet and the bundled
 SOC-MartNet reference implementations use MIT; see `LICENSE_STATUS.md`.
 When referring to the reproduced tables and figures, identify the bundled
 manuscript snapshot as well as the code version.
 
-Publish this directory alone into a new repository; see
+Publication checks and exclusions are described in
 [publication boundaries](docs/publishing.md). Local scheduling files and generated
 results are excluded from the release inventory.

@@ -12,6 +12,12 @@
     ]
   },
   "profile_source": {
-    "sha256": "7466367723fa37100d0df5436a7694d93d213e542a1d693ecc1c1b9a3b10593b"
+    "source_id": "submitted_five_run_HJB_profiles",
+    "sha256": "e03f37042d99cb8345ed4ae8ae570e87aad7ae63e89ebfbe2599250f102a2a88",
+    "selection": {
+      "cohort": "HJB3-D10",
+      "seed": 5
+    },
+    "release_sha256": "f946f6ce3a6f4c7bb1062a776451490486806d22fac78852906060cccba901e0"
   }
 }

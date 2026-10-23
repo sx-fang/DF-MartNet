@@ -5,9 +5,11 @@ import configparser
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from dfm_repro.common import ROOT, json_read, sha256, package_digest, expression
+from dfm_repro.protocol import validate_execution_sources
 
 def main():
     digest=package_digest();cases=json_read(ROOT/'configs/cases.json');count=0
+    validate_execution_sources(cases)
     for p in ROOT.rglob('*.py'):
         if 'results' not in p.parts:ast.parse(p.read_text(encoding='utf-8-sig'),filename=str(p));count+=1
     for key,case in cases.items():

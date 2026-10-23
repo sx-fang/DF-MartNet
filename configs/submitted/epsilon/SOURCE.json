@@ -1,0 +1,205 @@
+{
+  "files": [
+    {
+      "case": "eps1",
+      "seed": 1,
+      "file": "eps1_s1.ini",
+      "original_input_sha256": "9660fbbf41a92e73a5e19851e44e60a629cd1f17ca452ba97a47b385950e7b23",
+      "release_sha256": "2abaa9b1c93402a2daf8abb2587714c5fc8725078e05663a45eb2b50afd562e6",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps1",
+      "seed": 2,
+      "file": "eps1_s2.ini",
+      "original_input_sha256": "ff701a9246db9124e46b4c1e6e5e2d00997bf361f32c691c22f66a1eb7634cb4",
+      "release_sha256": "3f750847da1add44784f103594067be96cb454433a7155396d428c18bab42572",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps1",
+      "seed": 3,
+      "file": "eps1_s3.ini",
+      "original_input_sha256": "78acc6383eb86357094ba818600eee4c7e91e1197468027901389ee15997b5cf",
+      "release_sha256": "9b84c7e46f78b88df10e2b12a54648eaab4128ff4581ee2850919fc61c45b936",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps1",
+      "seed": 4,
+      "file": "eps1_s4.ini",
+      "original_input_sha256": "8620baf75c1c7149cdcfe6351164cca090b3aa6029654c307bd10f8271df9a69",
+      "release_sha256": "1be04df8c668f1cc00a61c18391993cc343e46ff9fc3edac9aecf6eb36b7200c",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps1",
+      "seed": 5,
+      "file": "eps1_s5.ini",
+      "original_input_sha256": "9c14db2f7f66179fc6df3fdaaa57909f4944028c28a683417183ace7cc98aef3",
+      "release_sha256": "448b146d2a27afb1488cdb6f0485fa9688a5b53a27aae171119ac4f285e311dd",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0p5",
+      "seed": 1,
+      "file": "eps0p5_s1.ini",
+      "original_input_sha256": "d72ee417c871eaab1765701e5165a6fd304315911698a44b567508f3ac08641b",
+      "release_sha256": "9f676033b317700a18ed41416ceb476d59fe4c2582814ada1d8b1ab38ce54934",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0p5",
+      "seed": 2,
+      "file": "eps0p5_s2.ini",
+      "original_input_sha256": "b4e2a4149cefba14e2779d1eff0cd1c4ca2f6bd6d7e06c0e894d514189f4e2cf",
+      "release_sha256": "92c0a279427c1621a03c41e86836556858d8279f43b2dd3572f6558e8943c1da",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0p5",
+      "seed": 3,
+      "file": "eps0p5_s3.ini",
+      "original_input_sha256": "b665484950f5b160a5cc9802c36ac7853f5f23a7259d4d81c7b54a165e5ec253",
+      "release_sha256": "431847cd77baab033e8eed2bb66510b89fff6893c7d3fbe4d58ac137d3e40665",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0p5",
+      "seed": 4,
+      "file": "eps0p5_s4.ini",
+      "original_input_sha256": "9abecffbc8710dba5fc09694779e0ab0b6d6b50092a56a55ecbf4b2a43c56f6f",
+      "release_sha256": "b51e17594d0354d0e8de7e84ba1f5aa412801d89486163595e11593fce7a6c19",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0p5",
+      "seed": 5,
+      "file": "eps0p5_s5.ini",
+      "original_input_sha256": "b85bc1b045a216bb2224aabfe97848400ae866c67ee2929d56b11c5ac43848ab",
+      "release_sha256": "d9a559c4815290c1958c71c2dea2343b989cbbf7cb9b249e003e378b8f992864",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0p25",
+      "seed": 1,
+      "file": "eps0p25_s1.ini",
+      "original_input_sha256": "2b70dd3a4d922d4d90e1bf96946141fed42b00cd1065ebfeb4e01e3e628f2740",
+      "release_sha256": "37a7f2b0079ab5b01e0266409d831e6faba7265ec19091823ffe09fc982ca47f",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0p25",
+      "seed": 2,
+      "file": "eps0p25_s2.ini",
+      "original_input_sha256": "408b6ddc91646d3aa019ce4216318d7f9652b69122d278b1b08220d5678f92e2",
+      "release_sha256": "644af74886df4688ca7c3573c6178ce29f28726b7e02769697a32d4d2665b95a",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0p25",
+      "seed": 3,
+      "file": "eps0p25_s3.ini",
+      "original_input_sha256": "e0e9c526714473340aa1bf495a2d8fe78a59e78a8e49cc0fc1a9cf657625d5bb",
+      "release_sha256": "c2c9187577875aed0bfc5b3faa0a0bf67d9d16c4b110338e2fcca2e420acbacd",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0p25",
+      "seed": 4,
+      "file": "eps0p25_s4.ini",
+      "original_input_sha256": "0ea2472ccfb58fe4031be3f7373e0c22fe8d7b334626b4c60d164b51a9471507",
+      "release_sha256": "d0d878d108533b76335ff4e414ad57404616feb63598ed3a847ddc7cdb3f7f0b",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0p25",
+      "seed": 5,
+      "file": "eps0p25_s5.ini",
+      "original_input_sha256": "75f299060f1af86ade7191c35cd5e7bf09fbbab37419d676a814d9235a2a7d97",
+      "release_sha256": "9f657fc8047c0e0b4c7dc4c0f8cd77c021354a151c0395a65ce9dd297b8f640b",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0p125",
+      "seed": 1,
+      "file": "eps0p125_s1.ini",
+      "original_input_sha256": "87c2ca130ce853d1cd50e9bea61db783ce96a096118ebf271eb18148300fa8a6",
+      "release_sha256": "32f68e8e88361c2326e0ef714221613771929a45d03a18765f036f38a3bd7e2a",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0p125",
+      "seed": 2,
+      "file": "eps0p125_s2.ini",
+      "original_input_sha256": "02d99231f3d9135ebbd77679f4bae8d31509a063fd84723af50bb931252b719a",
+      "release_sha256": "f25a6316961b9e0ea73cc6dfe81b9927f0b3e87c78dba52d0486f4443d17c31e",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0p125",
+      "seed": 3,
+      "file": "eps0p125_s3.ini",
+      "original_input_sha256": "206d13dd13a08ab593273a3a872b05d2c2d28e6668dc9e9fcda62bde7f8e2b0a",
+      "release_sha256": "5a74f3e96b41654ae7a5adf2bf8819a4e9e2158c5f785402151909d01bd74891",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0p125",
+      "seed": 4,
+      "file": "eps0p125_s4.ini",
+      "original_input_sha256": "e0ab41a5223720b9ce0184edaa593ae860b9dcc48c144e3ea8c7bb58721a2afe",
+      "release_sha256": "ba50e02276ee023af37be45a39f52047695dc227167952a69033561ffe5e04f8",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0p125",
+      "seed": 5,
+      "file": "eps0p125_s5.ini",
+      "original_input_sha256": "55222a6824d3eca7ab8f02deb6ef82493286607f63133313f361e7a2cac0f892",
+      "release_sha256": "71253beede0d448f330fbd49b6bc4c43417024d4ab71cf143f6b830e5b272bcb",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0",
+      "seed": 1,
+      "file": "eps0_s1.ini",
+      "original_input_sha256": "374541118aa1585fb6ee4a08e4da3c6a2504042627b292a929885dccb46cf065",
+      "release_sha256": "9628dc838aac4d2c864cbc4dbca7c83fcd0162df08cdb0fb354fae8811826a14",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0",
+      "seed": 2,
+      "file": "eps0_s2.ini",
+      "original_input_sha256": "b76e35b669888c16330a23dfb739ee871eb8497fb1fdf30f98312a0e99d93123",
+      "release_sha256": "1c1df9b579394da0a26a774c6c2fb2891d7fd849d9704f09da4ddf47ea642fd3",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0",
+      "seed": 3,
+      "file": "eps0_s3.ini",
+      "original_input_sha256": "9293c29daabfeb2414555c2831f84baa77deeba92fb54f21a4e69022d301ee61",
+      "release_sha256": "1108b529c1feaa91833f8342e24f05611aeb11ade4e700f8066551988f6c4c68",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0",
+      "seed": 4,
+      "file": "eps0_s4.ini",
+      "original_input_sha256": "4d2d67d9e6fc05cda449cef551088692dd84775c06762414c7159b91c3c861b4",
+      "release_sha256": "76ff97217f81f2979e4753465003f60afa9de9e8ed8b7f7b280aed29de95cc06",
+      "permitted_edit": "Environment.output_dir only"
+    },
+    {
+      "case": "eps0",
+      "seed": 5,
+      "file": "eps0_s5.ini",
+      "original_input_sha256": "11403c3e49e68af10b9bf6f613eb804c2187a3da4449d01bc27607be6e36da6b",
+      "release_sha256": "00c91d2e286fc7412b9fe4b0e5dcba98e278430996238b4771c6a2eb272e21ea",
+      "permitted_edit": "Environment.output_dir only"
+    }
+  ],
+  "scope": "Exact original scientific options of the five submitted runs per epsilon; only output paths are portable."
+}

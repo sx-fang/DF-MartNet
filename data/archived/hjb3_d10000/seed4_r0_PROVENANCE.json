@@ -1,0 +1,13 @@
+{
+  "case": "hjb3_d10000",
+  "sample_id": "seed4_r0",
+  "profile_source": {
+    "source_id": "submitted_five_run_HJB_profiles",
+    "sha256": "e03f37042d99cb8345ed4ae8ae570e87aad7ae63e89ebfbe2599250f102a2a88",
+    "selection": {
+      "cohort": "HJB3-D10",
+      "seed": 4
+    },
+    "release_sha256": "b7c309252763378a9d688a2285398db1cd1143c616deb3343abc3e7f2a04b727"
+  }
+}

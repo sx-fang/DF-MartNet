@@ -1,13 +1,13 @@
-case,paper_object,engine,status,note
-hjb1_d10000,Table 1 row 1 and Figure 2,engines/4d30ed0,verified,core modules byte-identical in the archived runs and in the 2026-10-16 seed-1 batch
-hjb2_d10000,Table 1 row 2 and Figure 2,engines/4d30ed0,verified,same as above
-hjb3_d10000,Table 1 row 3 and Figure 2,engines/4d30ed0,verified,same as above
-hjb3_d2000_w2010,Table 1 row 4 and Figure 3,engines/4d30ed0,verified,same as above
-hjb3_d2000_w10010,Table 1 row 5 and Figure 3,engines/4d30ed0,verified,same as above
-hjb_table,Table 1 and Figures 2-3,engines/4d30ed0,verified,aggregate entry over the five HJB cases
-rho_sweep,Figure 6,engines/af4a053,verified,Figure 6 uses the six-group r campaign pinned at af4a053
-performance_sweep,Figure 7,engines/4d30ed0,verified,recorded anchor of the 20 accepted timing runs
-scalar_control,Figure 8,engines/4d30ed0,verified,core modules unchanged from the 2026-10-16 K1 campaign
-epsilon_sweep,Figure 9,engines/4d30ed0,verified,core modules unchanged from the 2026-10-16 epsilon family
-comparison,Figure 4,paper_original/variants,unchanged_from_rc2,pre-October code paths already pinned in the released package
-complex_dynamics,Figure 5,paper_original/variant_a,unchanged_from_rc2,pre-October code path already pinned in the released package
+case,paper_object,engine,status,note,base_source
+hjb1_d10000,Table 1 row 1 and Figure 2,engines/runtime_4d30ed0,repair_verified,Original snapshots retained; runtime repair and module hashes in each SOURCE.json.,engines/4d30ed0
+hjb2_d10000,Table 1 row 2 and Figure 2,engines/runtime_4d30ed0,repair_verified,Original snapshots retained; runtime repair and module hashes in each SOURCE.json.,engines/4d30ed0
+hjb3_d10000,Table 1 row 3 and Figure 2,engines/runtime_4d30ed0,repair_verified,Original snapshots retained; runtime repair and module hashes in each SOURCE.json.,engines/4d30ed0
+hjb3_d2000_w2010,Table 1 row 4 and Figure 3,engines/runtime_4d30ed0,repair_verified,Original snapshots retained; runtime repair and module hashes in each SOURCE.json.,engines/4d30ed0
+hjb3_d2000_w10010,Table 1 row 5 and Figure 3,engines/runtime_4d30ed0,repair_verified,Original snapshots retained; runtime repair and module hashes in each SOURCE.json.,engines/4d30ed0
+hjb_table,Table 1 and Figures 2-3,engines/runtime_4d30ed0,repair_verified,Original snapshots retained; runtime repair and module hashes in each SOURCE.json.,engines/4d30ed0
+rho_sweep,Figure 6,engines/runtime_af4a053,repair_verified,Original snapshots retained; runtime repair and module hashes in each SOURCE.json.,engines/af4a053
+performance_sweep,Figure 7,engines/runtime_4d30ed0,repair_verified,Original snapshots retained; runtime repair and module hashes in each SOURCE.json.,engines/4d30ed0
+scalar_control,Figure 8,engines/runtime_4d30ed0,repair_verified,Original snapshots retained; runtime repair and module hashes in each SOURCE.json.,engines/4d30ed0
+epsilon_sweep,Figure 9,engines/runtime_4d30ed0,repair_verified,Original snapshots retained; runtime repair and module hashes in each SOURCE.json.,engines/4d30ed0
+comparison,Figure 4,engines/runtime_comparison;third_party/socmartnet_refactored;third_party/socmartnet_refactored_seed1to4,repair_verified,Original snapshots retained; runtime repair and module hashes in each SOURCE.json.,paper_original/variant_d;third_party/socmartnet_refactored;third_party/socmartnet_refactored_seed1to4
+complex_dynamics,Figure 5,engines/runtime_complex,repair_verified,Original snapshots retained; runtime repair and module hashes in each SOURCE.json.,paper_original/variant_a

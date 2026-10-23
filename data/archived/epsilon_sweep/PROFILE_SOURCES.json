@@ -1,0 +1,42 @@
+{
+  "release_file": "data/archived/epsilon_sweep/per_seed_profiles.csv",
+  "release_sha256": "54c5175f174de278a9bd64c39cb32964723f294ba5d71573b2744dd27df59cae",
+  "raw_asset_sha256": "2fb765570d6846c369bf84edf2fccce82879e94c82a7d3af970e8f2d926929db",
+  "members": [
+    {
+      "path": "raw/eps/eps0_five_run.csv",
+      "bytes": 85355,
+      "sha256": "08afba69ffeca1905ae0eb13e257612804de610e0c2f2890e70afeda4bfa1629"
+    },
+    {
+      "path": "raw/eps/eps0p125_five_run.csv",
+      "bytes": 85174,
+      "sha256": "2527a377822dd8826192458707be97b0b69cf2d8edade3be48a2f821742f4142"
+    },
+    {
+      "path": "raw/eps/eps0p25_five_run.csv",
+      "bytes": 85948,
+      "sha256": "33257256c01ad61b83a74c38f40eb9786c347412f623a48c2c560be2899677e9"
+    },
+    {
+      "path": "raw/eps/eps0p5_five_run.csv",
+      "bytes": 86615,
+      "sha256": "d1c974cfe78bd41c02bbc84703f57f76f5dff714ef7db3560993174ba9d2c6f2"
+    },
+    {
+      "path": "raw/eps/eps1_five_run.csv",
+      "bytes": 86817,
+      "sha256": "cd2579d93d47bf78ce4c4801013d1499f06be24ebb026fb54572267b468db155"
+    }
+  ],
+  "runs_per_epsilon": 5,
+  "training_seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "conversion": "Long-form extraction of the five saved prediction/cost columns; no new rollouts.",
+  "statistics": "Mean and sample SD across runs (ddof=1), distinct from conditional MC SD/SE."
+}

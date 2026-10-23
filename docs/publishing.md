@@ -1,16 +1,16 @@
 # Publication boundaries
 
 Publish the files listed in `PACKAGE_FILES.json`, plus that inventory file,
-as the root of a new repository with fresh Git history. Preparation reports,
+to the release repository. Preserve its existing Git history. Preparation reports,
 backup copies, local scheduling settings, generated outputs and environments
 are outside this package.
 
 ## Version and licence
 
-Use release/tag name `v0.1.0-rc2`. README and `CITATION.cff` use `0.1.0-rc2`;
-`dfm_repro.__version__` uses the equivalent Python form `0.1.0rc2`.
-`cff-version: 1.2.0` identifies the citation-file schema. `paper_original` and
-`corrected` identify numerical-source choices.
+README and `CITATION.cff` use `0.2.0-rc2`;
+`dfm_repro.__version__` uses the equivalent Python form `0.2.0rc2`.
+`cff-version: 1.2.0` identifies the citation-file schema. The `paper_original`
+protocol records the historical base separately from its repaired runtime.
 
 Add the actual publication date to `CITATION.cff` when releasing. Refresh
 `PACKAGE_FILES.json`, repeat the checks below, then create the release tag.

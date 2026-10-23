@@ -1,14 +1,18 @@
 # Source and numerical data
 
-`paper_manifest.csv` maps 105 selected runs in 41 configurations to public
+`paper_manifest.csv` maps 125 selected runs in 41 configurations to public
 sample IDs, seeds, repeats, GPU counts, configuration hashes and source
 snapshots. The twelve entry points select these runs. HJB group and individual
-entries share configurations. The package includes 95 DF INIs and ten
+entries share configurations. The package retains 145 original/revision DF INIs, adds
+25 portable copies of the submitted epsilon INIs, and contains ten
 reference-method CLI records. Labels such as `seed1_r0` identify samples.
 
-Code paths pinned to a named engine commit live under `engines/` (Figure 6 uses `engines/af4a053`; the HJB tables and Figures 2-3 use `engines/4d30ed0`), each with a `SOURCE.json`; the `paper_original/` and `third_party/` directories carry the older original and public file hashes. These snapshots provide the numerical executors used by the example
-entries. Public hashes describe the bundled files and remain distinct from
-their original-input hashes.
+Code pinned to a named commit lives under `engines/`. Fresh DF execution uses
+its separate `runtime_*` repair copies; `base_source` identifies each immutable
+historical snapshot. Official comparison code remains under `third_party/`
+and runs with the explicitly prescribed eight GPUs. `SOURCE.json` records
+module hashes; `ENGINE_PINS.csv` records case routing. Public hashes describe
+the bundled files and remain distinct from their original-input hashes.
 
 Adjacent `*_PROVENANCE.json` files record sample IDs and input hashes.
 `data/ASSET_PROVENANCE.json` records content-source IDs and bundled-file
@@ -16,14 +20,20 @@ SHA256 values. `PACKAGE_FILES.json` pins the publication files; Git preserves
 their bytes without line-ending conversion.
 
 Saved histories contain the numerical columns used by the paper's plots.
-HJB assets contain prediction, reference and time arrays for the selected
-samples. Figure 2's wide reference profiles are bundled separately from each
-run's final-profile arrays. Full mode generates states, predictions, references
-and per-path costs from the current run.
+HJB assets contain per-run prediction/reference arrays and a time-layer index;
+`path_protocol.json` binds their five-row ordering and 128-by-32 layout.
+`HJB_PLOT_SOURCES.json` pins the submitted final plotting cohort. Figure 2's
+wide references have separate initial/terminal coordinates. Full mode measures
+accuracy on new states and references; the wider display-only reference is a
+frozen plotting input and is labelled as such in evaluation metadata.
 
 Scalar-control QQ files contain pooled order statistics, both extremes and
-per-seed raw-pair RE. Epsilon cost files contain the saved points, mean, SD and
-Monte Carlo SE. Comparison inputs contain the selected histories and their
+per-seed raw-pair RE on the 31-layer QQ interior. Full path metrics remain
+separate. Epsilon `per_seed_profiles.csv` exposes all 25 saved runs, including
+pointwise predictions, costs and conditional MC SE; the aggregate uses
+across-run sample SD. Archived epsilon training histories cover seed 1 only;
+this subset is labelled and does not supply a five-seed history band.
+Comparison inputs contain the selected histories and their
 aggregate curves. Counts and statistic definitions accompany the data.
 
 All bundled-data inputs are included. Full mode produces final weights during

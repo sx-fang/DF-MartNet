@@ -1,24 +1,26 @@
-# Engine snapshots
+# Numerical sources
 
-`4d30ed0` is the only engine version that the revised figures need on top of
-the code paths already bundled in `paper_original/` and `corrected/`.
+`4d30ed0` and `af4a053`, and every directory under `paper_original/`, are
+unchanged historical snapshots. They identify the code behind the saved runs.
+`ENGINE_PINS.csv` and each arm's `base_source` preserve that identity.
 
-The nine core modules were taken from the engine repository with `git archive`
-and each file was checked with `git hash-object` against the commit tree. They
-were then compared byte for byte with the frozen copies archived next to the
-runs: the twenty-five HJB runs, the twenty timing runs and the earlier seed-1
-batch all carry the same core modules, so one snapshot serves every revised
-figure.
+Fresh execution uses four portable repair copies:
 
-```
-engines/4d30ed0/
-  SOURCE.json        commit, subject, sizes and SHA-256 of every module
-  diagnostics.py  examples.py  loss_martnet.py  networks.py  runtask.py
-  sampling.py     solver.py    train.py         utils.py
-```
+| Runtime | Historical base | Cases |
+|---|---|---|
+| `runtime_4d30ed0` | `4d30ed0` | HJB, timing, scalar control, epsilon |
+| `runtime_af4a053` | `af4a053` | Test-network dimension sweep |
+| `runtime_complex` | `paper_original/variant_a` | Complex dynamics |
+| `runtime_comparison` | `paper_original/variant_d` | DF method comparison |
 
-Scheduling scripts, calibration drivers and diagnostics are deliberately absent.
-Which case uses which code path is recorded in `ENGINE_PINS.csv`.
+The repairs provide the full import dependency set, disjoint pilot path
+groups, an alias-safe stopped-gradient loss, and exact global sample budgets
+with sample-weighted distributed reductions. The scalar-control reference is
+the scalar-control implementation already present in `4d30ed0`. Configured
+networks, coefficients, seeds, iteration counts and optimizers are retained.
 
-Figures 4 and 5 come from the pre-October code paths that the released package
-already pins under `paper_original/`; they are unchanged here.
+Each `SOURCE.json` pins the historical base and every executable module.
+Optional aligned/radial linear and fused optimizer modules are included so
+conditional imports cannot fail. Full-mode runs freeze these sources, their
+configurations and evaluation inputs before launching workers. See
+[validation](../docs/validation.md) for test scope and historical limitations.
